@@ -1,0 +1,17 @@
+2018.7.10
+1. In recursion algorithm, the parameter has 2 type can be choice if has 'STRING'
+   The String and StringBuilder(StringBuffer)
+   No reference about the cache use and GCC solution, just talking the 'PARAM'
+   Once String + "" as a param, the origin String is unchanged.
+   But StringBuilder.append(i), The origin StringBuilder is changed, In recursion
+   You need to delete the last element and transfer to another recursion.
+
+2. In Greedy algorithm, the benchmark is constantly changed. So consecutive update is needed.
+
+
+2018.7.12
+1. In recursion, too. the List can't be directly add.
+   Because the List's location is invariable, if List changed, the Lists is changed.
+
+2018.7.22
+1. Master the Data Structure can reduce the running time. Like utilizing the List in Map.
