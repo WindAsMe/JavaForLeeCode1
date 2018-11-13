@@ -12,8 +12,10 @@ public class numUniqueEmails {
 
     private static int numUniqueEmailsResult(String[] emails) {
         Set<String> set = new HashSet<>();
-        for (String email : emails)
-            set.add(process(email));
+        for (String email : emails) {
+            String[] e = email.split("@");
+            set.add(process(e[0]) + e[1]);
+        }
 
         for (String s : set)
             System.out.println(s);
@@ -21,19 +23,16 @@ public class numUniqueEmails {
     }
 
     private static String process(String email) {
-        StringBuilder s = new StringBuilder(email);
-        StringBuilder temp = new StringBuilder();
-        int i = 0;
-        for (; s.charAt(i) != '@'; i++) {
-            if (s.charAt(i) == '.') {
-                continue;
-            } else if (s.charAt(i) == '+') {
-                temp = new StringBuilder();
-            } else {
-                temp.append(s.charAt(i));
-            }
-        }
-        return temp.append(s.substring(i, s.length())).toString();
+        System.out.println("process: " + email);
+        StringBuilder s = new StringBuilder();
+        StringBuilder ans = new StringBuilder();
+        String[] email1 = email.split("\\.");
+        for (String e : email1)
+            s.append(e);
+        String[] email2 = s.toString().split("\\+");
+        for (int i = 0; i < email2.length; i += 2)
+            ans.append(email2[i]);
+        return ans.toString();
     }
 
     public static void main(String[] args) {
