@@ -5,8 +5,8 @@ import java.util.List;
  * Author     : WindAsMe
  * File       : preorder.java
  * Time       : Create on 18-7-18
- * Location   : ../Home/JavaForLeeCode/preorder.java
- * Function   : LeeCode No.589
+ * Location   : ../Home/JavaForLeetCode/preorder.java
+ * Function   : LeetCode No.589
  */
 public class preorder {
 
