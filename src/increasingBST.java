@@ -25,11 +25,12 @@ public class increasingBST {
         dfs(root, list);
         Collections.sort(list);
         TreeNode node = new TreeNode(list.get(0));
+        TreeNode temp = node;
         for (int i = 1; i < list.size(); i++) {
             node.right = new TreeNode(list.get(i));
             node = node.right;
         }
-        return node;
+        return temp;
     }
 
     private static void dfs(TreeNode node, List<Integer> list) {
