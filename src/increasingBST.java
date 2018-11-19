@@ -23,7 +23,6 @@ public class increasingBST {
     private static TreeNode increasingBSTResult(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         dfs(root, list);
-        Collections.sort(list);
         TreeNode node = new TreeNode(list.get(0));
         TreeNode temp = node;
         for (int i = 1; i < list.size(); i++) {
@@ -35,8 +34,8 @@ public class increasingBST {
 
     private static void dfs(TreeNode node, List<Integer> list) {
         if (node != null) {
-            list.add(node.val);
             dfs(node.left, list);
+            list.add(node.val);
             dfs(node.right, list);
         }
     }
