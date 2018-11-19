@@ -17,27 +17,14 @@ public class sortArrayByParityII {
 
     private static void sort(int[] a, int index) {
         if (index < a.length) {
-            if (index % 2 == 1) {
-                if (a[index] % 2 == 0) {
-                    for (int i = index + 1; i < a.length; i++) {
-                        if (a[i] % 2 == 0) {
-                            int temp = a[i];
-                            a[i] = a[index];
-                            a[index] = temp;
-                        }
+            if (a[index] % 2 != index % 2) {
+                for (int i = index + 1; i < a.length; i++) {
+                    if (a[i] % 2 == index % 2) {
+                        int temp = a[i];
+                        a[i] = a[index];
+                        a[index] = temp;
                     }
                 }
-            } else {
-                if (a[index] % 2 == 1) {
-                    for (int i = index + 1; i < a.length; i++) {
-                        if (a[i] % 2 == 1) {
-                            int temp = a[i];
-                            a[i] = a[index];
-                            a[index] = temp;
-                        }
-                    }
-                }
-
             }
             sort(a, ++index);
         }
