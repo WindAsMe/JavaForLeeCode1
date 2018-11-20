@@ -17,8 +17,12 @@ public class stoneGame {
             for(int i = 0; i < n - dis; i++)
                 dp[i][i + dis] = Math.max(piles[i] - dp[i + 1][i + dis], piles[i + dis] - dp[i][i + dis - 1]);
         }
-        return dp[0][n-1] > 0;
+        return dp[0][n - 1] > 0;
     }
 
+    public static void main(String[] args) {
+        int[] piles = {5,3,2,4};
+        System.out.println(stoneGameResult(piles));
+    }
 
 }
