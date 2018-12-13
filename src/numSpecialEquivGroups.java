@@ -28,7 +28,7 @@ public class numSpecialEquivGroups {
     }
 
     public static void main(String[] args) {
-        String[] A = {};
-        System.out.println();
+        String[] A = {"a","b","c","a","c","c"};
+        System.out.println(numSpecialEquivGroupsResult(A));
     }
 }
