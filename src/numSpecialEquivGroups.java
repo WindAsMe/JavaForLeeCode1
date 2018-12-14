@@ -15,10 +15,10 @@ public class numSpecialEquivGroups {
         for (String a : A) {
             StringBuilder even = new StringBuilder();
             StringBuilder odd = new StringBuilder();
-            for (int i = 0; i < A.length; i += 2)
-                even.append(A[i]);
-            for (int i = 1; i < A.length; i += 2)
-                odd.append(A[i]);
+            for (int i = 0; i < a.length(); i += 2)
+                even.append(a.charAt(i));
+            for (int i = 1; i < a.length(); i += 2)
+                odd.append(a.charAt(i));
             if (map.containsKey(even.append(odd).toString()))
                 map.put(even.append(odd).toString(), map.get(even.append(odd).toString()) + 1);
             else
