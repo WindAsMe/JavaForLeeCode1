@@ -1,5 +1,5 @@
-import java.util.HashMap;
-import java.util.Map;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Author     : WindAsMe
@@ -11,24 +11,27 @@ import java.util.Map;
 public class numSpecialEquivGroups {
 
     private static int numSpecialEquivGroupsResult(String[] A) {
-        Map<String, Integer> map = new HashMap<>();
-        for (String a : A) {
-            StringBuilder even = new StringBuilder();
-            StringBuilder odd = new StringBuilder();
-            for (int i = 0; i < a.length(); i += 2)
-                even.append(a.charAt(i));
-            for (int i = 1; i < a.length(); i += 2)
-                odd.append(a.charAt(i));
-            if (map.containsKey(even.append(odd).toString()))
-                map.put(even.append(odd).toString(), map.get(even.append(odd).toString()) + 1);
-            else
-                map.put(even.append(odd).toString(), 1);
-        }
-        return map.size();
+        Set<String> strSet = new HashSet<>();
+        for (String tmp : A)
+            strSet.add(strHash(tmp));
+        return strSet.size();
+    }
+
+    private static String strHash(String tmp) {
+        if (tmp.length() == 1)
+            return tmp;
+        int[] cArr = new int[52];
+        int odd = 0;
+        StringBuilder sb = new StringBuilder();
+        for (char c : tmp.toCharArray())
+            cArr[(odd++ % 2 == 0 ? 26 : 0) + c - 'a']++;
+        for (int i : cArr)
+            sb.append(i);
+        return sb.toString();
     }
 
     public static void main(String[] args) {
-        String[] A = {"a","b","c","a","c","c"};
+        String[] A = {"abc","acb","bac","bca","cab","cba"};
         System.out.println(numSpecialEquivGroupsResult(A));
     }
 }
