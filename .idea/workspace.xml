@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdb379e-4279-428b-9b06-590e93c8068c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/numSpecialEquivGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/numSpecialEquivGroups.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sortArrayByParity.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,24 +30,24 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="conclusion" value="2" />
-          <entry key="java" value="9" />
+          <entry key="java" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="10" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ft" value="21" />
-          <entry key="java" value="2904" />
+          <entry key="java" value="3148" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2904" />
+          <entry key="JAVA" value="3148" />
           <entry key="VTL" value="21" />
         </counts>
       </usages-collector>
@@ -98,11 +98,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/numSpecialEquivGroups.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+            <state relative-caret-position="242">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sortArrayByParity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -139,7 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/canCompleteCircuit.java" />
         <option value="$PROJECT_DIR$/src/hammingWeight.java" />
         <option value="$PROJECT_DIR$/src/isAnagram.java" />
         <option value="$PROJECT_DIR$/src/deleteNode1.java" />
@@ -190,6 +201,7 @@
         <option value="$PROJECT_DIR$/src/increasingBST.java" />
         <option value="$PROJECT_DIR$/src/stoneGame.java" />
         <option value="$PROJECT_DIR$/src/numSpecialEquivGroups.java" />
+        <option value="$PROJECT_DIR$/src/sortArrayByParity.java" />
       </list>
     </option>
   </component>
@@ -243,7 +255,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544706199643" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544765632784" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -264,16 +276,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.numSpecialEquivGroups">
+  <component name="RunManager" selected="Application.sortArrayByParity">
     <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="findAnagrams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="findAnagrams" />
-      <module name="JavaForLeeCode1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -303,6 +307,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="sortArrayByParity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sortArrayByParity" />
+      <module name="JavaForLeeCode1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="sortArrayByParityII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sortArrayByParityII" />
       <module name="JavaForLeeCode1" />
@@ -326,19 +338,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.findAnagrams" />
       <item itemvalue="Application.pruneTree" />
       <item itemvalue="Application.numUniqueEmails" />
       <item itemvalue="Application.sortArrayByParityII" />
       <item itemvalue="Application.numSpecialEquivGroups" />
+      <item itemvalue="Application.sortArrayByParity" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sortArrayByParity" />
         <item itemvalue="Application.numSpecialEquivGroups" />
         <item itemvalue="Application.sortArrayByParityII" />
         <item itemvalue="Application.numUniqueEmails" />
         <item itemvalue="Application.pruneTree" />
-        <item itemvalue="Application.findAnagrams" />
       </list>
     </recent_temporary>
   </component>
@@ -451,12 +463,21 @@
       <workItem from="1544704185166" duration="604000" />
       <workItem from="1544704812280" duration="144000" />
       <workItem from="1544705276530" duration="895000" />
-      <workItem from="1544760643008" duration="1122000" />
+      <workItem from="1544760643008" duration="1637000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="346809000" />
+    <option name="totallyTimeSpent" value="347324000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="862" y="65" width="1019" height="981" extended-state="0" />
@@ -471,11 +492,11 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49810094" visible="true" weight="0.25350466" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49810094" visible="true" weight="0.25233644" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2516129" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32943925" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4973262" weight="0.29672897" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -499,13 +520,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/matrixReshape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/maxArea.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
@@ -838,8 +852,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/numSpecialEquivGroups.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="242">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sortArrayByParity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
