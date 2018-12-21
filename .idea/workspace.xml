@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdb379e-4279-428b-9b06-590e93c8068c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/maxIncreaseKeepingSkyline.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/maxIncreaseKeepingSkyline.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/maxIncreaseKeepingSkyline.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,12 +42,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ft" value="21" />
-          <entry key="java" value="3675" />
+          <entry key="java" value="3751" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3675" />
+          <entry key="JAVA" value="3751" />
           <entry key="VTL" value="21" />
         </counts>
       </usages-collector>
@@ -135,8 +134,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/maxIncreaseKeepingSkyline.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            <state relative-caret-position="418">
+              <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -237,8 +236,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="760" />
-    <option name="y" value="69" />
+    <option name="x" value="677" />
+    <option name="y" value="73" />
     <option name="width" value="1155" />
     <option name="height" value="981" />
   </component>
@@ -274,7 +273,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545394243198" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545395202296" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -295,8 +294,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.smallestRangeI">
+  <component name="RunManager" selected="Application.maxIncreaseKeepingSkyline">
     <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="maxIncreaseKeepingSkyline" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="maxIncreaseKeepingSkyline" />
+      <module name="JavaForLeeCode1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -304,14 +311,6 @@
     </configuration>
     <configuration name="numSpecialEquivGroups" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="numSpecialEquivGroups" />
-      <module name="JavaForLeeCode1" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="numUniqueEmails" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="numUniqueEmails" />
       <module name="JavaForLeeCode1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -357,19 +356,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.numUniqueEmails" />
       <item itemvalue="Application.sortArrayByParityII" />
       <item itemvalue="Application.numSpecialEquivGroups" />
       <item itemvalue="Application.sortArrayByParity" />
       <item itemvalue="Application.smallestRangeI" />
+      <item itemvalue="Application.maxIncreaseKeepingSkyline" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.maxIncreaseKeepingSkyline" />
         <item itemvalue="Application.smallestRangeI" />
         <item itemvalue="Application.sortArrayByParity" />
         <item itemvalue="Application.numSpecialEquivGroups" />
         <item itemvalue="Application.sortArrayByParityII" />
-        <item itemvalue="Application.numUniqueEmails" />
       </list>
     </recent_temporary>
   </component>
@@ -483,12 +482,12 @@
       <workItem from="1544704812280" duration="144000" />
       <workItem from="1544705276530" duration="895000" />
       <workItem from="1544760643008" duration="1791000" />
-      <workItem from="1545393508059" duration="1360000" />
+      <workItem from="1545393508059" duration="1621000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348838000" />
+    <option name="totallyTimeSpent" value="349099000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -500,10 +499,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="760" y="69" width="1155" height="981" extended-state="0" />
+    <frame x="677" y="73" width="1155" height="981" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20754717" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20754717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -512,13 +511,13 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49810094" weight="0.25233644" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49810094" visible="true" weight="0.25233644" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2516129" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32943925" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4973262" visible="true" weight="0.29672897" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4973262" weight="0.29672897" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32258064" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5026738" side_tool="true" weight="0.3008" />
@@ -885,8 +884,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/maxIncreaseKeepingSkyline.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="29" column="8" lean-forward="true" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+        <state relative-caret-position="418">
+          <caret line="25" column="51" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
         </state>
       </provider>
     </entry>
