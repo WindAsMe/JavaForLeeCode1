@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 /**
@@ -17,6 +16,6 @@ public class smallestRangeI {
 
     public static void main(String[] args) {
         int[] A = {1, 3, 6};
-
+        System.out.println(smallestRangeIResult(A, 3));
     }
 }
