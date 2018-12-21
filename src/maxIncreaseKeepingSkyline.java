@@ -19,19 +19,18 @@ public class maxIncreaseKeepingSkyline {
     private static int getAugmentation(int[][] grid, int row, int column) {
         int rowMax = 0;
         int columnMax = 0;
-        for (int[] aGrid : grid)
-            rowMax = Math.max(rowMax, aGrid[column]);
+        for (int i = 0; i < grid[0].length; i++)
+            rowMax = Math.max(rowMax, grid[i][column]);
         for (int j = 0; j < grid[0].length; j++)
-            columnMax = Math.max(columnMax, grid[column][j]);
+            columnMax = Math.max(columnMax, grid[row][j]);
         return Math.min(columnMax, rowMax) - grid[row][column];
     }
 
     public static void main(String[] args) {
         int[][] grid = {
-                {3,0,8,4},
-                {2,4,5,7},
-                {9,2,6,3},
-                {0,3,1,0}
+                {59,88,44},
+                {3,18,38},
+                {21,26,51}
         };
         System.out.println(maxIncreaseKeepingSkylineResult(grid));
     }
