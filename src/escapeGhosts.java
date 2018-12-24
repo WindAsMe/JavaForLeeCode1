@@ -8,15 +8,23 @@
 public class escapeGhosts {
 
     private static boolean escapeGhostsResult(int[][] ghosts, int[] target) {
-        double dis = Math.pow(target[0], 2) + Math.pow(target[1], 2);
+        int dis = Math.abs(target[0]) + Math.abs(target[1]);
         for (int[] ghost : ghosts) {
-            if (Math.pow(ghost[0] - target[0], 2) + Math.pow(ghost[1] - target[1], 2) <= dis)
+            if (Math.abs(ghost[0] - target[0]) + Math.abs(ghost[1] - target[1]) <= dis)
                 return false;
         }
         return true;
     }
 
     public static void main(String[] args) {
-
+        int[][] ghosts = {
+                {1, 8},
+                {-9, 0},
+                {-7, -6},
+                {4, 3},
+                {1, 3}
+        };
+        int[] target = {6, -9};
+        System.out.println(escapeGhostsResult(ghosts, target));
     }
 }

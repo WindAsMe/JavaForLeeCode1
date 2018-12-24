@@ -8,7 +8,7 @@
 public class deadlockRecover {
 
     private static boolean recover(int[] resource, int[][] current, int[][] needed) {
-
+        return true;
     }
 
     public static void main(String[] args) {
