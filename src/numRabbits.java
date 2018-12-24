@@ -26,13 +26,13 @@ public class numRabbits {
             if (per > 0)
                 ans += (entry.getKey() + 1) * (div + 1);
             else
-                ans += entry.getKey() + 1;
+                ans += (entry.getKey() + 1) * div;
         }
         return ans;
     }
 
     public static void main(String[] args) {
-        int[] ans = {1, 1, 2};
+        int[] ans = {10, 10, 10};
         System.out.println(numRabbitsResult(ans));
     }
 }
