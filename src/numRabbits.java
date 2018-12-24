@@ -21,18 +21,18 @@ public class numRabbits {
         }
 
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            int div = (entry.getKey() + 1) / entry.getValue();
-            int per = (entry.getKey() + 1) % entry.getValue();
+            int div = entry.getValue() / (entry.getKey() + 1);
+            int per = entry.getValue() % (entry.getKey() + 1);
             if (per > 0)
-                ans += entry.getKey() * (div + 1);
+                ans += (entry.getKey() + 1) * (div + 1);
             else
-                ans += entry.getKey() * div;
+                ans += entry.getKey() + 1;
         }
         return ans;
     }
 
     public static void main(String[] args) {
-        int[] ans = {};
+        int[] ans = {1, 1, 2};
         System.out.println(numRabbitsResult(ans));
     }
 }
