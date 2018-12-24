@@ -12,6 +12,7 @@ public class numRabbits {
 
     private static int numRabbitsResult(int[] answers) {
         int ans = 0;
+        // Account the frequency
         Map<Integer, Integer> map = new HashMap<>();
 
         for (int i : answers) {
@@ -20,6 +21,8 @@ public class numRabbits {
             else
                 map.put(i, 1);
         }
+
+        // Analysis of the frequency
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             int div = entry.getValue() / (entry.getKey() + 1);
             int per = entry.getValue() % (entry.getKey() + 1);
