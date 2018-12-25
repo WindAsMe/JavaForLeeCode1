@@ -39,7 +39,7 @@ public class customSortString {
 
     public static void main(String[] args) {
         String S = "cba";
-        String T = "abcd";
+        String T = "abcdq";
         System.out.println(customSortStringResult(S, T));
     }
 }

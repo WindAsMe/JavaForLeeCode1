@@ -204,7 +204,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545731349728" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545731721292" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -225,8 +225,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.deadlockRecover">
+  <component name="RunManager" selected="Application.customSortString">
     <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="customSortString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="customSortString" />
+      <module name="JavaForLeeCode1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -264,14 +272,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="smallestRangeI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="smallestRangeI" />
-      <module name="JavaForLeeCode1" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -287,19 +287,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.smallestRangeI" />
       <item itemvalue="Application.maxIncreaseKeepingSkyline" />
       <item itemvalue="Application.escapeGhosts" />
       <item itemvalue="Application.numRabbits" />
       <item itemvalue="Application.deadlockRecover" />
+      <item itemvalue="Application.customSortString" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.customSortString" />
         <item itemvalue="Application.deadlockRecover" />
         <item itemvalue="Application.numRabbits" />
         <item itemvalue="Application.escapeGhosts" />
         <item itemvalue="Application.maxIncreaseKeepingSkyline" />
-        <item itemvalue="Application.smallestRangeI" />
       </list>
     </recent_temporary>
   </component>
