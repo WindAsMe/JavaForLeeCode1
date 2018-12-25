@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -13,6 +11,7 @@ import java.util.List;
 public class deadlockRecover {
 
     private static boolean recover(int[] resource, int[][] current, int[][] needed, List<Integer> list) {
+        System.out.println(list.toString());
         for (int i = 0; i < current.length; i++) {
             if (list.size() == current.length)
                 return true;
