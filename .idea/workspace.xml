@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdb379e-4279-428b-9b06-590e93c8068c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/numRabbits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/numRabbits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/deadlockRecover.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/deadlockRecover.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,39 +16,40 @@
     <session id="839989993">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.31" value="2" />
           <entry key="project.open.time.32" value="2" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="conclusion" value="2" />
-          <entry key="java" value="15" />
+          <entry key="java" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="15" />
+          <entry key="JAVA" value="16" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ft" value="21" />
-          <entry key="java" value="4440" />
+          <entry key="java" value="5369" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4440" />
+          <entry key="JAVA" value="5369" />
           <entry key="VTL" value="21" />
         </counts>
       </usages-collector>
@@ -58,36 +60,14 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/escapeGhosts.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="15" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/numRabbits.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
-              <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/deadlockRecover.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+            <state relative-caret-position="418">
+              <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
               <folding>
-                <element signature="e#319#320#0" expanded="true" />
-                <element signature="e#345#346#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -156,9 +136,9 @@
         <option value="$PROJECT_DIR$/src/sortArrayByParity.java" />
         <option value="$PROJECT_DIR$/src/smallestRangeI.java" />
         <option value="$PROJECT_DIR$/src/maxIncreaseKeepingSkyline.java" />
-        <option value="$PROJECT_DIR$/src/deadlockRecover.java" />
         <option value="$PROJECT_DIR$/src/escapeGhosts.java" />
         <option value="$PROJECT_DIR$/src/numRabbits.java" />
+        <option value="$PROJECT_DIR$/src/deadlockRecover.java" />
       </list>
     </option>
   </component>
@@ -175,8 +155,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="545" />
-    <option name="y" value="99" />
+    <option name="x" value="-108" />
+    <option name="y" value="151" />
     <option name="width" value="1437" />
     <option name="height" value="981" />
   </component>
@@ -212,7 +192,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545654970486" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545729880979" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -233,8 +213,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.numRabbits">
+  <component name="RunManager" selected="Application.deadlockRecover">
     <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="deadlockRecover" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="deadlockRecover" />
+      <module name="JavaForLeeCode1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -272,14 +260,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="sortArrayByParity" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sortArrayByParity" />
-      <module name="JavaForLeeCode1" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -295,19 +275,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.sortArrayByParity" />
       <item itemvalue="Application.smallestRangeI" />
       <item itemvalue="Application.maxIncreaseKeepingSkyline" />
       <item itemvalue="Application.escapeGhosts" />
       <item itemvalue="Application.numRabbits" />
+      <item itemvalue="Application.deadlockRecover" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.deadlockRecover" />
         <item itemvalue="Application.numRabbits" />
         <item itemvalue="Application.escapeGhosts" />
         <item itemvalue="Application.maxIncreaseKeepingSkyline" />
         <item itemvalue="Application.smallestRangeI" />
-        <item itemvalue="Application.sortArrayByParity" />
       </list>
     </recent_temporary>
   </component>
@@ -422,12 +402,13 @@
       <workItem from="1544705276530" duration="895000" />
       <workItem from="1544760643008" duration="1791000" />
       <workItem from="1545393508059" duration="2223000" />
-      <workItem from="1545651702128" duration="3008000" />
+      <workItem from="1545651702128" duration="3415000" />
+      <workItem from="1545727360330" duration="2266000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="352709000" />
+    <option name="totallyTimeSpent" value="355382000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -439,10 +420,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="614" y="125" width="1437" height="981" extended-state="0" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16845877" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1314191" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -451,13 +432,13 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49810094" visible="true" weight="0.3352804" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49810094" visible="true" weight="0.3344086" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2516129" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32943925" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4973262" weight="0.29672897" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4973262" weight="0.2731183" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3224299" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5026738" side_tool="true" weight="0.3008" />
@@ -808,13 +789,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/deadlockRecover.java">
+    <entry file="file://$PROJECT_DIR$/src/numRabbits.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+        <state relative-caret-position="308">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
           <folding>
-            <element signature="e#319#320#0" expanded="true" />
-            <element signature="e#345#346#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -826,10 +806,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/numRabbits.java">
+    <entry file="file://$PROJECT_DIR$/src/deadlockRecover.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="34" column="31" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
+        <state relative-caret-position="418">
+          <caret line="23" column="17" lean-forward="true" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
