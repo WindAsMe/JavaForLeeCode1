@@ -10,6 +10,10 @@ import java.util.List;
  */
 public class deadlockRecover {
 
+    private static boolean recover(int[] resource, int[][] current, int[][] needed) {
+        return recover(resource, current, needed, new ArrayList<>());
+    }
+
     private static boolean recover(int[] resource, int[][] current, int[][] needed, List<Integer> list) {
         System.out.println(list.toString());
         for (int i = 0; i < current.length; i++) {
@@ -54,6 +58,6 @@ public class deadlockRecover {
                 {1, 0, 1, 0},
                 {2, 2, 0, 0}
         };
-        System.out.println(recover(resource, current, needed, new ArrayList<>()));
+        System.out.println(recover(resource, current, needed));
     }
 }
