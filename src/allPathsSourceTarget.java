@@ -46,7 +46,7 @@ public class allPathsSourceTarget {
 
     public static void main(String[] args) {
         int[][] graph = {
-                {1,2},
+                {1},
                 {3},
                 {3},
                 {}
