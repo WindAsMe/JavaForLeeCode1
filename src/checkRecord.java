@@ -14,17 +14,14 @@ public class checkRecord {
             if (s.charAt(i) == 'A') {
                 countL = 0;
                 countA ++;
-                if (countA > 1) {
+                if (countA > 1)
                     return false;
-                }
             } else if (s.charAt(i) == 'L') {
                 countL ++;
-                if (countL > 2) {
+                if (countL > 2)
                     return false;
-                }
-            } else {
+            } else
                 countL = 0;
-            }
         }
         return true;
     }
