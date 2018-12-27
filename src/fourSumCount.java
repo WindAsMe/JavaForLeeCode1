@@ -1,3 +1,6 @@
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * Author     : WindAsMe
  * File       : fourSumCount.java
@@ -12,9 +15,9 @@ public class fourSumCount {
         Map<Integer, Integer> mapAB = new HashMap<>();
         int length = A.length;
         int sum;
-        for (int i = 0; i < length; i++) {
+        for (int aA : A) {
             for (int j = 0; j < length; j++) {
-                sum = A[i] + B[j];
+                sum = aA + B[j];
                 mapAB.put(sum, mapAB.getOrDefault(sum, 0) + 1);
             }
         }
@@ -23,13 +26,14 @@ public class fourSumCount {
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length; j++) {
                 sum = C[i] + D[j];
-                if (mapAB.containsKey(-sum)){
+                if (mapAB.containsKey(-sum))
                     result += mapAB.get(-sum);
-                }
             }
         }
-
         return result;
     }
+
+    public static void main(String[] args) {
+
     }
 }
