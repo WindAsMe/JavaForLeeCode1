@@ -46,4 +46,9 @@ public class construct {
         }
         return new Node(grid[x][y] == 1, true, null, null, null, null);
     }
+
+
+    public static void main(String[] args) {
+
+    }
 }
