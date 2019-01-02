@@ -11,6 +11,7 @@ public class countSegments {
         char[] helper = s.toCharArray();
         int count = 0;
         boolean start = false;
+
         for (int i = 0; i < helper.length - 1; i ++) {
             if (start && ((helper[i] >= 'A' && helper[i] <= 'Z') || (helper[i] >= 'a' && helper[i] <= 'z'))) {
                 if (!((helper[i + 1] >= 'A' && helper[i + 1] <= 'Z') || (helper[i + 1] >= 'a' && helper[i + 1] <= 'z')))
