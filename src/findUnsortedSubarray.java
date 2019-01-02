@@ -42,20 +42,17 @@ public class findUnsortedSubarray {
         int start = 0;
         int end = nums.length - 1;
         for (; start < nums.length; start ++) {
-            if (nums[start] != copy[start]) {
+            if (nums[start] != copy[start])
                 break;
-            }
         }
         for (; end > 0; end --) {
-            if (nums[end] != copy[end]) {
+            if (nums[end] != copy[end])
                 break;
-            }
         }
-        if (start >= end) {
+        if (start >= end)
             return 0;
-        } else {
+        else
             return end - start + 1;
-        }
     }
 
     public static void main(String[] args) {
