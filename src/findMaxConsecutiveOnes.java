@@ -11,9 +11,9 @@ public class findMaxConsecutiveOnes {
         int currentMax = 0;
         int totalMax = 0;
         for (int num : nums) {
-            if (num == 1) {
+            if (num == 1)
                 currentMax++;
-            } else {
+            else {
                 totalMax = currentMax > totalMax ? currentMax : totalMax;
                 currentMax = 0;
             }
