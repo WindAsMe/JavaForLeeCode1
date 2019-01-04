@@ -15,9 +15,8 @@ public class singleNumber {
         Map<Integer, Integer> map = new HashMap<>();
         int[] ans = new int[2];
         int mark = 0;
-        for (int num : nums) {
+        for (int num : nums)
             map.merge(num, 1, (a, b) -> a + b);
-        }
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
             if (entry.getValue() == 1) {
                 ans[mark] = entry.getKey();
