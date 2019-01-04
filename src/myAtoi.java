@@ -29,9 +29,8 @@ public class myAtoi {
             } else if (c >= '0' && c <= '9') {
                 flag = false;
                 s.append(c);
-            } else {
+            } else
                 break;
-            }
         }
         if (s.length() == 0 || (s.length() == 1 && s.charAt(0) == '-'))
             return 0;
@@ -51,9 +50,9 @@ public class myAtoi {
                 return Integer.MAX_VALUE;
         } else {
             Long l = Long.valueOf(s.toString());
-            if (l > Integer.MAX_VALUE) {
+            if (l > Integer.MAX_VALUE)
                 return Integer.MAX_VALUE;
-            } else if (l < Integer.MIN_VALUE)
+            else if (l < Integer.MIN_VALUE)
                 return Integer.MIN_VALUE;
             else
                 return Integer.valueOf(s.toString());
