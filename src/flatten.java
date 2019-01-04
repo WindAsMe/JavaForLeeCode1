@@ -29,9 +29,8 @@ public class flatten {
         root.right = trans(root.left);
         root.left = null;
         TreeNode temp = root;
-        while(temp.right != null){
+        while(temp.right != null)
             temp = temp.right;
-        }
         temp.right = right;
         return root;
     }

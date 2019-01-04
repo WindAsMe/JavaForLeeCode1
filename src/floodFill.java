@@ -10,9 +10,9 @@ import java.util.Arrays;
 public class floodFill {
 
     private static int[][] floodFillResult(int[][] image, int sr, int sc, int newColor) {
-        if (image.length == 0 || image[0].length == 0) {
+        if (image.length == 0 || image[0].length == 0)
             return image;
-        }
+
         int key = image[sr][sc];
         if (image[sr][sc] == newColor)
             return image;
