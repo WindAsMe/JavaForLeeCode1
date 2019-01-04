@@ -20,11 +20,11 @@ public class magicalString {
             index = sub.length();
             temp = base.charAt(index) - '0';
             sub.append(temp);
-            if(temp == 2) {
+            if (temp == 2) {
                 temp = base.charAt(base.length() - 1) - '0';
-                if(temp == 2){
+                if (temp == 2) {
                     base.append("11");
-                    if(base.length() <= n)
+                    if (base.length() <= n)
                         counts += 2;
                     else
                         counts += 1;
@@ -32,10 +32,10 @@ public class magicalString {
                     base.append("22");
             } else {
                 temp = base.charAt(base.length() - 1) - '0';
-                if(temp == 2){
+                if (temp == 2) {
                     base.append("1");
                     counts += 1;
-                }else
+                } else
                     base.append("2");
             }
         }
