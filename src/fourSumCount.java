@@ -11,7 +11,6 @@ import java.util.Map;
 public class fourSumCount {
 
     private static int fourSumCountResult(int[] A, int[] B, int[] C, int[] D) {
-        // 用于记录AB两个数组的和, Key为A中元素和B中元素和, Value为这个和出现的次数
         Map<Integer, Integer> mapAB = new HashMap<>();
         int length = A.length;
         int sum;
