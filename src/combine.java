@@ -21,7 +21,8 @@ public class combine {
 
     private static void dfs(int n, int k, int level, int idx, ArrayList<Integer> list) {
         if (level >= k) {
-            lists.add((ArrayList<Integer>) list.clone());
+            List<Integer> copy = new ArrayList<>(list);
+            lists.add(copy);
             return;
         }
         for (int i = idx; i <= n; i++) {
