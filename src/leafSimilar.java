@@ -29,9 +29,9 @@ public class leafSimilar {
 
     private static void dfs(TreeNode node, List<Integer> list) {
         if (node != null) {
-            if (node.left == null && node.right == null) {
+            if (node.left == null && node.right == null)
                 list.add(node.val);
-            } else {
+            else {
                 dfs(node.left, list);
                 dfs(node.right, list);
             }
