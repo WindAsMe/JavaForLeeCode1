@@ -6,7 +6,7 @@ import java.util.List;
  * File       : leafSimilar.java
  * Time       : Create on 18-7-22
  * Location   : ../Home/JavaForLeeCode/leafSimilar.java
- * Function   : LeeCode No.
+ * Function   : LeeCode No.872
  */
 public class leafSimilar {
 
