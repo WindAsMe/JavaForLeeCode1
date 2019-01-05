@@ -11,13 +11,12 @@ public class lemonadeChange {
         int dollor_5 = 0;
         int dollor_10 = 0;
         for (int bill : bills) {
-            if (bill == 5) {
+            if (bill == 5)
                 dollor_5 ++;
-            }
             if (bill == 10) {
-                if (dollor_5 == 0) {
+                if (dollor_5 == 0)
                     return false;
-                } else {
+                else {
                     dollor_5 --;
                     dollor_10 ++;
                 }
@@ -26,11 +25,11 @@ public class lemonadeChange {
                 if (dollor_10 - 1 >= 0 && dollor_5 - 1 >= 0) {
                     dollor_10 --;
                     dollor_5 --;
-                } else if (dollor_5 - 3 >= 0) {
+                } else if (dollor_5 - 3 >= 0)
                     dollor_5 -= 3;
-                } else {
+                else
                     return false;
-                }
+
             }
         }
         return true;
