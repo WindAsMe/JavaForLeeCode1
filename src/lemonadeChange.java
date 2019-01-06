@@ -29,7 +29,6 @@ public class lemonadeChange {
                     dollor_5 -= 3;
                 else
                     return false;
-
             }
         }
         return true;
