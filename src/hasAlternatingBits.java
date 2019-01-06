@@ -14,8 +14,7 @@ public class hasAlternatingBits {
             if (isOne && n % 2 == 0) {
                 isOne = false;
                 continue;
-            }
-            if (!isOne && n % 2 == 1) {
+            } else if (!isOne && n % 2 == 1) {
                 isOne = true;
                 continue;
             }
