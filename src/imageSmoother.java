@@ -22,15 +22,15 @@ public class imageSmoother {
                     count = 9;
                     for(int R = i - 1; R < i + 2; R ++) {
                         for(int C = j - 1; C < j + 2; C ++) {
-                            if(R < 0 || R > row - 1) {
+                            if(R < 0 || R > row - 1)
                                 count--;
-                            } else {
+                            else {
                                 col = M[R].length;
-                                if(C < 0 || C > col - 1) {
+                                if(C < 0 || C > col - 1)
                                     count --;
-                                } else {
+                                else
                                     sum += M[R][C];
-                                }
+
                             }
                         }
                         res[i][j] = sum/count;
