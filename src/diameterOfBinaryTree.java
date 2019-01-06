@@ -29,9 +29,9 @@ public class diameterOfBinaryTree {
     }
 
     private static void maxDepth(TreeNode node, int current, int[] max) {
-        if (node == null) {
+        if (node == null)
             max[0] = Math.max(current, max[0]);
-        } else {
+        else {
             current++;
             maxDepth(node.left, current, max);
             maxDepth(node.right, current, max);
