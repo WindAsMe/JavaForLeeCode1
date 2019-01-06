@@ -16,12 +16,10 @@ public class restoreIpAddresses {
         return list;
     }
     private static void addDot(List<String> list, String s,String result, int k){
-        if (s.length() <= k) {
+        if (s.length() <= k)
             return;
-        }
-        if (s.length() > 3 * (k + 1)) {
+        if (s.length() > 3 * (k + 1))
             return;
-        }
         if (k == 0) {
             if ((s.charAt(0) == '0' && s.length() > 1 ) || Integer.parseInt(s) >= 256)
                 return;
@@ -32,16 +30,13 @@ public class restoreIpAddresses {
             String temp = s.substring(0, i);
             if (Integer.parseInt(temp) < 256) {
                 String str = s.substring(i);
-                if (result.length() > 0) {
+                if (result.length() > 0)
                     temp = result + "." + temp;
-                }
                 addDot(list, str, temp, k - 1);
-                if (s.charAt(0) == '0') {
+                if (s.charAt(0) == '0')
                     break;
-                }
-            } else {
+            } else
                 break;
-            }
         }
     }
 
