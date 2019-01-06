@@ -25,10 +25,8 @@ public class insertionSortList {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         ListNode cur = head;
-        ListNode prev = null;
-        ListNode temp = null;
-        while(cur.next != null)
-        {
+        ListNode prev, temp;
+        while(cur.next != null) {
             if(cur.val <= cur.next.val)
                 cur = cur.next;
             else{
@@ -36,9 +34,7 @@ public class insertionSortList {
                 cur.next = temp.next;
                 prev = dummy;
                 while(prev.next.val <= temp.val)
-                {
                     prev = prev.next;
-                }
                 temp.next = prev.next;
                 prev.next = temp;
             }
