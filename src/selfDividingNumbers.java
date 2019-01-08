@@ -22,9 +22,8 @@ public class selfDividingNumbers {
     private static boolean isSelf(int i) {
         int judge = i;
         while (judge > 0) {
-            if (judge % 10 == 0) {
+            if (judge % 10 == 0)
                 return false;
-            }
             judge /= 10;
         }
         int temp = i;
@@ -33,9 +32,8 @@ public class selfDividingNumbers {
             if (i % s == 0) {
                 temp /= 10;
                 s = temp % 10;
-            } else {
+            } else
                 return false;
-            }
         }
         return true;
     }
