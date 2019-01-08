@@ -26,6 +26,7 @@ public class restoreIpAddresses {
             list.add(result + "." + s);
             return;
         }
+
         for (int i = 1; i <= s.length(); i++) {
             String temp = s.substring(0, i);
             if (Integer.parseInt(temp) < 256) {
