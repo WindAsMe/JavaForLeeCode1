@@ -13,9 +13,9 @@ public class permute {
 
     private static List<List<Integer>> permuteResult(int[] nums) {
         LinkedList<List<Integer>> result = new LinkedList<>();
-        if(nums.length == 0){
+        if(nums.length == 0)
             return result;
-        }
+
         List<Integer> first = new LinkedList<>();
         first.add(0, nums[0]);
         result.add(first);
