@@ -50,24 +50,21 @@ public class setZeroes {
         //System.out.println("length: " + mValueCurrentLength + " " + nValueCurrentLength);
 
         for (int i = 0 ; i < mValueCurrentLength ; i ++ ) {
-            for (int j = 0 ; j < m ; j ++ ) {
+            for (int j = 0 ; j < m ; j ++ )
                 matrix[j][mValue[i]] = 0;
-            }
         }
 
         for (int i = 0 ; i < nValueCurrentLength ; i ++ ) {
-            for (int j = 0 ; j < n ; j ++ ) {
+            for (int j = 0 ; j < n ; j ++ )
                 matrix[nValue[i]][j] = 0;
-            }
         }
         printMatrix(matrix);
     }
 
     private static boolean isExist(int[] value, int currentLength, int temp) {
         for (int i = 0 ; i < currentLength ; i ++ ) {
-            if (temp == value[i]) {
+            if (temp == value[i])
                 return true;
-            }
         }
         return false;
     }
