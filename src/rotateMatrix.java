@@ -23,9 +23,8 @@ public class rotateMatrix {
             }
         }
 
-        for (int[] a : matrix) {
+        for (int[] a : matrix)
             System.out.println(Arrays.toString(a));
-        }
     }
 
     public static void main(String[] args) {
