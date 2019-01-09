@@ -17,19 +17,19 @@ public class deleteNode {
 
 
     private static TreeNode deleteNodeResult(TreeNode root, int key) {
-        if(root == null)
+        if (root == null)
             return null;
-        if(root.val == key){
-            if(root.left == null)
+        if (root.val == key) {
+            if (root.left == null)
                 return root.right;
-            if(root.right == null)
+            if (root.right == null)
                 return root.left;
-            root.val = findReplacement(root,root.left,true);
-        } else{
-            if(root.val > key)
-                root.left = deleteNodeResult(root.left,key);
+            root.val = findReplacement(root, root.left, true);
+        } else {
+            if (root.val > key)
+                root.left = deleteNodeResult(root.left, key);
             else
-                root.right = deleteNodeResult(root.right,key);
+                root.right = deleteNodeResult(root.right, key);
         }
         return root;
 
@@ -37,13 +37,14 @@ public class deleteNode {
 
 
     private static int findReplacement(TreeNode parent, TreeNode node, boolean isLeft){
-        if(node.right == null){
+        if (node.right == null) {
             if (isLeft)
                 parent.left = node.left;
-            else parent.right = node.left;
+            else
+                parent.right = node.left;
             return node.val;
         }
-        return findReplacement(node,node.right,false);
+        return findReplacement(node, node.right, false);
     }
 
     private static void iteration(TreeNode node) {
