@@ -35,7 +35,8 @@ public class fourSum {
                         n--;
                     } else if (nums[m] + nums[n] < subtarget)
                         m++;
-                    else n--;
+                    else
+                        n--;
                 }
             }
         }
