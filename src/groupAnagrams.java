@@ -27,9 +27,8 @@ public class groupAnagrams {
                 map.put(s1, list);
             }
         }
-        for (Map.Entry<String, List<String>> m : map.entrySet()) {
+        for (Map.Entry<String, List<String>> m : map.entrySet())
             lists.add(m.getValue());
-        }
         return lists;
     }
 
