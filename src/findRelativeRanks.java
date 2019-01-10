@@ -24,15 +24,14 @@ public class findRelativeRanks {
         list.sort((o1, o2) -> o2[0] - o1[0]);
         String[] ans = new String[nums.length];
         for (int i = 0 ; i < nums.length ; i ++ ) {
-            if (i == 0) {
+            if (i == 0)
                 ans[list.get(0)[1]] = "Gold Medal";
-            } else if (i == 1) {
+            else if (i == 1)
                 ans[list.get(1)[1]] = "Silver Medal";
-            } else if (i == 2) {
+            else if (i == 2)
                 ans[list.get(2)[1]] = "Bronze Medal";
-            } else {
+            else
                 ans[list.get(i)[1]] = String.valueOf(i + 1);
-            }
         }
         return ans;
     }
