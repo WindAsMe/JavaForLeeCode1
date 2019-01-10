@@ -24,11 +24,10 @@ public class lowestCommonAncestor {
     private static TreeNode lowestCommonAncestorResult(TreeNode root, TreeNode p, TreeNode q) {
         if (root == null)
             return null;
-        if (p.val > root.val && q.val > root.val) {
+        if (p.val > root.val && q.val > root.val)
             return lowestCommonAncestorResult(root.right, p, q);
-        } else if (p.val < root.val && q.val < root.val) {
+        else if (p.val < root.val && q.val < root.val)
             return lowestCommonAncestorResult(root.left, p, q);
-        }
         return root;
     }
 
