@@ -51,13 +51,12 @@ public class findTarget {
         if (root == null) {
             return false;
         } else {
-            if (root.val == target) {
+            if (root.val == target)
                 return true;
-            } else if (root.val > target) {
+            else if (root.val > target)
                 return find(root.left, target);
-            } else {
+            else
                 return find(root.right, target);
-            }
         }
     }
 
