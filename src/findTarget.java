@@ -18,22 +18,20 @@ public class findTarget {
     }
 
     private static boolean findTargetResult(TreeNode root, int k) {
-        if (root == null) {
+        if (root == null)
             return false;
-        } else {
+        else {
             boolean flag;
             List<Integer> list = new ArrayList<>();
             dfs(root, list);
             for (Integer aList : list) {
                 // Default the BST has no equal value
                 // If has the equality, It's not instrumental
-                if (k - aList == aList) {
+                if (k - aList == aList)
                     continue;
-                }
                 flag = find(root, k - aList);
-                if (flag) {
+                if (flag)
                     return true;
-                }
             }
             return false;
         }
