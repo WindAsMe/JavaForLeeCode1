@@ -30,9 +30,8 @@ public class findTargetSumWays {
 
     private static int findTargetSumWaysResult1(int[] nums, int S) {
         int sum = 0;
-        for(int n:nums){
+        for(int n:nums)
             sum +=n;
-        }
         return sum < S || (sum + S) % 2 > 0 ? 0 : subsetsum(nums, (S + sum) >>> 1);
     }
 
