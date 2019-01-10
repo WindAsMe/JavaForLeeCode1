@@ -21,12 +21,7 @@ public class findRelativeRanks {
             temp[1] = i;
             list.add(temp);
         }
-        list.sort(new Comparator<int[]>() {
-            @Override
-            public int compare(int[] o1, int[] o2) {
-                return o2[0] - o1[0];
-            }
-        });
+        list.sort((o1, o2) -> o2[0] - o1[0]);
         String[] ans = new String[nums.length];
         for (int i = 0 ; i < nums.length ; i ++ ) {
             if (i == 0) {
