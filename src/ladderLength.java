@@ -18,9 +18,8 @@ public class ladderLength {
             int size = q.size();
             for (int i = 0; i < size; i++) {
                 String temp = q.poll();
-                if (temp != null && temp.equals(endWord)) {
+                if (temp != null && temp.equals(endWord))
                     return steps + 1;
-                }
                 for (Iterator<String> iterator = wordList.iterator(); iterator.hasNext(); ) {
                     String current = iterator.next();
                     if (canTransform(current, temp)) {
@@ -35,9 +34,9 @@ public class ladderLength {
     }
 
     private static boolean canTransform(String word1, String word2){
-        for(int i = 0, count=0 ; i<word1.length() ; i++){
+        for(int i = 0, count=0 ; i<word1.length() ; i++)
             if(word1.charAt(i)!=word2.charAt(i) && ++count>1) return false;
-        }
+
         return true;
     }
 
