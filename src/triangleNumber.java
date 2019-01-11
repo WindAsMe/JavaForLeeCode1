@@ -33,9 +33,8 @@ public class triangleNumber {
     // 2. iteration the smallest 2 edges
     // 3. find the another edge
     private static int triangleNumberResult1(int[] nums) {
-        if (nums.length < 3) {
+        if (nums.length < 3)
             return 0;
-        }
         int count = 0;
         Arrays.sort(nums);
         for (int i = 0; i < nums.length; i ++) {
