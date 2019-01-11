@@ -33,9 +33,8 @@ public class validPalindrome {
         int way = 0;
         for(i = 0, j = n - 1; i < j; i ++, j --) {
             if(c[i] != c[j]) {
-                if(way == 2) {
+                if(way == 2)
                     return false;
-                }
                 if(way == 1) {
                     way ++;
                     i = si;
@@ -63,38 +62,35 @@ public class validPalindrome {
             if (c[begin] == c[end]) {
                 begin ++;
                 end --;
-            } else {
+            } else
                 break;
-            }
         }
-        if (c[begin] == c[end] || begin == end) {
+        if (c[begin] == c[end] || begin == end)
             return true;
         // Iteration the subtract element
-        } else {
+        else {
             // waiting to subtract element index
             int skip = 0;
             while (skip < c.length) {
                 begin = 0;
                 end = c.length - 1;
                 while (begin < end) {
-                    if (begin == skip) {
+                    if (begin == skip)
                         begin ++;
-                    } else if (end == skip){
+                    else if (end == skip)
                         end --;
-                    } else {
+                    else {
                         if (c[begin] == c[end]) {
                             begin ++;
                             end --;
-                        } else {
+                        } else
                             break;
-                        }
                     }
                 }
-                if (c[begin] == c[end] || begin == end) {
+                if (c[begin] == c[end] || begin == end)
                     return true;
-                } else {
+                else
                     skip ++;
-                }
             }
             return false;
         }
