@@ -67,9 +67,8 @@ public class sortedListToBST {
             list.add(node.val);
             dfs(node.left, list);
             dfs(node.right, list);
-        } else {
+        } else
             list.add(null);
-        }
     }
 
     public static void main(String[] args) {
