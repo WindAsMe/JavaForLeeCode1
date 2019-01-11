@@ -41,9 +41,8 @@ public class sortedListToBST {
     }
 
     private static void create(int begin, int end, List<Integer> list, TreeNode node) {
-        if (begin > end) {
+        if (begin > end)
             return;
-        }
         if (begin == end) {
             if (list.get(begin) > node.val) {
                 node.right = new TreeNode(list.get(begin));
