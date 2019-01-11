@@ -44,11 +44,10 @@ public class sortedListToBST {
         if (begin > end)
             return;
         if (begin == end) {
-            if (list.get(begin) > node.val) {
+            if (list.get(begin) > node.val)
                 node.right = new TreeNode(list.get(begin));
-            } else {
+            else
                 node.left = new TreeNode(list.get(begin));
-            }
         } else {
             int mid = (begin + end + 1) / 2;
             if (node.val > list.get(mid)) {
