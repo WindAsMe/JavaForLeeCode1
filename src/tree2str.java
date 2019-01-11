@@ -15,23 +15,18 @@ public class tree2str {
     }
 
     private static String tree2strResult(TreeNode t) {
-        if (t == null) {
+        if (t == null)
             return "";
-        }
-
         String result = t.val + "";
         String left = tree2strResult(t.left);
         String right = tree2strResult(t.right);
 
-        if ("".equals(left) && "".equals(right)) {
+        if ("".equals(left) && "".equals(right))
             return result;
-        }
-        if ("".equals(left)) {
+        if ("".equals(left))
             return result + "()" + "(" + right + ")";
-        }
-        if ("".equals(right)) {
+        if ("".equals(right))
             return result + "(" + left + ")";
-        }
         return result + "(" + left + ")" + "(" + right + ")";
     }
 
