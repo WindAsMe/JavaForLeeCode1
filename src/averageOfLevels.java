@@ -26,9 +26,8 @@ public class averageOfLevels {
         List<Double> sum = new ArrayList<>();
         DFS(root, 0, sum, count);
 
-        for (int i = 0; i < sum.size(); i++) {
+        for (int i = 0; i < sum.size(); i++)
             sum.set(i, sum.get(i) / count.get(i));
-        }
         return sum;
     }
 
@@ -36,7 +35,6 @@ public class averageOfLevels {
     private static void DFS(TreeNode node, int i , List<Double> res, List<Integer> count) {
         if (null == node)
             return;
-
         if (i < res.size()) {
             res.set(i, res.get(i) + node.val);
             count.set(i, count.get(i) + 1);
