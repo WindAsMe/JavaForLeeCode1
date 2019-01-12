@@ -28,16 +28,15 @@ public class coinChange {
             dp[i] = Integer.MAX_VALUE;
             System.out.println(Arrays.toString(dp));
             for(int k : coins) {
-                if(i >= k && dp[i - k] != Integer.MAX_VALUE) {
+                if(i >= k && dp[i - k] != Integer.MAX_VALUE)
                     dp[i] = Math.min(dp[i - k] + 1,dp[i]);
-                }
             }
         }
-        if(dp[amount] < Integer.MAX_VALUE && dp[amount] > 0) {
+        if(dp[amount] < Integer.MAX_VALUE && dp[amount] > 0)
             return dp[amount];
-        } else {
+        else
             return -1;
-        }
+
     }
 
     public static void main(String[] args) {
