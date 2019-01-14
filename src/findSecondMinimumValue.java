@@ -33,9 +33,8 @@ public class findSecondMinimumValue {
                 return Math.min(dfs(node.left, min, node.val), dfs(node.right, min, node.val));
             else
                 return Math.min(dfs(node.left, min, current), dfs(node.right, min, current));
-        } else {
+        } else
             return current;
-        }
     }
 
     public static void main(String[] args) {
