@@ -13,9 +13,9 @@ public class findRestaurant {
     // 2.sort by sum
     // 3.add the corresponding
     private static String[] findRestaurantResult(String[] list1, String[] list2) {
-        if (list1.length == 0 || list2.length == 0) {
+        if (list1.length == 0 || list2.length == 0)
             return new String[0];
-        } else {
+        else {
             // save the same restaurant
             // String[0]: restaurant
             // String[1]: index sum
