@@ -15,9 +15,9 @@ public class findSecondMinimumValue {
     }
 
     private static int findSecondMinimumValueResult(TreeNode root) {
-        if (root == null) {
+        if (root == null)
             return -1;
-        } else {
+        else {
             int left = dfs(root.left, root.val, Integer.MAX_VALUE);
             int right = dfs(root.right, root.val, Integer.MAX_VALUE);
             System.out.println(left + " " + right);
