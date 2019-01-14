@@ -32,27 +32,20 @@ public class findRestaurant {
                 }
             }
 
-            Collections.sort(list, new Comparator<String[]>() {
-                @Override
-                public int compare(String[] o1, String[] o2) {
-                    return Integer.parseInt(o1[1]) - Integer.parseInt(o2[1]);
-                }
-            });
+            Collections.sort(list, (o1, o2) -> Integer.parseInt(o1[1]) - Integer.parseInt(o2[1]));
 //            for (String[] aList : list) {
 //                System.out.print(Arrays.toString(aList) + " ");
 //            }
             int count = 1;
             for (int i = 1; i < list.size(); i ++) {
-                if (list.get(i)[1].equals(list.get(0)[1])) {
+                if (list.get(i)[1].equals(list.get(0)[1]))
                     count ++;
-                } else {
+                else
                     break;
-                }
             }
             String[] ans = new String[count];
-            for (int i = 0; i < count; i ++) {
+            for (int i = 0; i < count; i ++)
                 ans[i] = list.get(i)[0];
-            }
             return ans;
         }
     }
