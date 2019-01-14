@@ -8,9 +8,8 @@
 public class detectCapitalUse {
 
     private static boolean detectCapitalUseResult(String word) {
-        if (word.length() == 1) {
+        if (word.length() == 1)
             return true;
-        }
         char temp = word.charAt(0);
         if (temp >= 'a') {
             for (int i = 1 ; i < word.length() ; i ++ ) {
