@@ -27,9 +27,9 @@ public class deleteDuplicates1 {
             if (list.get(i).equals(list.get(i + 1))) {
                 // System.out.println(list.toString() + " " + i);
                 list.remove(i + 1);
-                if (i + 1 < list.size() && list.get(i).equals(list.get(i + 1))) {
+                if (i + 1 < list.size() && list.get(i).equals(list.get(i + 1)))
                     i--;
-                } else {
+                else {
                     list.remove(i);
                     i--;
                 }
