@@ -11,9 +11,8 @@ import java.util.List;
 public class letterCombinations {
 
     private static List<String> letterCombinationsResult(String digits) {
-        if ("".equals(digits)){
+        if ("".equals(digits))
             return new ArrayList<>();
-        }
         // Simulate as a HashMap
         // Directly corresponding
         String[] map = new String[]{"" ,"", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
