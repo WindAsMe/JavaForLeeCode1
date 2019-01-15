@@ -14,16 +14,14 @@ public class judgeCircle {
         int y = 0;
         for (int i = 0; i < moves.length(); i ++) {
             char temp = moves.charAt(i);
-            if (temp == 'U') {
+            if (temp == 'U')
                 y ++;
-            } else if (temp == 'D') {
+            else if (temp == 'D')
                 y --;
-            } else if (temp == 'L') {
+            else if (temp == 'L')
                 x --;
-            } else {
+            else
                 x ++;
-            }
-
         }
         return x == 0 && y == 0;
     }
