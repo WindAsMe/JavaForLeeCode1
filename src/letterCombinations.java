@@ -21,18 +21,16 @@ public class letterCombinations {
         // Skip the '1'
         for (int i = 0; i < digits.length(); i ++) {
             char c = digits.charAt(i);
-            if (c != '1') {
+            if (c != '1')
                 temp.append(c);
-            }
         }
         recursion(new StringBuilder(), temp, list, map);
         return list;
     }
 
     private static void recursion(StringBuilder wait, StringBuilder s, List<String> list, String[] map) {
-        if (wait.length() > s.length()) {
+        if (wait.length() > s.length())
             return;
-        }
 
         if (wait.length() == s.length()) {
             list.add(wait.toString());
