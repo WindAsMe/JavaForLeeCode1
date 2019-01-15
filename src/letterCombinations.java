@@ -15,7 +15,7 @@ public class letterCombinations {
             return new ArrayList<>();
         // Simulate as a HashMap
         // Directly corresponding
-        String[] map = new String[]{"" ,"", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        String[] map = new String[] {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
         List<String> list = new ArrayList<>();
         StringBuilder temp = new StringBuilder();
         // Skip the '1'
