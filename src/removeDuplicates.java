@@ -9,9 +9,8 @@
 public class removeDuplicates {
 
     private static int removeDuplicatesResult1(int[] nums) {
-        if (nums.length < 3) {
+        if (nums.length < 3)
             return nums.length;
-        }
         int j = 0;
         int k = nums[0] - 1;
         int times = 0;
@@ -31,9 +30,9 @@ public class removeDuplicates {
 
 
     private static int removeDuplicatesResult(int[] nums) {
-        if(nums.length < 2){
+        if(nums.length < 2)
             return nums.length;
-        }
+
         int temp = nums[0];
         int insert = 1;
         boolean gate = false;
