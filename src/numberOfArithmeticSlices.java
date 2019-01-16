@@ -20,7 +20,7 @@ public class numberOfArithmeticSlices {
         int ans = 0;
         for (int i = 2; i < helper.length; i++)
             ans += helper[i];
-        System.out.println(Arrays.toString(helper));
+        // System.out.println(Arrays.toString(helper));
         return ans;
     }
 
