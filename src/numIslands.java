@@ -17,12 +17,6 @@ public class numIslands {
                     if (grid[i][j] == '1') {
                         count ++;
                         paint(grid, i, j);
-                        for (char[] aGrid : grid) {
-                            for (int b = 0; b < grid[0].length; b++) {
-                                System.out.print(grid[i][j] + " ");
-                            }
-                            System.out.println();
-                        }
                     }
                 }
             }
