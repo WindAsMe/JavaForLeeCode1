@@ -30,7 +30,7 @@ public class removeDuplicates {
 
 
     private static int removeDuplicatesResult(int[] nums) {
-        if(nums.length < 2)
+        if (nums.length < 2)
             return nums.length;
 
         int temp = nums[0];
