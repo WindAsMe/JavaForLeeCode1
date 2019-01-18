@@ -26,9 +26,8 @@ public class MapSum {
         for (Map.Entry<String, Integer> temp : map.entrySet()) {
             // The prefix.length() must equal or shorter than key
             // If or not key.substring(0, prefix.length()).equal(prefix)
-            if (temp.getKey().length() >= prefix.length() && temp.getKey().substring(0, prefix.length()).equals(prefix)) {
+            if (temp.getKey().length() >= prefix.length() && temp.getKey().substring(0, prefix.length()).equals(prefix))
                 sum += temp.getValue();
-            }
         }
         return sum;
     }
