@@ -10,9 +10,9 @@ import java.util.Arrays;
 public class matrixReshape {
 
     private static int[][] matrixReshapeResult(int[][] nums, int r, int c) {
-        if (nums.length == 0 || nums.length * nums[0].length != r * c) {
+        if (nums.length == 0 || nums.length * nums[0].length != r * c)
             return nums;
-        } else {
+        else {
             int[][] ans = new int[r][c];
             // position of primary array
             int row = 0;
@@ -33,8 +33,7 @@ public class matrixReshape {
     public static void main(String[] args) {
         int[][] nums = {{},{}};
         int[][] ans = matrixReshapeResult(nums, 1, 3);
-        for (int[] a : ans) {
+        for (int[] a : ans)
             System.out.println(Arrays.toString(a));
-        }
     }
 }
