@@ -39,9 +39,8 @@ public class maxDepth {
                 cur++;
                 for (Node tiny : node.children)
                     depth(tiny, max, cur);
-            } else {
+            } else
                 max[0] = Math.max(max[0], cur);
-            }
         }
     }
 
