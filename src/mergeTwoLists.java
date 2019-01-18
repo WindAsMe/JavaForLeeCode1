@@ -16,12 +16,11 @@ public class mergeTwoLists {
     }
 
     private static ListNode mergeTwoListsResult(ListNode l1, ListNode l2) {
-
-        if (l1 == null && l2 == null){
+        if (l1 == null && l2 == null)
             return null;
-        } else if (l1 == null || l2 == null){
+        else if (l1 == null || l2 == null)
             return l1 == null ? l2 : l1;
-        } else {
+        else {
             Stack<ListNode> stack = new Stack<>();
             while (true){
                 if (l1 == null && l2 == null){
