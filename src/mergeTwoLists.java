@@ -23,9 +23,9 @@ public class mergeTwoLists {
         else {
             Stack<ListNode> stack = new Stack<>();
             while (true){
-                if (l1 == null && l2 == null){
+                if (l1 == null && l2 == null)
                     break;
-                } else if (l1 == null){
+                else if (l1 == null){
                     stack.push(l2);
                     l2 = l2.next;
                 } else if (l2 == null){
