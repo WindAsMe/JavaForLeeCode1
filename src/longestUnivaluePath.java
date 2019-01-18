@@ -49,9 +49,8 @@ public class longestUnivaluePath {
 
 
     private static int longestUnivaluePathResult(TreeNode root) {
-        if (root == null) {
+        if (root == null)
             return 0;
-        }
         // Location passed
         int[] longestPath = new int[1];
         getUnivaluePathCount(root, longestPath);
