@@ -9,9 +9,8 @@ public class maxCount {
 
     private static int maxCountResult(int m, int n, int[][] ops) {
         int len = ops.length;
-        if(len<  1) {
+        if(len<  1)
             return m * n;
-        }
 
         int min_a = Integer.MAX_VALUE;
         int min_b = Integer.MAX_VALUE;
