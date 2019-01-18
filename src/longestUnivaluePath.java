@@ -74,13 +74,13 @@ public class longestUnivaluePath {
                 right = 0;
         }
         int currentLongestPath;
-        if (node.left != null && node.right != null && node.left.val == node.right.val) {
+        if (node.left != null && node.right != null && node.left.val == node.right.val)
             currentLongestPath = left + right;
-        } else {
+        else
             currentLongestPath = Math.max(left, right);
-        } if (currentLongestPath > longestPath[0]) {
+        if (currentLongestPath > longestPath[0])
             longestPath[0] = currentLongestPath;
-        }
+
         return Math.max(left, right);
     }
 
