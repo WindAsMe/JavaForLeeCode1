@@ -47,11 +47,7 @@ public class merge {
         if (intervals.size() < 2)
             return intervals;
         // sort depending the a.start
-        Collections.sort(intervals, new Comparator<Interval>(){
-            public int compare(Interval i1, Interval i2){
-                return i1.start - i2.start;
-            }
-        });
+        intervals.sort(Comparator.comparingInt(i -> i.start));
         for (Interval a : intervals)
             System.out.println("( " + a.start + ", " + a.end + " )");
         int start = intervals.get(0).start;
