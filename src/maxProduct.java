@@ -18,9 +18,8 @@ public class maxProduct {
         int max = Integer.MIN_VALUE;
         for (int i = 0; i < size; i++) {
             for (int j = i + 1; j < size; j++) {
-                if ((nums[i] & nums[j]) == 0) {
+                if ((nums[i] & nums[j]) == 0)
                     max = Math.max(max, words[i].length() * words[j].length());
-                }
             }
         }
         return max == Integer.MIN_VALUE ? 0 : max;
@@ -29,9 +28,8 @@ public class maxProduct {
     private static int wordToNum(String string) {
         int result = 0;
         int size = string.length();
-        for (int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++)
             result |= 1 << (string.charAt(i) - 'a');
-        }
         return result;
     }
 
@@ -40,9 +38,8 @@ public class maxProduct {
         int max = 0;
         for (int i = 0; i < words.length; i++) {
             for (int j = i + 1; j < words.length; j++) {
-                if (judge(words[i], words[j])) {
+                if (judge(words[i], words[j]))
                     max = Math.max(words[i].length() * words[j].length(), max);
-                }
             }
         }
         return max;
