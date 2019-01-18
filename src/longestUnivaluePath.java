@@ -60,11 +60,10 @@ public class longestUnivaluePath {
         int left = 0;
         if (node.left != null) {
             left += getUnivaluePathCount(node.left, longestPath);
-            if (node.val == node.left.val) {
+            if (node.val == node.left.val)
                 left += 1;
-            } else {
+            else
                 left = 0;
-            }
         }
         int right = 0;
         if (node.right != null) {
