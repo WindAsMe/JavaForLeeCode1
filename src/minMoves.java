@@ -11,18 +11,16 @@ public class minMoves {
     // Equal the one element minus 1
     // So need all need to descent to the MIN
     private static int minMovesResult(int[] nums) {
-        if (nums.length <= 1) {
+        if (nums.length <= 1)
             return 0;
-        } else {
+        else {
             int min = nums[0];
             int count = 0;
-            for (int num : nums) {
+            for (int num : nums)
                 min = min > num ? num : min;
-            }
 
-            for (int num : nums) {
+            for (int num : nums)
                 count += num - min;
-            }
             return count;
         }
     }
