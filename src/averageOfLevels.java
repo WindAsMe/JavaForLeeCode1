@@ -32,7 +32,7 @@ public class averageOfLevels {
     }
 
     // Use list index to substitute the tree's layer
-    private static void DFS(TreeNode node, int i , List<Double> res, List<Integer> count) {
+    private static void DFS(TreeNode node, int i, List<Double> res, List<Integer> count) {
         if (null == node)
             return;
         if (i < res.size()) {
@@ -42,7 +42,6 @@ public class averageOfLevels {
             res.add(1.0 * node.val);
             count.add(1);
         }
-
         DFS(node.left, i + 1, res, count);
         DFS(node.right, i + 1, res, count);
     }
@@ -52,9 +51,9 @@ public class averageOfLevels {
 
     //
     private static List<Double> averageOfLevelsResult(TreeNode root) {
-        if (root == null) {
+        if (root == null)
             return new ArrayList<>();
-        } else {
+        else {
             // Layer iteration
             List<Double> list = new ArrayList<>();
             Stack<TreeNode> stack1 = new Stack<>();
