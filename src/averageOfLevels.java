@@ -66,12 +66,10 @@ public class averageOfLevels {
                     while (!(stack1.empty())) {
                         TreeNode node = stack1.pop();
                         sum += node.val;
-                        if (node.left != null) {
+                        if (node.left != null)
                             stack2.push(node.left);
-                        }
-                        if (node.right != null) {
+                        if (node.right != null)
                             stack2.push(node.right);
-                        }
                     }
                     list.add(sum / size);
                 } else {
@@ -80,12 +78,10 @@ public class averageOfLevels {
                     while (!(stack2.empty())) {
                         TreeNode node = stack2.pop();
                         sum += node.val;
-                        if (node.left != null) {
+                        if (node.left != null)
                             stack1.push(node.left);
-                        }
-                        if (node.right != null) {
+                        if (node.right != null)
                             stack1.push(node.right);
-                        }
                     }
                     list.add(sum / size);
                 }
