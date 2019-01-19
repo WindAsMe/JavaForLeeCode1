@@ -10,14 +10,13 @@ import java.util.Arrays;
 public class arrayPairSum {
 
     private static int arrayPairSumResult(int[] nums) {
-        if (nums.length < 2) {
+        if (nums.length < 2)
             return 0;
-        } else {
+        else {
             int count = 0;
             Arrays.sort(nums);
-            for (int i = 0 ; i < nums.length ; i += 2 ) {
+            for (int i = 0 ; i < nums.length ; i += 2 )
                 count += nums[i];
-            }
             return count;
         }
     }
