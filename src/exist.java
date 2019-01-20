@@ -77,11 +77,8 @@ public class exist {
                 if (find(board, inFlag, i, j - 1, word, index + 1))
                     return true;
             }
-            if (j + 1 <= board[0].length - 1 && !inFlag[i][j + 1] && board[i][j + 1] == word.charAt(index + 1)) {
-                if (find(board, inFlag, i, j + 1, word, index + 1)) {
-                    return true;
-                }
-            }
+            if (j + 1 <= board[0].length - 1 && !inFlag[i][j + 1] && board[i][j + 1] == word.charAt(index + 1))
+                return find(board, inFlag, i, j + 1, word, index + 1);
         }
         return false;
     }
