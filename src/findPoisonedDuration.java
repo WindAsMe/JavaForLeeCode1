@@ -8,9 +8,9 @@
 public class findPoisonedDuration {
 
     private static int findPoisonedDurationResult(int[] timeSeries, int duration) {
-        if (timeSeries.length == 0 || duration <= 0) {
+        if (timeSeries.length == 0 || duration <= 0)
             return 0;
-        } else {
+        else {
             int before = timeSeries[0];
             int total = duration;
             for (int i = 1; i < timeSeries.length; i++) {
