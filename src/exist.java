@@ -22,6 +22,7 @@ public class exist {
         }
         return false;
     }
+
     private static boolean check(char[][] board, int i, int j, String word, int pos){
         if (pos == word.length())
             return true;
