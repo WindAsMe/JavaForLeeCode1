@@ -48,9 +48,9 @@ public class findTarget {
 
     // Find if exist another node
     private static boolean find(TreeNode root, int target) {
-        if (root == null) {
+        if (root == null)
             return false;
-        } else {
+        else {
             if (root.val == target)
                 return true;
             else if (root.val > target)
