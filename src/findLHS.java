@@ -12,10 +12,9 @@ public class findLHS {
 
     private static int findLHSResult(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
-        for (int num : nums) {
+        for (int num : nums)
             // getOrDefault（JDK 8）
             map.put(num, map.getOrDefault(num, 0) + 1);
-        }
         int max = 0;
         for (int num : map.keySet()) {
             // If map has num + 1, comparing
