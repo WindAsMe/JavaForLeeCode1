@@ -32,7 +32,7 @@ public class findRestaurant {
                 }
             }
 
-            Collections.sort(list, (o1, o2) -> Integer.parseInt(o1[1]) - Integer.parseInt(o2[1]));
+            list.sort(Comparator.comparingInt(o -> Integer.parseInt(o[1])));
 //            for (String[] aList : list) {
 //                System.out.print(Arrays.toString(aList) + " ");
 //            }
