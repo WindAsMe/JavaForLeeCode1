@@ -11,9 +11,8 @@ public class findNthDigit {
         long sum = 0;
         long  tens = 1;
         int i;
-        for (i = 1; sum < n; ++i, tens *= 10) {
+        for (i = 1; sum < n; ++i, tens *= 10)
             sum += i * tens * 9;
-        }
         tens /= 10;
         --i;
         sum -= tens * 9 * i;
