@@ -30,9 +30,8 @@ public class findMode {
             if (a.getValue() > maxFrequence) {
                 maxFrequence = a.getValue();
                 occurTimes = 1;
-            } else if (a.getValue() == maxFrequence) {
+            } else if (a.getValue() == maxFrequence)
                 occurTimes ++;
-            }
         }
 
         int[] ans = new int[occurTimes];
@@ -51,11 +50,10 @@ public class findMode {
     private static void dfs(TreeNode node, Map<Integer, Integer> map) {
         if (node != null) {
             Integer temp = map.get(node.val);
-            if (temp == null) {
+            if (temp == null)
                 map.put(node.val, 1);
-            } else {
+            else
                 map.put(node.val, ++ temp);
-            }
             dfs(node.left, map);
             dfs(node.right, map);
         }
