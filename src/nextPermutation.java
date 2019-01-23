@@ -22,9 +22,9 @@ public class nextPermutation {
             }
             value = nums[index];
         }
-        if (index < 0) {
+        if (index < 0)
             reversal(nums, 0, len - 1);
-        } else {
+        else {
             for (int j = len - 1; j > index; j--) {
                 if (nums[j] > value) {
                     nums[index] = nums[j];
