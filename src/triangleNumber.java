@@ -17,11 +17,11 @@ public class triangleNumber {
             int left = 0, right = i - 1;
             while(left < right) {
                 if (nums[left] + nums[right] > nums[i]) {
-                    count += (right - left);    // 找到区间以后，就更新第2条边，构建新组合，并记录上个组合的总数
+                    count += (right - left);
                     right--;
                 }
                 else {
-                    left++;    // 调整第1条边
+                    left++;
                 }
             }
         }
