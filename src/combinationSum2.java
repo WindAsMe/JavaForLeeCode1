@@ -52,7 +52,7 @@ public class combinationSum2 {
     }
 
     public static void main(String[] args) {
-        int[] candidates = {2,2,2,1,5};
+        int[] candidates = {2, 2, 2, 1, 5};
         List<List<Integer>> lists = combinationSum2Result(candidates, 5);
         for (List<Integer> l : lists)
             System.out.println(l.toString());
