@@ -44,6 +44,7 @@ public class canPlaceFlowers {
 
     public static void main(String[] args) {
         int[] flowered = {0};
-        System.out.println(canPlaceFlowersResult(flowered, 1));
+        int n = 1;
+        System.out.println(canPlaceFlowersResult(flowered, n));
     }
 }
