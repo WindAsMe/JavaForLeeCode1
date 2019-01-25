@@ -39,7 +39,9 @@ public class addBinary {
     }
 
     public static void main(String[] args) {
-        System.out.println(addBinaryResult("101", "11010"));
+        String a = "101";
+        String b = "11010";
+        System.out.println(addBinaryResult(a, b));
     }
 }
 
