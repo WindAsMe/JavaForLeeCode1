@@ -12,6 +12,7 @@ public class canWinNim {
     }
 
     public static void main(String[] args) {
-        System.out.println(canWinNimResult(16));
+        int n = 16;
+        System.out.println(canWinNimResult(n));
     }
 }
