@@ -42,6 +42,7 @@ public class coinChange {
 
     public static void main(String[] args) {
         int[] coins = {1, 2, 5};
-        System.out.println(coinChangeResult(coins, 11));
+        int amount = 11;
+        System.out.println(coinChangeResult(coins, amount));
     }
 }
