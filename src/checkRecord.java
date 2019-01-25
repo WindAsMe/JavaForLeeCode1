@@ -27,6 +27,7 @@ public class checkRecord {
     }
 
     public static void main(String[] args) {
-        System.out.println(checkRecordResult("LALL"));
+        String s = "LALL";
+        System.out.println(checkRecordResult(s));
     }
 }
