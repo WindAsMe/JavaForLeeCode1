@@ -12,7 +12,7 @@ public class checkPerfectNumber {
             return false;
         int n = (int) Math.sqrt(num);
         int ans = 1;
-        for(int i = 2;i <= n;i++){
+        for(int i = 2; i <= n; i++){
             // Add the corresponding two elements
             if(num % i == 0)
                 ans += i + num / i;
@@ -36,6 +36,7 @@ public class checkPerfectNumber {
 //    }
 
     public static void main(String[] args) {
-        System.out.println(checkPerfectNumberResult(28));
+        int n = 28;
+        System.out.println(checkPerfectNumberResult(n));
     }
 }
