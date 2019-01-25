@@ -34,14 +34,16 @@ public class addTwoNumbers {
             sum = sum % 10;
             sta.push(sum);
         }
-        if(!sta2.isEmpty()) sta1 = sta2;
+        if(!sta2.isEmpty())
+            sta1 = sta2;
         while(!sta1.isEmpty()){
             int sum = sta1.pop() + c;
             c = sum / 10;
             sum = sum % 10;
             sta.push(sum);
         }
-        if(c == 1) sta.push(1);
+        if(c == 1)
+            sta.push(1);
         ListNode dump = new ListNode(0);
         ListNode ret = dump;
         while(!sta.isEmpty()){
