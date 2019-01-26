@@ -21,8 +21,8 @@ public class findRestaurant {
             // String[1]: index sum
             List<String[]> list = new ArrayList<>();
             // compare and add
-            for (int i = 0; i < list1.length; i ++) {
-                for (int j = 0; j < list2.length; j ++) {
+            for (int i = 0; i < list1.length; i++) {
+                for (int j = 0; j < list2.length; j++) {
                     if (list1[i].equals(list2[j])) {
                         String[] temp = new String[2];
                         temp[0] = list1[i];
@@ -37,14 +37,14 @@ public class findRestaurant {
 //                System.out.print(Arrays.toString(aList) + " ");
 //            }
             int count = 1;
-            for (int i = 1; i < list.size(); i ++) {
+            for (int i = 1; i < list.size(); i++) {
                 if (list.get(i)[1].equals(list.get(0)[1]))
                     count ++;
                 else
                     break;
             }
             String[] ans = new String[count];
-            for (int i = 0; i < count; i ++)
+            for (int i = 0; i < count; i++)
                 ans[i] = list.get(i)[0];
             return ans;
         }
