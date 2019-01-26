@@ -13,9 +13,8 @@ public class isPowerOfFour {
         }
         int temp = num / 4;
         while (temp / 4 != 0) {
-            if (temp * 4 != num) {
+            if (temp * 4 != num)
                 return false;
-            }
             num = temp;
             temp /= 4;
         }
