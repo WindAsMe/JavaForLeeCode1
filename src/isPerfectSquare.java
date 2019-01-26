@@ -14,7 +14,7 @@ public class isPerfectSquare {
 
 
     public static void main(String[] args) {
-
-        System.out.println(isPerfectSquareResult(808201));
+        int num = 808201;
+        System.out.println(isPerfectSquareResult(num));
     }
 }
