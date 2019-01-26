@@ -13,7 +13,7 @@ public class findMaxAverage {
         for (int i = 0; i < k; i ++)
             sum += nums[i];
         maxSum = sum;
-        for (int l = 0, r = k; r < nums.length; l ++, r ++) {
+        for (int l = 0, r = k; r < nums.length; l++, r++) {
             sum += nums[r] - nums[l];
             maxSum = Math.max(maxSum, sum);
         }
