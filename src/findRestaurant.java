@@ -39,7 +39,7 @@ public class findRestaurant {
             int count = 1;
             for (int i = 1; i < list.size(); i++) {
                 if (list.get(i)[1].equals(list.get(0)[1]))
-                    count ++;
+                    count++;
                 else
                     break;
             }
