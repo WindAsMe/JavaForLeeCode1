@@ -28,7 +28,7 @@ public class findPoisonedDuration {
     }
 
     public static void main(String[] args) {
-        int[] times = {1,2,3,4,5};
+        int[] times = {1, 2, 3, 4, 5};
         System.out.println(findPoisonedDurationResult(times, 5));
     }
 }
