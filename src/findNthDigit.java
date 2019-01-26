@@ -62,6 +62,7 @@ public class findNthDigit {
 //    }
 
     public static void main(String[] args) {
-        System.out.println(findNthDigitResult(17));
+        int n = 17;
+        System.out.println(findNthDigitResult(n));
     }
 }
