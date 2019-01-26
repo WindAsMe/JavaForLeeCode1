@@ -30,7 +30,7 @@ public class coinChange {
             System.out.println(Arrays.toString(dp));
             for (int k : coins) {
                 if (i >= k && dp[i - k] != Integer.MAX_VALUE)
-                    dp[i] = Math.min(dp[i - k] + 1,dp[i]);
+                    dp[i] = Math.min(dp[i - k] + 1, dp[i]);
             }
         }
         if (dp[amount] < Integer.MAX_VALUE && dp[amount] > 0)
