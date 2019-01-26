@@ -14,9 +14,9 @@ public class isPowerOfThree {
             return true;
         int temp = n / 3;
         while (temp != 0) {
-            if (n % 2 == 0 || temp % 2 == 0 || temp * 3 != n) {
+            if (n % 2 == 0 || temp % 2 == 0 || temp * 3 != n)
                 return false;
-            } else {
+            else {
                 n = temp;
                 temp = temp / 3;
             }
