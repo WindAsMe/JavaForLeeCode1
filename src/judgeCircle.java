@@ -12,7 +12,7 @@ public class judgeCircle {
         // (x, y) define the position
         int x = 0;
         int y = 0;
-        for (int i = 0; i < moves.length(); i ++) {
+        for (int i = 0; i < moves.length(); i++) {
             char temp = moves.charAt(i);
             if (temp == 'U')
                 y ++;
@@ -27,6 +27,7 @@ public class judgeCircle {
     }
 
     public static void main(String[] args) {
-        System.out.println(judgeCircleResult("LL"));
+        String moves = "LL";
+        System.out.println(judgeCircleResult(moves));
     }
 }
