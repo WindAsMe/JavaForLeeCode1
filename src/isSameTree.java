@@ -41,9 +41,8 @@ public class isSameTree {
             DFS(root.left, values);
             values.add(root.val);
             DFS(root.right, values);
-        } else {
+        } else
             values.add(Integer.MAX_VALUE);
-        }
     }
 
     public static void main(String[] args){
