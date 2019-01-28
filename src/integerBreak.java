@@ -28,6 +28,7 @@ public class integerBreak {
     }
 
     public static void main(String[] args) {
-        System.out.println(integerBreakResult(10));
+        int n = 10;
+        System.out.println(integerBreakResult(n));
     }
 }
