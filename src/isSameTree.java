@@ -29,7 +29,7 @@ public class isSameTree {
         if (left.size() != right.size())
             return false;
         else {
-            for (int i = 0 ; i < left.size() ; i++ ){
+            for (int i = 0; i < left.size(); i++) {
                 if (!left.get(i).equals(right.get(i)))
                     return false;
             }
