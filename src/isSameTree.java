@@ -36,7 +36,7 @@ public class isSameTree {
             return true;
         }
     }
-    private static void DFS(TreeNode root, List<Integer> values){
+    private static void DFS(TreeNode root, List<Integer> values) {
         if (root != null) {
             DFS(root.left, values);
             values.add(root.val);
@@ -45,7 +45,7 @@ public class isSameTree {
             values.add(Integer.MAX_VALUE);
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         TreeNode p = new TreeNode(1);
         p.left = new TreeNode(2);
 
