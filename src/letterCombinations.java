@@ -41,7 +41,7 @@ public class letterCombinations {
         int len = wait.length();
         int index = s.charAt(len) - '0';
         String add = map[index];
-        for (int i = 0; i < add.length(); i ++) {
+        for (int i = 0; i < add.length(); i++) {
             recursion(wait.append(add.charAt(i)), s, list, map);
             wait.deleteCharAt(wait.length() - 1);
         }
