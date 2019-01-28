@@ -26,14 +26,12 @@ public class isSameTree {
 
         System.out.println(left);
         System.out.println(right);
-        if (left.size() != right.size()){
+        if (left.size() != right.size())
             return false;
-        } else {
-            for (int i = 0 ; i < left.size() ; i ++ ){
-
-                if (!left.get(i).equals(right.get(i))){
+        else {
+            for (int i = 0 ; i < left.size() ; i++ ){
+                if (!left.get(i).equals(right.get(i)))
                     return false;
-                }
             }
             return true;
         }
