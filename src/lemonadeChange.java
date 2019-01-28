@@ -35,7 +35,7 @@ public class lemonadeChange {
     }
 
     public static void main(String[] args) {
-        int[] bills = {10,10};
+        int[] bills = {10, 10};
         System.out.println(lemonadeChangeResult(bills));
     }
 }
