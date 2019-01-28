@@ -19,7 +19,7 @@ public class letterCombinations {
         List<String> list = new ArrayList<>();
         StringBuilder temp = new StringBuilder();
         // Skip the '1'
-        for (int i = 0; i < digits.length(); i ++) {
+        for (int i = 0; i < digits.length(); i++) {
             char c = digits.charAt(i);
             if (c != '1')
                 temp.append(c);
