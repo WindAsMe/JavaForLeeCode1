@@ -8,9 +8,8 @@
 public class isPowerOfFour {
 
     private static boolean isPowerOfFourResult(int num) {
-        if (num < 4) {
+        if (num < 4)
             return num == 1;
-        }
         int temp = num / 4;
         while (temp / 4 != 0) {
             if (temp * 4 != num)
