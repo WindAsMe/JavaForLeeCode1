@@ -24,6 +24,7 @@ public class hasAlternatingBits {
     }
 
     public static void main(String[] args) {
-        System.out.println(hasAlternatingBitsResult(10));
+        int n = 10;
+        System.out.println(hasAlternatingBitsResult(n));
     }
 }
