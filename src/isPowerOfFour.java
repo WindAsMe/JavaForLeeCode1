@@ -22,6 +22,7 @@ public class isPowerOfFour {
     }
 
     public static void main(String[] args) {
-        System.out.println(isPowerOfFourResult(8));
+        int num = 8;
+        System.out.println(isPowerOfFourResult(num));
     }
 }
