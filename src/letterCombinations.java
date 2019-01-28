@@ -48,6 +48,7 @@ public class letterCombinations {
     }
 
     public static void main(String[] args) {
-        System.out.println(letterCombinationsResult("").toString());
+        String digits = "";
+        System.out.println(letterCombinationsResult(digits).toString());
     }
 }
