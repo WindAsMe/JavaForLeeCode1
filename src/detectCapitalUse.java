@@ -39,6 +39,7 @@ public class detectCapitalUse {
     }
 
     public static void main(String[] args) {
-        System.out.println(detectCapitalUseResult("Uc"));
+        String word = "Uc";
+        System.out.println(detectCapitalUseResult(word));
     }
 }
