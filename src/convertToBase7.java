@@ -14,12 +14,11 @@ public class convertToBase7 {
         boolean flag = num <= 0;
         num = Math.abs(num);
         while(num != 0){
-            s.insert(0,num % 7);
+            s.insert(0, num % 7);
             num /= 7;
         }
         if(flag)
-            s.insert(0,"-");
-
+            s.insert(0, "-");
         return s.toString();
     }
 
