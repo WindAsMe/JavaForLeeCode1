@@ -14,11 +14,11 @@ public class deleteDuplicates {
     }
 
     private static ListNode deleteDuplicatesResult(ListNode head) {
-        if (head == null) {
+        if (head == null)
             return null;
-        } else if (head.next == null) {
+        else if (head.next == null)
             return head;
-        } else {
+        else {
             ListNode firstPointer = head;
             ListNode secondPointer = head.next;
             while (secondPointer.next != null) {
