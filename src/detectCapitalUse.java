@@ -17,7 +17,6 @@ public class detectCapitalUse {
                     return false;
             }
             return true;
-
         // First word is higher
         } else {
             char temp1 = word.charAt(1);
