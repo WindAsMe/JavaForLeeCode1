@@ -26,6 +26,7 @@ public class countSegments {
     }
 
     public static void main(String[] args) {
-        System.out.println(countSegmentsResult("Hello, my name is z"));
+        String s = "Hello, my name is z";
+        System.out.println(countSegmentsResult(s));
     }
 }
