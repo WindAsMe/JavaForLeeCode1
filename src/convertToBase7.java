@@ -8,7 +8,7 @@
 public class convertToBase7 {
 
     private static String convertToBase7Result(int num) {
-        StringBuffer s = new StringBuffer();
+        StringBuilder s = new StringBuilder();
         if(num == 0)
             return "0";
         boolean flag = num <= 0;
@@ -24,7 +24,8 @@ public class convertToBase7 {
     }
 
     public static void main(String[] args) {
-        System.out.println(convertToBase7Result(54));
+        int num = 54;
+        System.out.println(convertToBase7Result(num));
     }
 
 }
