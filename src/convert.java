@@ -15,9 +15,8 @@ public class convert {
         for ( int i = 0 ; i < numRows ; i ++ ) {
             for ( int j = i ; j < n ; j += sep ) {
                 ans.append(s.charAt(j));
-                if ( i != 0 && i != numRows - 1 && sep + j - 2 * i < n ) {
+                if ( i != 0 && i != numRows - 1 && sep + j - 2 * i < n )
                     ans.append(s.charAt(sep + j - 2 * i));
-                }
             }
         }
         return ans.toString();
