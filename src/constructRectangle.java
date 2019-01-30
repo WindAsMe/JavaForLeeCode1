@@ -23,6 +23,7 @@ public class constructRectangle {
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(constructRectangleResult(16)));
+        int area = 16;
+        System.out.println(Arrays.toString(constructRectangleResult(area)));
     }
 }
