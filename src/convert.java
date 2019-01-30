@@ -23,6 +23,8 @@ public class convert {
     }
 
     public static void main(String[] args) {
-        System.out.println(convertResult("ABCDq", 2));
+        String s = "ABCDq";
+        int numRows = 2;
+        System.out.println(convertResult(s, numRows));
     }
 }
