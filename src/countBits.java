@@ -26,6 +26,7 @@ public class countBits {
     }
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(countBitsResult(8)));
+        int num = 8;
+        System.out.println(Arrays.toString(countBitsResult(num)));
     }
 }
