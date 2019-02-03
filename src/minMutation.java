@@ -50,6 +50,8 @@ public class minMutation {
 
     public static void main(String[] args) {
         String[] s = {"AACCGGTA","AACCGCTA","AAACGGTA"};
-        System.out.println(minMutationResult("AACCGGTT",  "AAACGGTA", s));
+        String start = "AACCGGTT";
+        String end = "AAACGGTA";
+        System.out.println(minMutationResult(start,  end, s));
     }
 }
