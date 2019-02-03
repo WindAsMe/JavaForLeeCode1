@@ -28,9 +28,9 @@ public class maxIncreaseKeepingSkyline {
 
     public static void main(String[] args) {
         int[][] grid = {
-                {59,88,44},
-                {3,18,38},
-                {21,26,51}
+                {59, 88, 44},
+                {3, 18, 38},
+                {21, 26, 51}
         };
         System.out.println(maxIncreaseKeepingSkylineResult(grid));
     }
