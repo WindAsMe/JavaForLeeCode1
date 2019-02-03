@@ -22,14 +22,14 @@ public class detectCapitalUse {
             char temp1 = word.charAt(1);
             // Second word is lower
             if (temp1 >= 'a') {
-                for (int i = 2 ; i < word.length() ; i ++) {
+                for (int i = 2 ; i < word.length() ; i++) {
                     if (word.charAt(i) <= 'Z')
                         return false;
                 }
                 return true;
 
             } else {
-                for (int i = 2 ; i < word.length() ; i ++) {
+                for (int i = 2 ; i < word.length() ; i++) {
                     if (word.charAt(i) >= 'a')
                         return false;
                 }
