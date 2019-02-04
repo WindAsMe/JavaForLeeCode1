@@ -12,7 +12,7 @@ public class convert {
             return s;
         StringBuilder ans = new StringBuilder();
         int n = s.length() , sep = 2 * ( numRows - 1 ) ;
-        for ( int i = 0 ; i < numRows ; i ++ ) {
+        for ( int i = 0; i < numRows; i++ ) {
             for ( int j = i ; j < n ; j += sep ) {
                 ans.append(s.charAt(j));
                 if ( i != 0 && i != numRows - 1 && sep + j - 2 * i < n )
