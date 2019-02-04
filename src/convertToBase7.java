@@ -9,7 +9,7 @@ public class convertToBase7 {
 
     private static String convertToBase7Result(int num) {
         StringBuilder s = new StringBuilder();
-        if(num == 0)
+        if (num == 0)
             return "0";
         boolean flag = num <= 0;
         num = Math.abs(num);
@@ -17,7 +17,7 @@ public class convertToBase7 {
             s.insert(0, num % 7);
             num /= 7;
         }
-        if(flag)
+        if (flag)
             s.insert(0, "-");
         return s.toString();
     }
