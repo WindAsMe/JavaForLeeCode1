@@ -14,7 +14,7 @@ public class constructRectangle {
         int width = (int) Math.sqrt(area);
         int length = width;
         while (!(width * length == area)) {
-            width ++;
+            width++;
             length = area / width;
         }
         result[0] = width;
