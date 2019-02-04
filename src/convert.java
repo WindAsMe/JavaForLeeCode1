@@ -8,7 +8,7 @@
 public class convert {
 
     private static String convertResult(String s, int numRows) {
-        if ( numRows <= 1 || s.length() <= 2 || s.length() <= numRows)
+        if (numRows <= 1 || s.length() <= 2 || s.length() <= numRows)
             return s;
         StringBuilder ans = new StringBuilder();
         int n = s.length() , sep = 2 * (numRows - 1) ;
