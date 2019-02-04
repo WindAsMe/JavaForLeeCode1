@@ -13,7 +13,7 @@ public class convertToBase7 {
             return "0";
         boolean flag = num <= 0;
         num = Math.abs(num);
-        while(num != 0){
+        while (num != 0) {
             s.insert(0, num % 7);
             num /= 7;
         }
