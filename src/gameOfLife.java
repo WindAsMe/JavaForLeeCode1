@@ -13,11 +13,11 @@ public class gameOfLife {
         if (board.length == 0 || board[0].length == 0)
             return;
         int[][] helper = new int[board.length][board[0].length];
-        for (int i = 0; i < board.length; i ++)
+        for (int i = 0; i < board.length; i++)
             System.arraycopy(board[i], 0, helper[i], 0, board[0].length);
 
-        for (int i = 0; i < board.length; i ++) {
-            for (int j = 0; j < board[0].length; j ++) {
+        for (int i = 0; i < board.length; i++) {
+            for (int j = 0; j < board[0].length; j++) {
                 int sum = 0;
                 // The order:
                 // Left
