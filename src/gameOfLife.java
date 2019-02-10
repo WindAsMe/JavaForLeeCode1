@@ -22,28 +22,28 @@ public class gameOfLife {
                 // The order:
                 // Left
                 if (j != 0 && helper[i][j - 1] == 1)
-                    sum ++;
+                    sum++;
                 // LeftTop
                 if (j != 0 && i != 0 && helper[i - 1][j - 1] == 1)
-                    sum ++;
+                    sum++;
                 // Top
                 if (i != 0 && helper[i - 1][j] == 1)
-                    sum ++;
+                    sum++;
                 // RightTop
                 if (i != 0 && j < board[0].length - 1 && helper[i - 1][j + 1] == 1)
-                    sum ++;
+                    sum++;
                 // Right
                 if (j < board[0].length - 1 && helper[i][j + 1] == 1)
-                    sum ++;
+                    sum++;
                 // RightButton
                 if (i < board.length - 1 && j < board[0].length - 1 && helper[i + 1][j + 1] == 1)
-                    sum ++;
+                    sum++;
                 // Button
                 if (i < board.length - 1 && helper[i + 1][j] == 1)
-                    sum ++;
+                    sum++;
                 // LeftButton
                 if (i < board.length - 1 && j != 0 && helper[i + 1][j - 1] == 1)
-                    sum ++;
+                    sum++;
                 System.out.println("sum: "+ sum);
                 if (board[i][j] == 1) {
                     if (sum < 2)
