@@ -37,6 +37,8 @@ public class divide {
     }
 
     public static void main(String[] args) {
-        System.out.println(divideResult(-2147483648, -1));
+        int dividend = -2147483648;
+        int divisor = -1;
+        System.out.println(divideResult(dividend, divisor));
     }
 }
