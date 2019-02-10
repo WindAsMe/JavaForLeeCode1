@@ -10,7 +10,7 @@ public class findMaxAverage {
     // Comparing with slid window.
     private static double findMaxAverageResult1(int[] nums, int k) {
         int maxSum, sum = 0;
-        for (int i = 0; i < k; i ++)
+        for (int i = 0; i < k; i++)
             sum += nums[i];
         maxSum = sum;
         for (int l = 0, r = k; r < nums.length; l++, r++) {
