@@ -12,12 +12,12 @@ public class findComplement {
         int n = 0;
         int Div = -1;
         int Rem;
-        while ( Div != 0) {
+        while (Div != 0) {
             Div = num / 2;
             Rem = num % 2;
             num = Div;
             sum += (1 - Rem) * Math.pow(2, n);
-            n ++;
+            n++;
         }
         return sum;
     }
