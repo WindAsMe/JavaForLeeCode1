@@ -27,7 +27,8 @@ public class fizzBuzz {
     }
 
     public static void main(String[] args) {
-        List<String> l = fizzBuzzResult(15);
+        int n = 15;
+        List<String> l = fizzBuzzResult(n);
         for (String aL : l) {
             System.out.print(aL + " ");
         }
