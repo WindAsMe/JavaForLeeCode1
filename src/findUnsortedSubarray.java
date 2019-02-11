@@ -15,7 +15,7 @@ public class findUnsortedSubarray {
         int begin, end;
         begin = end = 0;
         int max = nums[0];
-        for(int i = 1; i < nums.length; i ++) {
+        for (int i = 1; i < nums.length; i ++) {
             if(nums[i] > max)
                 max = nums[i];
             if(nums[i] < nums[i - 1])
@@ -24,7 +24,7 @@ public class findUnsortedSubarray {
                 end = i;
         }
         int min = nums[nums.length-1];
-        for(int i = nums.length - 2; i >= 0; i --) {
+        for (int i = nums.length - 2; i >= 0; i --) {
             if(nums[i] < min)
                 min = nums[i];
             if(nums[i] > nums[i + 1])
