@@ -39,7 +39,10 @@ public class floodFill {
                 {0, 0, 0},
                 {1, 1, 1}
         };
-        int[][] ans = floodFillResult(nums, 1, 1, 0);
+        int sr = 1;
+        int sc = 1;
+        int newColor = 0;
+        int[][] ans = floodFillResult(nums, sr, sc, newColor);
         for (int[] a : ans)
             System.out.println(Arrays.toString(a));
     }
