@@ -10,9 +10,9 @@ public class moveZeroes {
 
     private static void moveZeroesReusult(int[] nums) {
         int count = 0;
-        for (int i = 0 ; i < nums.length - count ; i ++ ) {
+        for (int i = 0; i < nums.length - count; i++) {
             if (nums[i] == 0) {
-                count ++;
+                count++;
                 i = move(nums, i);
             }
         }
