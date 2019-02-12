@@ -8,7 +8,7 @@
  */
 public class moveZeroes {
 
-    private static void moveZeroesReusult(int[] nums) {
+    private static void moveZeroesResult(int[] nums) {
         int count = 0;
         for (int i = 0; i < nums.length - count; i++) {
             if (nums[i] == 0) {
@@ -30,6 +30,6 @@ public class moveZeroes {
 
     public static void main(String[] args) {
         int[] num = {1,2,3,0,0,4,5,0,5};
-        moveZeroesReusult(num);
+        moveZeroesResult(num);
     }
 }
