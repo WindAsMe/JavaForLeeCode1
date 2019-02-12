@@ -60,6 +60,7 @@ public class myAtoi {
     }
 
     public static void main(String[] args) {
-        System.out.println(myAtoiResult("-411-2"));
+        String str = "-411-2";
+        System.out.println(myAtoiResult(str));
     }
 }
