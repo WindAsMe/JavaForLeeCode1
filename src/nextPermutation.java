@@ -45,7 +45,7 @@ public class nextPermutation {
 
 
     public static void main(String[] args) {
-        int[] nums = {1,1,5};
+        int[] nums = {1, 1, 5};
         nextPermutationResult(nums);
     }
 }
