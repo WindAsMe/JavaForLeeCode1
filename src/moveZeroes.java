@@ -22,14 +22,14 @@ public class moveZeroes {
 
     private static int move(int[] nums, int index) {
         int i = index;
-        for (; i < nums.length - 1 ; i ++ )
+        for (; i < nums.length - 1 ; i++)
             nums[i] = nums[i + 1];
         nums[i] = 0;
         return index - 1;
     }
 
     public static void main(String[] args) {
-        int[] num = {1,2,3,0,0,4,5,0,5};
+        int[] num = {1, 2, 3, 0, 0, 4, 5, 0, 5};
         moveZeroesResult(num);
     }
 }
