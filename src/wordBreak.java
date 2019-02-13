@@ -16,7 +16,7 @@ public class wordBreak {
             return true;
         boolean[] dp = new boolean[s.length()];
         dp[0] = wordDict.contains(s.substring(0, 1));
-        for(int i = 1; i < s.length(); i++) {
+        for (int i = 1; i < s.length(); i++) {
             // If index from 0 to i
             // word can be consisted
             if (wordDict.contains(s.substring(0, i + 1))) {
@@ -32,7 +32,7 @@ public class wordBreak {
                 }
             }
         }
-        return dp[dp.length-1];
+        return dp[dp.length - 1];
     }
 
     public static void main(String[] args) {
