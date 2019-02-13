@@ -26,9 +26,9 @@ public class zigzagLevelOrder {
     }
 
     private static void dfs(TreeNode cur, List<List<Integer>> ans, int depth){
-        if(cur == null)
+        if (cur == null)
             return;
-        if(ans.size() == depth){
+        if (ans.size() == depth) {
             List<Integer> list = new ArrayList<>();
             ans.add(list);
         }
