@@ -61,11 +61,11 @@ public class triangleNumber {
     // Brutal proceeding: TL
     private static int triangleNumberResult(int[] nums) {
         int count = 0;
-        for (int i = 0; i < nums.length; i ++) {
-            for (int j = i + 1; j < nums.length; j ++) {
-                for (int k = j + 1; k < nums.length; k ++) {
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = i + 1; j < nums.length; j++) {
+                for (int k = j + 1; k < nums.length; k++) {
                     if (nums[i] + nums[j] > nums[k] && nums[i] + nums[k] > nums[j] && nums[j] + nums[k] > nums[i])
-                        count ++;
+                        count++;
                 }
             }
         }
