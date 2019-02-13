@@ -76,13 +76,13 @@ public class validPalindrome {
                 end = c.length - 1;
                 while (begin < end) {
                     if (begin == skip)
-                        begin ++;
+                        begin++;
                     else if (end == skip)
-                        end --;
+                        end--;
                     else {
                         if (c[begin] == c[end]) {
-                            begin ++;
-                            end --;
+                            begin++;
+                            end--;
                         } else
                             break;
                     }
