@@ -39,7 +39,8 @@ public class wordBreak {
         List<String> list = new ArrayList<>();
         list.add("aaaa");
         list.add("aaa");
-        System.out.println(wordBreakResult("aaaaaaa", list));
+        String s = "aaaaaaa";
+        System.out.println(wordBreakResult(s, list));
     }
 
 }
