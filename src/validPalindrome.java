@@ -90,13 +90,14 @@ public class validPalindrome {
                 if (c[begin] == c[end] || begin == end)
                     return true;
                 else
-                    skip ++;
+                    skip++;
             }
             return false;
         }
     }
 
     public static void main(String[] args) {
-        System.out.println(validPalindromeResult1("a"));
+        String s = "a";
+        System.out.println(validPalindromeResult1(s));
     }
 }
