@@ -43,6 +43,7 @@ public class magicalString {
     }
 
     public static void main(String[] args) {
-        System.out.println(magicalStringResult(15));
+        int n = 15;
+        System.out.println(magicalStringResult(n));
     }
 }
