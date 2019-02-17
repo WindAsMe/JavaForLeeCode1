@@ -7,7 +7,7 @@
  */
 public class maxArea {
 
-    private static int maxAreaReuslt1(int[] height) {
+    private static int maxAreaResult1(int[] height) {
         int l = 0;
         int r = height.length - 1;
         int res = 0;
@@ -33,6 +33,6 @@ public class maxArea {
 
     public static void main(String[] args) {
         int[] nums = {2,3,4,2,1,5,5};
-        System.out.println(maxAreaReuslt1(nums));
+        System.out.println(maxAreaResult1(nums));
     }
 }
