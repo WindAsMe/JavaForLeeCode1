@@ -17,7 +17,7 @@ public class integerBreak {
         if(k1 == 1)
             k2 --;
         int sum = 1;
-        for(int i = 0 ; i < k2 ; i ++)
+        for(int i = 0 ; i < k2 ; i++)
             sum *= 3;
         if(k1 == 1)
             return sum * 4;
