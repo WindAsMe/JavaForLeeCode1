@@ -25,6 +25,8 @@ public class maxCount {
 
     public static void main(String[] args) {
         int[][] ops = {};
-        System.out.println(maxCountResult(3,4,ops));
+        int m = 3;
+        int n = 4;
+        System.out.println(maxCountResult(m, n, ops));
     }
 }
