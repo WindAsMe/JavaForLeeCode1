@@ -73,7 +73,7 @@ public class triangleNumber {
     }
 
     public static void main(String[] args) {
-        int[] nums = {0,0,0};
+        int[] nums = {0, 0, 0};
         System.out.println(triangleNumberResult1(nums));
     }
 }
