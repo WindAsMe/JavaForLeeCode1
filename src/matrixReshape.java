@@ -17,10 +17,10 @@ public class matrixReshape {
             // position of primary array
             int row = 0;
             int colomn = 0;
-            for (int i = 0; i < r; i ++) {
-                for (int j = 0; j < c; j ++) {
+            for (int i = 0; i < r; i++) {
+                for (int j = 0; j < c; j++) {
                     ans[i][j] = nums[row][colomn];
-                    colomn ++;
+                    colomn++;
                     row += colomn / nums[0].length;
                     colomn %= nums[0].length;
                 }
@@ -31,7 +31,7 @@ public class matrixReshape {
 
 
     public static void main(String[] args) {
-        int[][] nums = {{},{}};
+        int[][] nums = {{}, {}};
         int[][] ans = matrixReshapeResult(nums, 1, 3);
         for (int[] a : ans)
             System.out.println(Arrays.toString(a));
