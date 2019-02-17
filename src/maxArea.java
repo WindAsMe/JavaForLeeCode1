@@ -32,7 +32,7 @@ public class maxArea {
     }
 
     public static void main(String[] args) {
-        int[] nums = {2,3,4,2,1,5,5};
+        int[] nums = {2, 3, 4, 2, 1, 5, 5};
         System.out.println(maxAreaResult1(nums));
     }
 }
