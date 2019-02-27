@@ -58,6 +58,7 @@ public class generateParenthesis {
     }
 
     public static void main(String[] args) {
-        System.out.println(generateParenthesisResult(4).toString());
+        int n = 4;
+        System.out.println(generateParenthesisResult(n).toString());
     }
 }
