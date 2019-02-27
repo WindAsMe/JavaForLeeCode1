@@ -13,7 +13,7 @@ public class fizzBuzz {
     private static List<String> fizzBuzzResult(int n) {
         List<String> list = new ArrayList<>();
 
-        for (int i = 1 ; i <= n ; i++) {
+        for (int i = 1; i <= n; i++) {
             if (i % 3 == 0 && i % 5 == 0)
                 list.add("FizzBuzz");
             else if (i % 3 == 0)
