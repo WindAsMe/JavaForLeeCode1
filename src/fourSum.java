@@ -45,7 +45,7 @@ public class fourSum {
 
 
     public static void main(String[] args) {
-        int[] nums = { 0, 0, 0, 0};
+        int[] nums = {0, 0, 0, 0};
         List<List<Integer>> lists = fourSumResult(nums, 1);
         for (List<Integer> list : lists)
             System.out.println(list.toString());
