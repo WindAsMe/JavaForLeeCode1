@@ -49,16 +49,12 @@ public class generateParenthesis {
         if (left == 0 && right == 0) {
             list.add(str);
             return;
-        }
-        if (left > right) {
+        } if (left > right)
             return;
-        }
-        if (left > 0){
+        if (left > 0)
             generate(left - 1, right, str + "(", list);
-        }
-        if (right > 0){
+        if (right > 0)
             generate(left, right - 1, str + ")", list);
-        }
     }
 
     public static void main(String[] args) {
