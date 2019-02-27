@@ -24,9 +24,8 @@ public class getMinimumDifference {
         if (root == null)
             return min;
         getMinimumDifferenceResult2(root.left);
-        if (prev != null) {
+        if (prev != null)
             min = Math.min(min, root.val - prev.val);
-        }
         prev = root;
         getMinimumDifferenceResult2(root.right);
         return min;
