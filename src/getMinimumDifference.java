@@ -69,12 +69,11 @@ public class getMinimumDifference {
     }
 
     private static int dfs1(TreeNode node, int value) {
-        if (node != null) {
+        if (node != null)
             // find the smallest in current minus, left minus and right minus.
             return Math.min(Math.min(dfs1(node.left, node.val), dfs1(node.right, node.val)), Math.abs(node.val - value));
-        } else {
+        else
             return Integer.MAX_VALUE;
-        }
     }
 
     public static void main(String[] args) {
