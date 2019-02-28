@@ -42,8 +42,8 @@ public class getMinimumDifference {
             dfs(root, list);
             System.out.println(list.toString());
             int min = Integer.MAX_VALUE;
-            for (int i = 0; i < list.size(); i ++) {
-                for (int j = i + 1; j < list.size(); j ++) {
+            for (int i = 0; i < list.size(); i++) {
+                for (int j = i + 1; j < list.size(); j++) {
                     min = Math.min(min, Math.abs(list.get(j) - list.get(i)));
                 }
             }
@@ -62,11 +62,10 @@ public class getMinimumDifference {
 
     // Find the constant two node
     private static int getMinimumDifferenceResult1(TreeNode root) {
-        if (root == null || (root.left == null && root.right == null)) {
+        if (root == null || (root.left == null && root.right == null))
             return 0;
-        } else {
+        else
             return Math.min(dfs1(root.left, root.val), dfs1(root.right, root.val));
-        }
     }
 
     private static int dfs1(TreeNode node, int value) {
