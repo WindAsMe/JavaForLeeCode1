@@ -35,9 +35,9 @@ public class getMinimumDifference {
     // Save all node value to list
     // Trans to array problem
     private static int getMinimumDifferenceResult(TreeNode root) {
-        if (root == null || (root.left == null && root.right == null)) {
+        if (root == null || (root.left == null && root.right == null))
             return 0;
-        } else {
+        else {
             List<Integer> list = new ArrayList<>();
             dfs(root, list);
             System.out.println(list.toString());
