@@ -22,11 +22,10 @@ public class generateParenthesis {
         //System.out.println(1);
         if (left >= 0 && right >= 0) {
             if (left == right) {
-                if (left == 0) {
+                if (left == 0)
                     list.add(s);
-                } else {
+                else
                     generateParen(left - 1, right, s + "(", list);
-                }
             }
             if (left < right) {
                 generateParen(left - 1, right, s + "(", list);
