@@ -13,11 +13,11 @@ import java.util.List;
 public class combinationSum {
 
     private static List<List<Integer>> combinationSumResult(int[] candidates, int target) {
-        List<List<Integer>> LList = new ArrayList<List<Integer>>();
+        List<List<Integer>> LList = new ArrayList<>();
         if(candidates == null || candidates.length < 1 || target < 1 )
             return LList;
         Arrays.sort(candidates);
-        List<Integer> list = new ArrayList<Integer>();
+        List<Integer> list = new ArrayList<>();
         combinationSumCore(candidates,list, target, 0, LList);
         return LList;
     }
