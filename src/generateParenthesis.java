@@ -39,7 +39,8 @@ public class generateParenthesis {
 
     private static List<String> generateParenthesisResult1(int n) {
         List<String> list = new ArrayList<>();
-        generate(n, n, "", list);
+        String str = "";
+        generate(n, n, str, list);
         return list;
     }
 
