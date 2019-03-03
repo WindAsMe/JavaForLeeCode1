@@ -13,18 +13,18 @@ public class getPermutation {
 
     private static String getPermutationResult1(int n, int k) {
         int total = 1;
-        for(int i = 2; i <= n; i++) total *= i;
+        for(int i = 2; i <= n; i++)
+            total *= i;
         if(k > total || k < 1)
             return "";
-
         int[] all = new int[n];
         for(int i = 0; i < n; i++)
             all[i] = i+1;
         helper(all, 0, k, total / n);
-        String result = "";
+        StringBuilder result = new StringBuilder();
         for(int i = 0; i < n; i++)
-            result += all[i];
-        return result;
+            result.append(all[i]);
+        return result.toString();
     }
 
     private static void helper(int[] all, int index, int k, int maxOnce) {
