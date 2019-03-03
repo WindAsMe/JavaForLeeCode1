@@ -91,9 +91,8 @@ public class groupAnagrams {
                     continue;
                 char[] c1 = strs[j].toCharArray();
                 Map<Character, Integer> map1 = new HashMap<>();
-                for (char aC1 : c1) {
+                for (char aC1 : c1)
                     map1.merge(aC1, 1, (a, b) -> a + b);
-                }
                 if (map.equals(map1)) {
                     list.add(strs[j]);
                     strs[j] = null;
