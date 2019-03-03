@@ -84,13 +84,11 @@ public class groupAnagrams {
             Map<Character, Integer> map = new HashMap<>();
             List<String> list = new ArrayList<>();
             list.add(strs[i]);
-            for (char aC : c) {
+            for (char aC : c)
                 map.merge(aC, 1, (a, b) -> a + b);
-            }
             for (int j = i + 1; j < strs.length; j++) {
-                if (strs[j] == null) {
+                if (strs[j] == null)
                     continue;
-                }
                 char[] c1 = strs[j].toCharArray();
                 Map<Character, Integer> map1 = new HashMap<>();
                 for (char aC1 : c1) {
