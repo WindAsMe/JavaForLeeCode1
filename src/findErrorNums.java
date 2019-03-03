@@ -18,7 +18,7 @@ public class findErrorNums {
         int corSum = (1 + nums.length) * nums.length / 2;
         int sum = 0;
 
-        for(int num: nums) {
+        for (int num: nums) {
             if(set.contains(num))
                 res[0] = num;
             else {
