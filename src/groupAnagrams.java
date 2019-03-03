@@ -38,9 +38,8 @@ public class groupAnagrams {
     private static List<List<String>> groupAnagramsResult1(String[] strs) {
         List<List<String>> lists = new ArrayList<>();
         for (int i = 0; i < strs.length; i++) {
-            if (strs[i] == null) {
+            if (strs[i] == null)
                 continue;
-            }
             List<String> list = new ArrayList<>();
             list.add(strs[i]);
             char[] c = strs[i].toCharArray();
@@ -65,9 +64,8 @@ public class groupAnagrams {
     private static List<List<String>> groupAnagramsResult(String[] strs) {
         List<List<String>> lists = new ArrayList<>();
         for (int i = 0; i < strs.length; i++) {
-            if (strs[i] == null) {
+            if (strs[i] == null)
                 continue;
-            }
             if ("".equals(strs[i])) {
                 List<String> list  = new ArrayList<>();
                 list.add("");
