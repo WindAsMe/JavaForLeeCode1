@@ -13,13 +13,13 @@ public class getPermutation {
 
     private static String getPermutationResult1(int n, int k) {
         int total = 1;
-        for(int i = 2; i <= n; i++)
+        for (int i = 2; i <= n; i++)
             total *= i;
         if(k > total || k < 1)
             return "";
         int[] all = new int[n];
-        for(int i = 0; i < n; i++)
-            all[i] = i+1;
+        for (int i = 0; i < n; i++)
+            all[i] = i + 1;
         helper(all, 0, k, total / n);
         StringBuilder result = new StringBuilder();
         for(int i = 0; i < n; i++)
@@ -31,7 +31,7 @@ public class getPermutation {
         if (k == 1)
             return;
         int i = index;
-        for(; i < all.length; i++) {
+        for (; i < all.length; i++) {
             if(k - maxOnce < 1)
                 break;
             k -= maxOnce;
