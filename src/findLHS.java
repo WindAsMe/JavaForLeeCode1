@@ -28,7 +28,7 @@ public class findLHS {
 
 
     public static void main(String[] args) {
-        int[] nums = {};
+        int[] nums = {1};
         System.out.println(findLHSResult(nums));
     }
 }
