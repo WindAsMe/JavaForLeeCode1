@@ -76,6 +76,8 @@ public class getPermutation {
 
 
     public static void main(String[] args) {
-        System.out.println(getPermutationResult1(3, 4));
+        int n = 3;
+        int k = 4;
+        System.out.println(getPermutationResult1(n, k));
     }
 }
