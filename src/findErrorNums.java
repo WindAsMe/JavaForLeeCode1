@@ -32,7 +32,7 @@ public class findErrorNums {
 
 
     public static void main(String[] args) {
-        int[] nums = {1,2,2,3};
+        int[] nums = {1, 2, 2, 3};
         System.out.println(Arrays.toString(findErrorNumsResult(nums)));
     }
 }
