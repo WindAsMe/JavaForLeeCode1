@@ -60,9 +60,9 @@ public class getPermutation {
 
     private static void dfs(boolean[] flag, String s, List<String> list) {
         //System.out.println(s + Arrays.toString(flag));
-        if (s.length() == flag.length - 1) {
+        if (s.length() == flag.length - 1)
             list.add(s);
-        } else {
+        else {
             boolean[] inFlag = flag.clone();
             for (int i = 1; i < flag.length; i++) {
                 if (inFlag[i]) {
