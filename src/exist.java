@@ -45,9 +45,9 @@ public class exist {
         boolean[][] flag = new boolean[board.length][board[0].length];
         for (int i = 0; i < flag.length; i++) {
             for (int j = 0; j < flag[0].length; j++) {
-                if (board[i][j] == word.charAt(0) && find(board, flag, i, j, word, 0)) {
+                if (board[i][j] == word.charAt(0) && find(board, flag, i, j, word, 0))
                     return true;
-                } else {
+                else {
                     for (boolean[] aFlag : flag)
                         Arrays.fill(aFlag, false);
                 }
