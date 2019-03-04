@@ -39,7 +39,7 @@ public class jump {
 
 
     public static void main(String[] args) {
-        int[] nums = {2,3,1, 1,4,1,2,5};
+        int[] nums = {2, 3, 1, 1, 4, 1, 2, 5};
         System.out.println(jumpResult(nums));
     }
 }
