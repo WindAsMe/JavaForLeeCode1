@@ -31,7 +31,7 @@ public class numSpecialEquivGroups {
     }
 
     public static void main(String[] args) {
-        String[] A = {"abc","acb","bac","bca","cab","cba"};
+        String[] A = {"abc", "acb", "bac", "bca", "cab", "cba"};
         System.out.println(numSpecialEquivGroupsResult(A));
     }
 }
