@@ -27,8 +27,8 @@ public class jump {
                     current[1] = i + nums[i];
                 }
             }
-            System.out.println("index: " + Arrays.toString(index));
-            System.out.println("current: " + Arrays.toString(current));
+            // System.out.println("index: " + Arrays.toString(index));
+            // System.out.println("current: " + Arrays.toString(current));
             time++;
             index[0] = current[0];
             index[1] = current[1];
