@@ -23,6 +23,7 @@ public class findComplement {
     }
 
     public static void main(String[] args) {
-        System.out.println(findComplementResult(5));
+        int num = 5;
+        System.out.println(findComplementResult(num));
     }
 }
