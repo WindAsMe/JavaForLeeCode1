@@ -92,6 +92,8 @@ public class ladderLength {
         list.add("lot");
         list.add("log");
         list.add("cog");
-        System.out.println(ladderLengthResult1("hit", "cog", list));
+        String beginWord = "hit";
+        String endWord = "cog";
+        System.out.println(ladderLengthResult1(beginWord, endWord, list));
     }
 }
