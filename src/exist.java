@@ -86,9 +86,9 @@ public class exist {
 
     public static void main(String[] args) {
         char[][] board = {
-                {'A','B','C','E'},
-                {'S','F','E','S'},
-                {'A','D','E','E'}
+                {'A', 'B', 'C', 'E'},
+                {'S', 'F', 'E', 'S'},
+                {'A', 'D', 'E', 'E'}
         };
         System.out.println(existResult1(board, "ABCESEEEFS"));
     }
