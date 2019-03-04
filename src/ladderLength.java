@@ -38,7 +38,6 @@ public class ladderLength {
             if (word1.charAt(i) != word2.charAt(i) && ++count > 1)
                 return false;
         }
-
         return true;
     }
 
@@ -47,7 +46,6 @@ public class ladderLength {
     private static int ladderLengthResult(String beginWord, String endWord, List<String> wordList) {
         if (!wordList.contains(endWord))
             return 0;
-
         int[] ans = new int[1];
         ans[0] = Integer.MAX_VALUE;
         for (int i = 0; i < wordList.size(); i++) {
