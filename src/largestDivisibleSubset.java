@@ -28,9 +28,9 @@ public class largestDivisibleSubset {
         // record current length
         int[] length = new int[n];
         // init the length array
-        for (int i = 0; i < n; i ++) length[i] = 1;
-
-        for (int i = 1; i < n; i ++) {
+        for (int i = 0; i < n; i++)
+            length[i] = 1;
+        for (int i = 1; i < n; i++) {
             // save the current value
             List<Integer> current = new ArrayList<>();
             for (int j = 0; j < i; j ++) {
