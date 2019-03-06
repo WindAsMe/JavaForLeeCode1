@@ -35,8 +35,8 @@ public class MapSum {
     public static void main(String[] args) {
         MapSum mapSum = new MapSum();
         mapSum.insert("a", 3);
-        System.out.println(mapSum.sum("ap"));
         mapSum.insert("b", 2);
+        System.out.println(mapSum.sum("ap"));
         System.out.println(mapSum.sum("a"));
     }
 }
