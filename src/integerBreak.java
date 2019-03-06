@@ -16,11 +16,11 @@ public class integerBreak {
         int k1 = n % 3;
         int k2 = n / 3;
         if(k1 == 1)
-            k2 --;
+            k2--;
         int sum = 1;
-        for(int i = 0 ; i < k2 ; i++)
+        for (int i = 0; i < k2; i++)
             sum *= 3;
-        if(k1 == 1)
+        if (k1 == 1)
             return sum * 4;
         else if(k1 == 2)
             return sum * 2;
