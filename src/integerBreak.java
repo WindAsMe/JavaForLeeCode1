@@ -8,9 +8,9 @@
 public class integerBreak {
 
     private static int integerBreakResult(int n) {
-        if(n == 2)
+        if (n == 2)
             return 1;
-        if(n == 3)
+        if (n == 3)
             return 2;
         // Divide
         int k1 = n % 3;
@@ -22,7 +22,7 @@ public class integerBreak {
             sum *= 3;
         if (k1 == 1)
             return sum * 4;
-        else if(k1 == 2)
+        else if (k1 == 2)
             return sum * 2;
         else
             return sum;
