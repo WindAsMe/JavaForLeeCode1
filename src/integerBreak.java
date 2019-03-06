@@ -13,7 +13,8 @@ public class integerBreak {
         if(n == 3)
             return 2;
         // Divide
-        int k1 = n % 3, k2 = n / 3;
+        int k1 = n % 3;
+        int k2 = n / 3;
         if(k1 == 1)
             k2 --;
         int sum = 1;
