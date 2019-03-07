@@ -27,7 +27,6 @@ public class trimBST {
         return root;
     }
 
-
     private static TreeNode trimBSTResult(TreeNode root, int L, int R) {
         if (root.val > R) {
             return trimBSTResult(root.left, L, R);
