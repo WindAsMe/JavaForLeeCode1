@@ -42,7 +42,7 @@ public class addTwoNumbers {
             sum = sum % 10;
             sta.push(sum);
         }
-        if(c == 1)
+        if (c == 1)
             sta.push(1);
         ListNode dump = new ListNode(0);
         ListNode ret = dump;
