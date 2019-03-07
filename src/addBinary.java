@@ -12,16 +12,16 @@ public class addBinary {
         int aLen = a.length() - 1;
         int bLen = b.length() - 1;
         int sum = 0;
-        while(aLen >= 0 || bLen >= 0) {
-            if(aLen >= 0) {
+        while (aLen >= 0 || bLen >= 0) {
+            if (aLen >= 0) {
                 sum += Integer.parseInt(a.substring(aLen, aLen + 1));
                 aLen --;
             }
-            if(bLen >= 0) {
+            if (bLen >= 0) {
                 sum += Integer.parseInt(b.substring(bLen, bLen + 1));
                 bLen --;
             }
-            if(sum == 2){
+            if (sum == 2) {
                 result = "0".concat(result) ;
                 sum = 1;
             } else if(sum == 0 || sum == 1) {
