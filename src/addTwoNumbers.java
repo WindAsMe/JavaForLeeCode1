@@ -46,8 +46,8 @@ public class addTwoNumbers {
             sta.push(1);
         ListNode dump = new ListNode(0);
         ListNode ret = dump;
-        while(!sta.isEmpty()){
-            dump.next = new ListNode((int)sta.pop());
+        while (!sta.isEmpty()) {
+            dump.next = new ListNode(sta.pop());
             dump = dump.next;
         }
         return ret.next;
