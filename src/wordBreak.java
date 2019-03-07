@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 /**
  * Author     : WindAsMe
  * File       : wordBreak.java
@@ -19,9 +18,9 @@ public class wordBreak {
         for (int i = 1; i < s.length(); i++) {
             // If index from 0 to i
             // word can be consisted
-            if (wordDict.contains(s.substring(0, i + 1))) {
+            if (wordDict.contains(s.substring(0, i + 1)))
                 dp[i] = true;
-            } else {
+            else {
                 // From 0 to i
                 // If word can be consisted
                 for(int j = 0; j < i; j++) {
