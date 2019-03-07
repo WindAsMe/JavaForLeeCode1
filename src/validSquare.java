@@ -40,9 +40,9 @@ public class validSquare {
         double length1 = Math.pow(p2[1] - p1[1], 2) + Math.pow(p2[0] - p1[0], 2);
         double length2 = Math.pow(p3[1] - p1[1], 2) + Math.pow(p3[0] - p1[0], 2);
         double length3 = Math.pow(p4[1] - p1[1], 2) + Math.pow(p4[0] - p1[0], 2);
-        if (length1 == 0 || length2 == 0 || length3 == 0) {
+        if (length1 == 0 || length2 == 0 || length3 == 0)
             return false;
-        } else {
+        else {
             // If the axis is not parallel or vertical
             int point1_row = p4[0] - p2[0];
             int point1_column = p4[1] - p2[1];
