@@ -7,7 +7,6 @@
  */
 public class addBinary {
 
-
     private static String addBinaryResult(String a, String b) {
         String result = "";
         int aLen = a.length() - 1;
