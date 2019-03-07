@@ -48,11 +48,10 @@ public class trimBST {
     private static void dfs(TreeNode before, TreeNode node, boolean flag, int L, int R) {
         if (node != null) {
             if (node.val >= L && node.val <= R) {
-                if (flag) {
+                if (flag)
                     before.left = node;
-                } else {
+                else
                     before.right = node;
-                }
                 dfs(node, node.left, true, L, R);
                 dfs(node, node.right, false, L, R);
             } else if (node.val < L) {
