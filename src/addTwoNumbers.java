@@ -34,9 +34,9 @@ public class addTwoNumbers {
             sum = sum % 10;
             sta.push(sum);
         }
-        if(!sta2.isEmpty())
+        if (!sta2.isEmpty())
             sta1 = sta2;
-        while(!sta1.isEmpty()){
+        while (!sta1.isEmpty()) {
             int sum = sta1.pop() + c;
             c = sum / 10;
             sum = sum % 10;
