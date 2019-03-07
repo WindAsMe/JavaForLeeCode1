@@ -48,9 +48,8 @@ public class validSquare {
             int point1_column = p4[1] - p2[1];
             int point2_row = p3[0] - p1[0];
             int point2_column = p3[1] - p1[1];
-            if (length1 + length2 == length3 || length1 + length3 == length2 || length3 + length2 == length1) {
+            if (length1 + length2 == length3 || length1 + length3 == length2 || length3 + length2 == length1)
                 return length1 == length2 || length1 == length3 || length2 == length3;
-            }
         }
         return false;
     }
