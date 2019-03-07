@@ -28,7 +28,7 @@ public class addTwoNumbers {
             l2 = l2.next;
         }
         int c = 0;
-        while(!sta1.isEmpty() && !sta2.isEmpty()){
+        while (!sta1.isEmpty() && !sta2.isEmpty()) {
             int sum = sta1.pop() + sta2.pop() + c;
             c = sum / 10;
             sum = sum % 10;
