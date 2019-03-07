@@ -16,14 +16,14 @@ public class addTwoNumbers {
     }
 
     private static ListNode addTwoNumbersResult(ListNode l1, ListNode l2) {
-        Stack<Integer> sta1 = new Stack<Integer>();
-        Stack<Integer> sta2 = new Stack<Integer>();
-        Stack<Integer> sta = new Stack<Integer>();
-        while(l1 != null) {
+        Stack<Integer> sta1 = new Stack<>();
+        Stack<Integer> sta2 = new Stack<>();
+        Stack<Integer> sta = new Stack<>();
+        while (l1 != null) {
             sta1.push(l1.val);
             l1 = l1.next;
         }
-        while(l2 != null) {
+        while (l2 != null) {
             sta2.push(l2.val);
             l2 = l2.next;
         }
