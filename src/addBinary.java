@@ -24,10 +24,10 @@ public class addBinary {
             if (sum == 2) {
                 result = "0".concat(result) ;
                 sum = 1;
-            } else if(sum == 0 || sum == 1) {
+            } else if (sum == 0 || sum == 1) {
                 result = sum + "" + result;
                 sum = 0;
-            } else if(sum == 3){
+            } else if (sum == 3){
                 result = "1" + result;
                 sum = 1;
             }
