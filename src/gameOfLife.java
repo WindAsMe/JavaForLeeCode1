@@ -55,10 +55,8 @@ public class gameOfLife {
                 }
             }
         }
-
         for (int[] ans : board)
             System.out.println(Arrays.toString(ans));
-
     }
 
 
