@@ -32,6 +32,7 @@ public class reverseWords {
 
     public static void main(String[] args) {
         // System.out.println(reverse("leetcode"));
-        System.out.println(reverseWordsResult("Let's take LeetCode contest"));
+        String s = "Let's take LeetCode contest";
+        System.out.println(reverseWordsResult(s));
     }
 }
