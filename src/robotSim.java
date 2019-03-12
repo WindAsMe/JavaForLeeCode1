@@ -11,9 +11,8 @@ public class robotSim {
         if (obstacles.length == 0) {
             int ans = 0;
             for (int a : commands) {
-                if (a > 0) {
+                if (a > 0)
                     ans += a * a;
-                }
             }
             return ans;
         } else {
