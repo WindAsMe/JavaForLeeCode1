@@ -30,7 +30,6 @@ public class robotSim {
                     toward = (toward + 3) % 4;
                     continue;
                 }
-
                 // Left: y not change
                 if (toward == 0) {
                     // If no obstacle the distance can move
