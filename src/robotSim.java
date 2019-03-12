@@ -70,9 +70,8 @@ public class robotSim {
                     int move = c;
                     for (int[] o : obstacles) {
                         if (o[0] == x && o[1] < y) {
-                            if (y - move <= o[1]) {
+                            if (y - move <= o[1])
                                 move = y - o[1] - 1;
-                            }
                         }
                     }
                     y -= move;
