@@ -35,7 +35,6 @@ public class letterCombinations {
             list.add(wait.toString());
             return;
         }
-
         // Get the map's String
         int len = wait.length();
         int index = s.charAt(len) - '0';
