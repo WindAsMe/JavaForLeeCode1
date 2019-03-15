@@ -22,7 +22,7 @@ public class permuteUnique {
 
     // Utilize the pos to represent the usage. Array of boolean is more efficient
     private static void helper(List<List<Integer>> result, int[] nums, List<Integer> ans, int num, int[] pos){
-        if(num == nums.length){
+        if (num == nums.length) {
             result.add(new ArrayList<>(ans));
             return ;
         }
