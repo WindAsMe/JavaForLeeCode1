@@ -55,7 +55,7 @@ public class insertionSortList {
         int i = 0;
         while (i < list.size()) {
             node.val = list.get(i);
-            i ++;
+            i++;
             node = node.next;
         }
         return head;
