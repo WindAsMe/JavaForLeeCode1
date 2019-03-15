@@ -40,7 +40,7 @@ public class permuteUnique {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,2,1};
+        int[] nums = {1, 2, 1};
         List<List<Integer>> lists = permuteUniqueResult(nums);
         assert lists != null;
         for (List<Integer> list : lists)
