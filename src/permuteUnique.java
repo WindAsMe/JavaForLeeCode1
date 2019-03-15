@@ -26,8 +26,8 @@ public class permuteUnique {
             result.add(new ArrayList<>(ans));
             return ;
         }
-        for(int i = 0; i < nums.length; i++){
-            if( pos[i] == 0 ){
+        for (int i = 0; i < nums.length; i++) {
+            if (pos[i] == 0 ) {
                 ans.add(nums[i]);
                 pos[i] = 1;
                 helper(result, nums, ans, num + 1, pos);
