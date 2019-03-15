@@ -35,7 +35,7 @@ public class permute {
     }
 
     public static void main (String[] args) {
-        int[] nums = {1,4,6,7,3};
+        int[] nums = {1, 4, 6, 7, 3};
         System.out.println(permuteResult(nums).toString());
     }
 }
