@@ -26,9 +26,9 @@ public class minMutation {
     }
 
     private static void bfs(int[] i, String current, String end, String[] bank) {
-        if (current.equals(end) || i[0] == bank.length) {
+        if (current.equals(end) || i[0] == bank.length)
             i[1] = Math.min(i[0], i[1]);
-        } else {
+        else {
             for (String s : bank) {
                 if (differ(s, current)) {
                     i[0]++;
