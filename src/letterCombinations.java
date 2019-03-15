@@ -31,7 +31,6 @@ public class letterCombinations {
     private static void recursion(StringBuilder wait, StringBuilder s, List<String> list, String[] map) {
         if (wait.length() > s.length())
             return;
-
         if (wait.length() == s.length()) {
             list.add(wait.toString());
             return;
