@@ -33,9 +33,8 @@ public class permuteUnique {
                 helper(result, nums, ans, num + 1, pos);
                 pos[i] = 0;
                 ans.remove(num);
-                while(i < nums.length - 1 && nums[i] == nums[i + 1]){
+                while(i < nums.length - 1 && nums[i] == nums[i + 1])
                     i++;
-                }
             }
         }
     }
