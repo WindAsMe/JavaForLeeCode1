@@ -44,9 +44,8 @@ public class zigzagLevelOrder {
     // In Iteration
     private static List<List<Integer>> zigzagLevelOrderResult(TreeNode root) {
         List<List<Integer>> lists = new ArrayList<>();
-        if (root == null) {
+        if (root == null)
             return lists;
-        }
         Stack<TreeNode> left = new Stack<>();
         Stack<TreeNode> right = new Stack<>();
         left.push(root);
