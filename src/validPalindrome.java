@@ -39,13 +39,13 @@ public class validPalindrome {
                     way ++;
                     i = si;
                     j = sj;
-                    j ++;
+                    j++;
                 }
                 if(way == 0){
                     way ++;
                     si = i;
                     sj = j;
-                    i --;
+                    i--;
                 }
             }
         }
