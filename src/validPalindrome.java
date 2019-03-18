@@ -13,11 +13,11 @@ public class validPalindrome {
     }
 
     private static boolean validPalindromeResult2(String s, int start, int end, int count) {
-        if(count > 1)
+        if (count > 1)
             return false;
-        if(start >= end)
+        if (start >= end)
             return true;
-        if(s.charAt(start) == s.charAt(end))
+        if (s.charAt(start) == s.charAt(end))
             return validPalindromeResult2(s, start + 1, end - 1, count);
         else
             return validPalindromeResult2(s, start + 1, end, count + 1) || validPalindromeResult2(s, start, end - 1, count + 1);
