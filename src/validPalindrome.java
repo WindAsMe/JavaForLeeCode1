@@ -33,15 +33,15 @@ public class validPalindrome {
         int way = 0;
         for(i = 0, j = n - 1; i < j; i++, j--) {
             if(c[i] != c[j]) {
-                if(way == 2)
+                if (way == 2)
                     return false;
-                if(way == 1) {
+                if (way == 1) {
                     way++;
                     i = si;
                     j = sj;
                     j++;
                 }
-                if(way == 0){
+                if (way == 0){
                     way++;
                     si = i;
                     sj = j;
