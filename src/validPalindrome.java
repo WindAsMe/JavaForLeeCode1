@@ -41,7 +41,7 @@ public class validPalindrome {
                     j = sj;
                     j++;
                 }
-                if (way == 0){
+                if (way == 0) {
                     way++;
                     si = i;
                     sj = j;
