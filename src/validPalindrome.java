@@ -31,7 +31,7 @@ public class validPalindrome {
         int n = s.length();
         //if way reaches 2 and count is 1, when you find a different char, you return false
         int way = 0;
-        for(i = 0, j = n - 1; i < j; i++, j--) {
+        for (i = 0, j = n - 1; i < j; i++, j--) {
             if(c[i] != c[j]) {
                 if (way == 2)
                     return false;
