@@ -16,7 +16,7 @@ public class maximumProduct {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,4,6,7,-2,-7};
+        int[] nums = {1, 4, 6, 7, -2, -7};
         System.out.println(maximumProductResult(nums));
     }
 }
