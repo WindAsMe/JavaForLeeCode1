@@ -25,7 +25,6 @@ public class findMode {
         System.out.println(map.toString());
         int maxFrequence = 0;
         int occurTimes = 0;
-
         for (Map.Entry<Integer, Integer> a : map.entrySet()) {
             if (a.getValue() > maxFrequence) {
                 maxFrequence = a.getValue();
@@ -33,7 +32,6 @@ public class findMode {
             } else if (a.getValue() == maxFrequence)
                 occurTimes ++;
         }
-
         int[] ans = new int[occurTimes];
         int i = 0;
 
