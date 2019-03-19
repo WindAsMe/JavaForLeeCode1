@@ -41,9 +41,8 @@ public class combinationSum2 {
         if (target - candidates[index] > 0) {
             List<Integer> list1 = new ArrayList<>(list);
             list1.add(candidates[index]);
-            for (int i = index + 1; i < candidates.length; i++) {
+            for (int i = index + 1; i < candidates.length; i++)
                 dfs(candidates, i, target - candidates[index], list1, lists);
-            }
         } else if (target - candidates[index] == 0) {
             List<Integer> list1 = new ArrayList<>(list);
             list1.add(candidates[index]);
