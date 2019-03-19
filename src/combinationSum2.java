@@ -20,7 +20,7 @@ public class combinationSum2 {
         if (target == 0 || candidates.length < 1)
             return lists;
         dfs(candidates, 0, target, new ArrayList<>(), lists);
-        for (int i = 1; i < candidates.length;  i++) {
+        for (int i = 1; i < candidates.length; i++) {
             if (candidates[i] != candidates[i - 1])
                 dfs(candidates, i, target, new ArrayList<>(), lists);
         }
