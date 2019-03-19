@@ -18,12 +18,11 @@ public class threeSum {
         }
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 2; i++) {
-            if (nums[i] > 0) {
+            if (nums[i] > 0)
                 break;
-            }
-            if (i > 0 && nums[i] == nums[i - 1]) {
+            if (i > 0 && nums[i] == nums[i - 1])
                 continue;
-            }
+
 
             int sum = -nums[i];
             int left = i + 1, right = nums.length - 1;
