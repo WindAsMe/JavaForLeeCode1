@@ -15,7 +15,6 @@ public class deleteNode {
         TreeNode(int x) { val = x; }
     }
 
-
     private static TreeNode deleteNodeResult(TreeNode root, int key) {
         if (root == null)
             return null;
