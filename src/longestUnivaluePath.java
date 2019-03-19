@@ -17,9 +17,8 @@ public class longestUnivaluePath {
         }
     }
 
+    private static int result = 0;
 
-    private static int result=0;
-    //返回沿着某条子树直走能到达的最大值
     private static int singleLength(TreeNode root){
         int countL = 0, countR = 0;
         if(root.left != null){
