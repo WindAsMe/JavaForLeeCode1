@@ -25,7 +25,6 @@ public class numIslands {
     }
 
     private static void paint(char[][] grid, int i, int j) {
-
         if (i == grid.length || j == grid[0].length || i < 0 || j < 0)
             return;
         if (grid[i][j] == '1') {
