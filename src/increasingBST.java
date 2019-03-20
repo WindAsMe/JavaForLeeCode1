@@ -44,7 +44,6 @@ public class increasingBST {
         TreeNode node = new TreeNode(5);
         node.left = new TreeNode(3);
         node.right = new TreeNode(6);
-
     }
 
 }
