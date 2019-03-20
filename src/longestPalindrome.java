@@ -19,9 +19,9 @@ public class longestPalindrome {
                 helper[a - 'A']++;
         }
         for (int a : helper) {
-            if (a % 2 == 0) {
+            if (a % 2 == 0)
                 max += a;
-            } else {
+            else {
                 max += a - 1;
                 flag = true;
             }
