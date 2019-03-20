@@ -23,8 +23,8 @@ public class lemonadeChange {
             }
             if (bill == 20) {
                 if (dollor_10 - 1 >= 0 && dollor_5 - 1 >= 0) {
-                    dollor_10 --;
-                    dollor_5 --;
+                    dollor_10--;
+                    dollor_5--;
                 } else if (dollor_5 - 3 >= 0)
                     dollor_5 -= 3;
                 else
