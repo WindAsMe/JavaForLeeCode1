@@ -20,16 +20,16 @@ public class insertionSortList {
     }
 
     private static ListNode insertionSortListResult1(ListNode head) {
-        if(head == null || head.next == null)
+        if (head == null || head.next == null)
             return head;
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         ListNode cur = head;
         ListNode prev, temp;
-        while(cur.next != null) {
-            if(cur.val <= cur.next.val)
+        while (cur.next != null) {
+            if (cur.val <= cur.next.val)
                 cur = cur.next;
-            else{
+            else {
                 temp = cur.next;
                 cur.next = temp.next;
                 prev = dummy;
