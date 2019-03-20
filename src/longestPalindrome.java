@@ -13,9 +13,9 @@ public class longestPalindrome {
         int[] helper = new int[52];
         for (int i = 0; i < s.length(); i++) {
             char a = s.charAt(i);
-            if (a >= 'a' && a <= 'z') {
+            if (a >= 'a' && a <= 'z')
                 helper[a - 'G']++;
-            } else
+            else
                 helper[a - 'A']++;
         }
         for (int a : helper) {
