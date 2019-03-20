@@ -33,7 +33,7 @@ public class insertionSortList {
                 temp = cur.next;
                 cur.next = temp.next;
                 prev = dummy;
-                while(prev.next.val <= temp.val)
+                while (prev.next.val <= temp.val)
                     prev = prev.next;
                 temp.next = prev.next;
                 prev.next = temp;
