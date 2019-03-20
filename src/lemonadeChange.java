@@ -12,13 +12,13 @@ public class lemonadeChange {
         int dollor_10 = 0;
         for (int bill : bills) {
             if (bill == 5)
-                dollor_5 ++;
+                dollor_5++;
             if (bill == 10) {
                 if (dollor_5 == 0)
                     return false;
                 else {
-                    dollor_5 --;
-                    dollor_10 ++;
+                    dollor_5--;
+                    dollor_10++;
                 }
             }
             if (bill == 20) {
