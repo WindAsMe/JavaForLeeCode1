@@ -19,7 +19,6 @@ public class increasingBST {
         TreeNode(int x) { val = x; }
     }
 
-
     private static TreeNode increasingBSTResult(TreeNode root) {
         List<Integer> list = new ArrayList<>();
         dfs(root, list);
