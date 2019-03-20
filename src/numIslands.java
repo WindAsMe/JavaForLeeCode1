@@ -12,8 +12,8 @@ public class numIslands {
             return 0;
         else {
             int count = 0;
-            for (int i = 0 ; i < grid.length; i ++ ) {
-                for (int j = 0 ; j < grid[0].length ; j ++ ) {
+            for (int i = 0 ; i < grid.length; i++ ) {
+                for (int j = 0 ; j < grid[0].length ; j++ ) {
                     if (grid[i][j] == '1') {
                         count ++;
                         paint(grid, i, j);
