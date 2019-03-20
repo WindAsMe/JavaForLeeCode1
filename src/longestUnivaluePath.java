@@ -20,13 +20,13 @@ public class longestUnivaluePath {
 
     private static int singleLength(TreeNode root){
         int countL = 0, countR = 0;
-        if(root.left != null){
+        if (root.left != null) {
             if(root.left.val == root.val)
                 countL = singleLength(root.left);
             else
                 singleLength(root.left);
         }
-        if(root.right != null){
+        if (root.right != null) {
             if(root.right.val == root.val)
                 countR = singleLength(root.right);
             else
