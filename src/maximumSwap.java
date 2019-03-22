@@ -11,11 +11,9 @@ public class maximumSwap {
     private static int maximumSwapResult(int num) {
         // to char array is more simple
         char[] digits = Integer.toString(num).toCharArray();
-
         int[] buckets = new int[10];
         for (int i = 0; i < digits.length; i++)
             buckets[digits[i] - '0'] = i;
-
         for (int i = 0; i < digits.length; i++) {
             for (int k = 9; k > digits[i] - '0'; k--) {
                 if (buckets[k] > i) {
