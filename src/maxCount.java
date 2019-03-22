@@ -11,7 +11,6 @@ public class maxCount {
         int len = ops.length;
         if(len<  1)
             return m * n;
-
         int min_a = Integer.MAX_VALUE;
         int min_b = Integer.MAX_VALUE;
         for (int[] op : ops) {
