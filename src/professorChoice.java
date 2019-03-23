@@ -1,6 +1,4 @@
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Author     : WindAsMe
@@ -69,6 +67,10 @@ public class professorChoice {
             return sum;
         }
 
+        public void setUniversityScore(int universityScore) {
+            this.universityScore = universityScore;
+        }
+
         public void setSum(double sum) {
             this.sum = sum;
         }
@@ -82,27 +84,38 @@ public class professorChoice {
         }
     }
 
-    static {
-        Map<String, Integer> map = new HashMap<>();
-        map.put("University of Tokyo", 10);
-        map.put("Osaka University", 10);
-        map.put("Tohoku University", 8);
-        map.put("Hokkaido University", 8);
-        map.put("Nagoya University", 8);
-        map.put("Kyushu University", 8);
-        map.put("University of Tsukuba", 6);
-        map.put("Hiroshima University", 4);
-        map.put("Kobe University", 4);
-        map.put("Chiba University", 2);
-    }
-
     public static void calculate(List<Professor> list) {
+        Map<String, Integer> universityMap = new HashMap<>();
+        universityMap.put("University of Tokyo", 10);
+        universityMap.put("Osaka University", 10);
+        universityMap.put("Tohoku University", 8);
+        universityMap.put("Hokkaido University", 8);
+        universityMap.put("Nagoya University", 8);
+        universityMap.put("Kyushu University", 8);
+        universityMap.put("University of Tsukuba", 6);
+        universityMap.put("Hiroshima University", 4);
+        universityMap.put("Kobe University", 4);
+        universityMap.put("Chiba University", 2);
+
         for (Professor professor : list) {
+            professor.setUniversityScore(universityMap.get(professor.getUniversity()));
             professor.setSum(professor.getUniversityScore() * 0.3
             + professor.getAgeScore() * 0.1 + professor.getImpressionScore() * 0.3
             + professor.getMatchScore() * 0.3 + professor.getRandomFactor() * 0.1);
-            System.out.println(professor.toString());
         }
+
+        // sort by sum
+        list.sort((o1, o2) -> {
+            if (o1.getSum() > o2.getSum())
+                return 1;
+            else if (o1.getSum() < o2.getSum())
+                return 0;
+            else
+                return o1.getUniversityScore() - o2.getUniversityScore();
+        });
+
+        for (Professor professor : list)
+            System.out.println(professor.toString());
     }
 
 }
