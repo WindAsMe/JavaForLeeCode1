@@ -53,12 +53,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ft" value="21" />
-          <entry key="java" value="8928" />
+          <entry key="java" value="9357" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8928" />
+          <entry key="JAVA" value="9357" />
           <entry key="VTL" value="21" />
         </counts>
       </usages-collector>
@@ -145,10 +145,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/professorChoice.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="436">
-              <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+            <state relative-caret-position="392">
+              <caret line="123" column="22" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
               <folding>
-                <element signature="imports" expanded="true" />
                 <element signature="e#1312#1313#0" expanded="true" />
                 <element signature="e#1347#1348#0" expanded="true" />
                 <element signature="e#1388#1389#0" expanded="true" />
@@ -165,6 +164,8 @@
                 <element signature="e#1844#1845#0" expanded="true" />
                 <element signature="e#1878#1879#0" expanded="true" />
                 <element signature="e#1912#1913#0" expanded="true" />
+                <element signature="e#1924#1925#0" expanded="true" />
+                <element signature="e#1986#1987#0" expanded="true" />
                 <element signature="e#1954#1955#0" expanded="true" />
                 <element signature="e#1992#1993#0" expanded="true" />
               </folding>
@@ -300,7 +301,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553347951273" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553349700469" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -321,7 +322,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.magicalString">
+  <component name="RunManager" selected="Application.professorChoice">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -360,8 +361,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="numRabbits" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="numRabbits" />
+    <configuration name="professorChoice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="professorChoice" />
       <module name="JavaForLeeCode1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -383,19 +384,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.numRabbits" />
       <item itemvalue="Application.deadlockRecover" />
       <item itemvalue="Application.customSortString" />
       <item itemvalue="Application.allPathsSourceTarget" />
       <item itemvalue="Application.magicalString" />
+      <item itemvalue="Application.professorChoice" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.professorChoice" />
         <item itemvalue="Application.magicalString" />
         <item itemvalue="Application.allPathsSourceTarget" />
         <item itemvalue="Application.customSortString" />
         <item itemvalue="Application.deadlockRecover" />
-        <item itemvalue="Application.numRabbits" />
       </list>
     </recent_temporary>
   </component>
@@ -552,12 +553,12 @@
       <workItem from="1552807679092" duration="135000" />
       <workItem from="1552919450655" duration="164000" />
       <workItem from="1553096961655" duration="297000" />
-      <workItem from="1553344829364" duration="3184000" />
+      <workItem from="1553344829364" duration="4797000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="381439000" />
+    <option name="totallyTimeSpent" value="383052000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -961,10 +962,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/professorChoice.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="436">
-          <caret line="106" column="30" selection-start-line="106" selection-start-column="30" selection-end-line="106" selection-end-column="30" />
+        <state relative-caret-position="392">
+          <caret line="123" column="22" selection-start-line="123" selection-start-column="22" selection-end-line="123" selection-end-column="22" />
           <folding>
-            <element signature="imports" expanded="true" />
             <element signature="e#1312#1313#0" expanded="true" />
             <element signature="e#1347#1348#0" expanded="true" />
             <element signature="e#1388#1389#0" expanded="true" />
@@ -981,6 +981,8 @@
             <element signature="e#1844#1845#0" expanded="true" />
             <element signature="e#1878#1879#0" expanded="true" />
             <element signature="e#1912#1913#0" expanded="true" />
+            <element signature="e#1924#1925#0" expanded="true" />
+            <element signature="e#1986#1987#0" expanded="true" />
             <element signature="e#1954#1955#0" expanded="true" />
             <element signature="e#1992#1993#0" expanded="true" />
           </folding>

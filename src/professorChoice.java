@@ -10,12 +10,12 @@ import java.util.*;
 public class professorChoice {
 
     // Professor class
-    // university score: * 0.3 weight
-    // age score: * 0.1 weight
-    // impression score: * 0.3 weight
-    // majority matching score: * 0.2 weight
-    // random factor: * 0.1 weight
-    private class Professor {
+    // university score: * 0.3 weight  Range(2, 10)
+    // age score: * 0.1 weight  Range(2, 5)
+    // impression score: * 0.3 weight  Range(4, 10)
+    // majority matching score: * 0.2 weight  Range(5, 10)
+    // random factor: * 0.1 weight  Range(0, 3)
+    private static class Professor {
         private String name;
         private String university;
         private int universityScore;
@@ -25,10 +25,9 @@ public class professorChoice {
         private int randomFactor;
         private double sum;
 
-        public Professor(String name, String university, int universityScore, int ageScore, int impressionScore, int matchScore, int randomFactor) {
+        public Professor(String name, String university, int ageScore, int impressionScore, int matchScore, int randomFactor) {
             this.name = name;
             this.university = university;
-            this.universityScore = universityScore;
             this.ageScore = ageScore;
             this.impressionScore = impressionScore;
             this.matchScore = matchScore;
@@ -77,10 +76,7 @@ public class professorChoice {
 
         @Override
         public String toString() {
-            return "Professor: " + name + ", " + university +
-                    ", " + universityScore + ", " + ageScore +
-                    ", " + impressionScore + ", " + matchScore +
-                    ", " + randomFactor + ", "+ sum + '\'';
+            return "Professor: " + name + ", " + university + ", " + sum + '\'';
         }
     }
 
@@ -116,6 +112,14 @@ public class professorChoice {
 
         for (Professor professor : list)
             System.out.println(professor.toString());
+    }
+
+    public static void main(String[] args) {
+        List<Professor> list = new ArrayList<>();
+        list.add(new Professor("越塚登", "University of Tokyo", 4, 8, 10, (int)(3 * Math.random())));
+        list.add(new Professor("增泽利光", "Osaka University", 3, 9, 8, (int)(3 * Math.random())));
+
+        calculate(list);
     }
 
 }
