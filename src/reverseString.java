@@ -7,7 +7,11 @@
  */
 public class reverseString {
 
-    private String reverseStringResult(String s) {
+    private static String reverseStringResult(String s) {
         return new StringBuilder(s).reverse().toString();
+    }
+
+    public static void main(String[] args) {
+
     }
 }
