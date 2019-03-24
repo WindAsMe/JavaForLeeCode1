@@ -80,7 +80,7 @@ public class professorChoice {
         }
     }
 
-    public static void calculate(List<Professor> list) {
+    private static void calculate(List<Professor> list) {
         Map<String, Integer> universityMap = new HashMap<>();
         universityMap.put("University of Tokyo", 10);
         universityMap.put("Osaka University", 10);
