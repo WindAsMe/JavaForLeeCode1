@@ -12,6 +12,7 @@ public class reverseString {
     }
 
     public static void main(String[] args) {
-
+        String s = "AACS";
+        System.out.println(reverseStringResult(s));
     }
 }

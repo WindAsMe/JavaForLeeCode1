@@ -322,7 +322,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.professorChoice">
+  <component name="RunManager" selected="Application.reverseString">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -345,14 +345,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="deadlockRecover" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="deadlockRecover" />
-      <module name="JavaForLeeCode1" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="magicalString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="magicalString" />
       <module name="JavaForLeeCode1" />
@@ -363,6 +355,14 @@
     </configuration>
     <configuration name="professorChoice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="professorChoice" />
+      <module name="JavaForLeeCode1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="reverseString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="reverseString" />
       <module name="JavaForLeeCode1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -384,19 +384,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.deadlockRecover" />
       <item itemvalue="Application.customSortString" />
       <item itemvalue="Application.allPathsSourceTarget" />
       <item itemvalue="Application.magicalString" />
       <item itemvalue="Application.professorChoice" />
+      <item itemvalue="Application.reverseString" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.reverseString" />
         <item itemvalue="Application.professorChoice" />
         <item itemvalue="Application.magicalString" />
         <item itemvalue="Application.allPathsSourceTarget" />
         <item itemvalue="Application.customSortString" />
-        <item itemvalue="Application.deadlockRecover" />
       </list>
     </recent_temporary>
   </component>
