@@ -30,12 +30,12 @@ public class setZeroes {
                     if (!isExist(mValue, mValueCurrentLength, i)) {
                         if (!isExist(nValue, nValueCurrentLength, j)) {
                             mValue[mValueCurrentLength] = i;
-                            mValueCurrentLength ++;
+                            mValueCurrentLength++;
                             nValue[nValueCurrentLength] = j;
-                            nValueCurrentLength ++;
+                            nValueCurrentLength++;
                         } else {
                             mValue[mValueCurrentLength] = i;
-                            mValueCurrentLength ++;
+                            mValueCurrentLength++;
                         }
                     } else {
                         if (!isExist(nValue, nValueCurrentLength, j)) {
