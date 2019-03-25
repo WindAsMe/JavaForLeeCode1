@@ -129,6 +129,9 @@ public class professorChoice {
         list.add(new Professor("荒濑由纪", "Osaka University", 5, 8, 9, (int)(3 * Math.random())));
 
         list.add(new Professor("佐藤 松崎研究室", "Tohoku University", 4, 9, 8, (int)(3 * Math.random())));
+        list.add(new Professor("後藤英昭", "Tohoku University", 3, 8, 8, (int)(3 * Math.random())));
+        list.add(new Professor("乾健太郎", "Tohoku University", 3, 8, 7, (int)(3 * Math.random())));
+        list.add(new Professor("伊藤彰则", "Tohoku University", 3, 9, 9, (int)(3 * Math.random())));
 
         calculate(list);
     }
