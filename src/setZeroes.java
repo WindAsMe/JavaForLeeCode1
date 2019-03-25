@@ -103,7 +103,7 @@ public class setZeroes {
 
     public static void main(String[] args) {
         int[][] matrix = {
-                {8,7,5,3,6,0,8,8,0}
+                {8, 7, 5, 3, 6, 0, 8, 8, 0}
         };
         setZeroesResult(matrix);
     }
