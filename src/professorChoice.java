@@ -76,7 +76,7 @@ public class professorChoice {
 
         @Override
         public String toString() {
-            return "Professor: " + name + ", " + university + ", " + sum + '\'';
+            return "Professor: " + name + ", " + university + ", " + String.format("%.2f", sum) + '\'';
         }
     }
 
@@ -103,9 +103,9 @@ public class professorChoice {
         // sort by sum
         list.sort((o1, o2) -> {
             if (o1.getSum() > o2.getSum())
-                return 1;
+                return -1;
             else if (o1.getSum() < o2.getSum())
-                return 0;
+                return 1;
             else
                 return o1.getUniversityScore() - o2.getUniversityScore();
         });
@@ -117,7 +117,18 @@ public class professorChoice {
     public static void main(String[] args) {
         List<Professor> list = new ArrayList<>();
         list.add(new Professor("越塚登", "University of Tokyo", 4, 8, 10, (int)(3 * Math.random())));
+        list.add(new Professor("川原圭博", "University of Tokyo", 4, 7, 6, (int)(3 * Math.random())));
+        list.add(new Professor("森川博之", "University of Tokyo",4, 8, 9, (int)(3 * Math.random())));
+        list.add(new Professor("杉山 佐藤 本多研究室", "University of Tokyo", 4, 9, 8, (int)(3 * Math.random())));
+        list.add(new Professor("杉山 佐藤 本多研究室", "University of Tokyo", 4, 9, 8, (int)(3 * Math.random())));
+        list.add(new Professor("宫尾研究室", "University of Tokyo", 4, 8, 8, (int)(3 * Math.random())));
+
         list.add(new Professor("增泽利光", "Osaka University", 3, 9, 8, (int)(3 * Math.random())));
+        list.add(new Professor("石黑浩", "Osaka University", 3, 8, 7, (int)(3 * Math.random())));
+        list.add(new Professor("鬼塚真", "Osaka University", 3, 10, 8, (int)(3 * Math.random())));
+        list.add(new Professor("荒濑由纪", "Osaka University", 5, 8, 9, (int)(3 * Math.random())));
+
+        list.add(new Professor("佐藤 松崎研究室", "Tohoku University", 4, 9, 8, (int)(3 * Math.random())));
 
         calculate(list);
     }
