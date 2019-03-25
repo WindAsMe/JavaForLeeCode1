@@ -23,8 +23,8 @@ public class setZeroes {
         int[] nValue = new int[m * n];
         int mValueCurrentLength = 0;
         int nValueCurrentLength = 0;
-        for (int i = 0 ; i < n ; i++ ) {
-            for (int j = 0 ; j < m ; j++ ) {
+        for (int i = 0; i < n; i++ ) {
+            for (int j = 0; j < m; j++ ) {
                  System.out.println("i:" + i + " j:" + j);
                 if (matrix[j][i] == 0) {
                     if (!isExist(mValue, mValueCurrentLength, i)) {
