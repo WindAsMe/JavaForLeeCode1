@@ -48,7 +48,6 @@ public class setZeroes {
         }
 
         //System.out.println("length: " + mValueCurrentLength + " " + nValueCurrentLength);
-
         for (int i = 0 ; i < mValueCurrentLength ; i++) {
             for (int j = 0 ; j < m ; j ++ )
                 matrix[j][mValue[i]] = 0;
