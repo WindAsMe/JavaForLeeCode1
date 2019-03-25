@@ -25,7 +25,7 @@ public class professorChoice {
         private int randomFactor;
         private double sum;
 
-        public Professor(String name, String university, int ageScore, int impressionScore, int matchScore, int randomFactor) {
+        Professor(String name, String university, int ageScore, int impressionScore, int matchScore, int randomFactor) {
             this.name = name;
             this.university = university;
             this.ageScore = ageScore;
@@ -34,43 +34,43 @@ public class professorChoice {
             this.randomFactor = randomFactor;
         }
 
-        public String getName() {
+        String getName() {
             return name;
         }
 
-        public String getUniversity() {
+        String getUniversity() {
             return university;
         }
 
-        public int getUniversityScore() {
+        int getUniversityScore() {
             return universityScore;
         }
 
-        public int getAgeScore() {
+        int getAgeScore() {
             return ageScore;
         }
 
-        public int getImpressionScore() {
+        int getImpressionScore() {
             return impressionScore;
         }
 
-        public int getMatchScore() {
+        int getMatchScore() {
             return matchScore;
         }
 
-        public int getRandomFactor() {
+        int getRandomFactor() {
             return randomFactor;
         }
 
-        public double getSum() {
+        double getSum() {
             return sum;
         }
 
-        public void setUniversityScore(int universityScore) {
+        void setUniversityScore(int universityScore) {
             this.universityScore = universityScore;
         }
 
-        public void setSum(double sum) {
+        void setSum(double sum) {
             this.sum = sum;
         }
 
