@@ -114,6 +114,10 @@ public class professorChoice {
             System.out.println(professor.toString());
     }
 
+    private static void sortByUniversity() {
+
+    }
+
     public static void main(String[] args) {
         List<Professor> list = new ArrayList<>();
         list.add(new Professor("越塚登", "University of Tokyo", 4, 8, 10, (int)(3 * Math.random())));
