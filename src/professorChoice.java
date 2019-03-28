@@ -114,12 +114,8 @@ public class professorChoice {
             });
         }
         for (List<Professor> list : lists) {
-            System.out.println(list.toString());
+            System.out.println(list.get(0).getUniversity() + ": " + list.toString());
         }
-    }
-
-    private static void sortByUniversity() {
-
     }
 
     public static void main(String[] args) {
@@ -161,8 +157,13 @@ public class professorChoice {
         list6.add(new Professor("高井昌彰（先端network）", "Hokkaido University", 4, 10, 10, (int)(3 * Math.random())));
         list6.add(new Professor("MediaNetwork", "Hokkaido University", 4, 9, 9, (int)(3 * Math.random())));
         list6.add(new Professor("长谷山美纪", "Hokkaido University", 4, 10, 10, (int)(3 * Math.random())));
+        list6.add(new Professor("调和系工学研究室", "Hokkaido University", 4, 9, 10, (int)(3 * Math.random())));
 
         List<Professor> list7 = new ArrayList<>();
+        list7.add(new Professor("宇津吕研究室", "University of Tsukuba", 4, 10, 9, (int)(3 * Math.random())));
+        list7.add(new Professor("自然言语处理Group", "University of Tsukuba", 4, 7, 8, (int)(3 * Math.random())));
+        list7.add(new Professor("人工智能研究所", "University of Tsukuba", 4, 8, 9, (int)(3 * Math.random())));
+        list7.add(new Professor("制御System研究所", "University of Tsukuba", 4, 9, 9, (int)(3 * Math.random())));
 
         List<List<Professor>> lists = new ArrayList<>();
         lists.add(list1);
@@ -171,6 +172,8 @@ public class professorChoice {
         lists.add(list4);
         lists.add(list5);
         lists.add(list6);
+        lists.add(list7);
+
         calculate(lists);
     }
 
