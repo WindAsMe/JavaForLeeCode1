@@ -127,7 +127,6 @@ public class professorChoice {
         list1.add(new Professor("杉山 佐藤 本多研究室", "University of Tokyo", 4, 9, 8, (int)(3 * Math.random())));
         list1.add(new Professor("宫尾研究室", "University of Tokyo", 4, 8, 8, (int)(3 * Math.random())));
 
-
         List<Professor> list2 = new ArrayList<>();
         list2.add(new Professor("增泽利光", "Osaka University", 3, 9, 8, (int)(3 * Math.random())));
         list2.add(new Professor("石黑浩", "Osaka University", 3, 8, 7, (int)(3 * Math.random())));
