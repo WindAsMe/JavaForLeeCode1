@@ -120,6 +120,7 @@ public class professorChoice {
 
     public static void main(String[] args) {
         List<Professor> list1 = new ArrayList<>();
+
         list1.add(new Professor("越塚登", "University of Tokyo", 4, 8, 10, (int)(3 * Math.random())));
         list1.add(new Professor("川原圭博", "University of Tokyo", 4, 7, 6, (int)(3 * Math.random())));
         list1.add(new Professor("森川博之", "University of Tokyo",4, 8, 9, (int)(3 * Math.random())));
