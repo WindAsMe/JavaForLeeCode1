@@ -96,9 +96,9 @@ public class professorChoice {
         for (List<Professor> list : lists) {
             for (Professor professor : list) {
                 professor.setUniversityScore(universityMap.get(professor.getUniversity()));
-                professor.setSum(professor.getUniversityScore() * 0.3
+                professor.setSum((professor.getUniversityScore() * 0.3
                         + professor.getAgeScore() * 0.1 + professor.getImpressionScore() * 0.3
-                        + professor.getMatchScore() * 0.3 + professor.getRandomFactor() * 0.1);
+                        + professor.getMatchScore() * 0.3 + professor.getRandomFactor() * 0.1) / 2);
             }
         }
 
@@ -165,6 +165,11 @@ public class professorChoice {
         list7.add(new Professor("人工智能研究所", "University of Tsukuba", 4, 8, 9, (int)(3 * Math.random())));
         list7.add(new Professor("制御System研究所", "University of Tsukuba", 4, 9, 9, (int)(3 * Math.random())));
 
+        List<Professor> list8 = new ArrayList<>();
+        list7.add(new Professor("栗田宫尾研究所", "Hiroshima University", 4, 9, 9, (int)(3 * Math.random())));
+        list7.add(new Professor("林田智雄", "Hiroshima University", 4, 9, 8, (int)(3 * Math.random())));
+        list7.add(new Professor("林田智雄", "Hiroshima University", 4, 9, 8, (int)(3 * Math.random())));
+
         List<List<Professor>> lists = new ArrayList<>();
         lists.add(list1);
         lists.add(list2);
@@ -173,7 +178,7 @@ public class professorChoice {
         lists.add(list5);
         lists.add(list6);
         lists.add(list7);
-
+        lists.add(list8);
         calculate(lists);
     }
 
