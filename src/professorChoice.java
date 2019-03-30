@@ -166,9 +166,15 @@ public class professorChoice {
         list7.add(new Professor("制御System研究所", "University of Tsukuba", 4, 9, 9, (int)(3 * Math.random())));
 
         List<Professor> list8 = new ArrayList<>();
-        list7.add(new Professor("栗田宫尾研究所", "Hiroshima University", 4, 9, 9, (int)(3 * Math.random())));
-        list7.add(new Professor("林田智雄", "Hiroshima University", 4, 9, 8, (int)(3 * Math.random())));
-        list7.add(new Professor("林田智雄", "Hiroshima University", 4, 9, 8, (int)(3 * Math.random())));
+        list8.add(new Professor("栗田宫尾研究所", "Hiroshima University", 4, 9, 9, (int)(3 * Math.random())));
+        list8.add(new Professor("林田智雄", "Hiroshima University", 4, 9, 8, (int)(3 * Math.random())));
+
+        List<Professor> list9 = new ArrayList<>();
+        list9.add(new Professor("中村匡秀", "Kobe University", 4, 9, 10, (int)(3 * Math.random())));
+        list9.add(new Professor("上原研究室", "Kobe University", 4, 9, 9, (int)(3 * Math.random())));
+
+        List<Professor> list10 = new ArrayList<>();
+        list10.add(new Professor("中村匡秀", "Chiba University", 4, 9, 10, (int)(3 * Math.random())));
 
         List<List<Professor>> lists = new ArrayList<>();
         lists.add(list1);
@@ -179,6 +185,8 @@ public class professorChoice {
         lists.add(list6);
         lists.add(list7);
         lists.add(list8);
+        lists.add(list9);
+        lists.add(list10);
         calculate(lists);
     }
 
