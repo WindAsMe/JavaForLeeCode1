@@ -76,7 +76,7 @@ public class professorChoice {
 
         @Override
         public String toString() {
-            return "Professor: " + name + ", " + university + ", " + String.format("%.2f", sum) + '\'';
+            return "Professor: " + name + ", " + String.format("%.2f", sum) + '\'';
         }
     }
 
@@ -124,7 +124,6 @@ public class professorChoice {
         list1.add(new Professor("越塚登", "University of Tokyo", 4, 8, 10, (int)(3 * Math.random())));
         list1.add(new Professor("川原圭博", "University of Tokyo", 4, 7, 6, (int)(3 * Math.random())));
         list1.add(new Professor("森川博之", "University of Tokyo",4, 8, 9, (int)(3 * Math.random())));
-        list1.add(new Professor("杉山 佐藤 本多研究室", "University of Tokyo", 4, 9, 8, (int)(3 * Math.random())));
         list1.add(new Professor("杉山 佐藤 本多研究室", "University of Tokyo", 4, 9, 8, (int)(3 * Math.random())));
         list1.add(new Professor("宫尾研究室", "University of Tokyo", 4, 8, 8, (int)(3 * Math.random())));
 
