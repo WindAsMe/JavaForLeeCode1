@@ -16,7 +16,6 @@ public class numUniqueEmails {
             String[] e = email.split("@");
             set.add(process(e[0]) + "@" + e[1]);
         }
-
         for (String s : set)
             System.out.println(s);
         return set.size();
