@@ -32,7 +32,6 @@ public class validSquare {
         return (int) (Math.pow(x[0] - y[0], 2) + Math.pow(x[1] - y[1], 2));
     }
 
-
     // set p1 as benchmark
     // If can constitute as square:
     // 3 line can constitute as special triangle
@@ -43,11 +42,6 @@ public class validSquare {
         if (length1 == 0 || length2 == 0 || length3 == 0)
             return false;
         else {
-            // If the axis is not parallel or vertical
-            int point1_row = p4[0] - p2[0];
-            int point1_column = p4[1] - p2[1];
-            int point2_row = p3[0] - p1[0];
-            int point2_column = p3[1] - p1[1];
             if (length1 + length2 == length3 || length1 + length3 == length2 || length3 + length2 == length1)
                 return length1 == length2 || length1 == length3 || length2 == length3;
         }
