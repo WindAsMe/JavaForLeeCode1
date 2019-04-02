@@ -14,7 +14,7 @@ public class trap {
         int leftMax = 0;
         int rightMax = 0;
         int res = 0;
-        while(left <= right) {
+        while (left <= right) {
             if(height[left] <= height[right]) {
                 if(height[left] > leftMax)
                     leftMax = height[left];
