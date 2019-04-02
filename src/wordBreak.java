@@ -23,7 +23,7 @@ public class wordBreak {
             else {
                 // From 0 to i
                 // If word can be consisted
-                for(int j = 0; j < i; j++) {
+                for (int j = 0; j < i; j++) {
                     if (dp[j] && wordDict.contains(s.substring(j + 1, i + 1))) {
                         dp[i] = true;
                         break;
