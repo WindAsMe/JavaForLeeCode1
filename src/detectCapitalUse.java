@@ -12,7 +12,7 @@ public class detectCapitalUse {
             return true;
         char temp = word.charAt(0);
         if (temp >= 'a') {
-            for (int i = 1; i < word.length(); i++ ) {
+            for (int i = 1; i < word.length(); i++) {
                 if (word.charAt(i) <= 'Z')
                     return false;
             }
