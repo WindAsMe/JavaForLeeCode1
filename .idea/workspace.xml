@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdb379e-4279-428b-9b06-590e93c8068c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/shoppingOffers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shoppingOffers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/shoppingOffers.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,12 +54,12 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ft" value="21" />
-          <entry key="java" value="11489" />
+          <entry key="java" value="11628" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11489" />
+          <entry key="JAVA" value="11628" />
           <entry key="VTL" value="21" />
         </counts>
       </usages-collector>
@@ -156,8 +155,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/shoppingOffers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+            <state relative-caret-position="524">
+              <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -284,7 +283,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555421885375" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555424828747" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -305,7 +304,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.professorChoice">
+  <component name="RunManager" selected="Application.shoppingOffers">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -314,14 +313,6 @@
     </configuration>
     <configuration name="allPathsSourceTarget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="allPathsSourceTarget" />
-      <module name="JavaForLeeCode1" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="customSortString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="customSortString" />
       <module name="JavaForLeeCode1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -352,6 +343,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="shoppingOffers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="shoppingOffers" />
+      <module name="JavaForLeeCode1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -367,19 +366,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.customSortString" />
       <item itemvalue="Application.allPathsSourceTarget" />
       <item itemvalue="Application.magicalString" />
       <item itemvalue="Application.professorChoice" />
       <item itemvalue="Application.reverseString" />
+      <item itemvalue="Application.shoppingOffers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.shoppingOffers" />
         <item itemvalue="Application.professorChoice" />
         <item itemvalue="Application.reverseString" />
         <item itemvalue="Application.magicalString" />
         <item itemvalue="Application.allPathsSourceTarget" />
-        <item itemvalue="Application.customSortString" />
       </list>
     </recent_temporary>
   </component>
@@ -545,12 +544,12 @@
       <workItem from="1554127926345" duration="432000" />
       <workItem from="1554209894446" duration="308000" />
       <workItem from="1554264403773" duration="158000" />
-      <workItem from="1555420357520" duration="3380000" />
+      <workItem from="1555420357520" duration="4619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="401336000" />
+    <option name="totallyTimeSpent" value="402575000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -565,7 +564,7 @@
     <frame x="404" y="63" width="1612" height="981" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12292994" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12292994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -574,7 +573,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.496963" weight="0.39032257" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.496963" visible="true" weight="0.23831776" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2516129" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -954,8 +953,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/shoppingOffers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+        <state relative-caret-position="524">
+          <caret line="49" column="15" selection-start-line="49" selection-start-column="15" selection-end-line="49" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
