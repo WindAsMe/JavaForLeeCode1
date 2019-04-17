@@ -43,7 +43,6 @@ public class shoppingOffers {
             }
         }
         if (!listZero(needs)) {
-            System.out.println("????");
             for (int i = 0; i < needs.size(); i++)
                 total += price.get(i) * needs.get(i);
         }
