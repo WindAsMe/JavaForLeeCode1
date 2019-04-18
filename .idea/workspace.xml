@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdb379e-4279-428b-9b06-590e93c8068c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bitwiseComplement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sortedSquares.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaForLeeCode1/shoppingOffers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaForLeeCode1/shoppingOffers.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -43,24 +44,24 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="conclusion" value="2" />
-          <entry key="java" value="411" />
+          <entry key="java" value="412" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="411" />
+          <entry key="JAVA" value="412" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ft" value="21" />
-          <entry key="java" value="11628" />
+          <entry key="java" value="11830" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="11628" />
+          <entry key="JAVA" value="11830" />
           <entry key="VTL" value="21" />
         </counts>
       </usages-collector>
@@ -72,15 +73,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/validSquare.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/trimBST.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -156,13 +148,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bitwiseComplement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+            <state relative-caret-position="220">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="18" selection-end-column="19" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/sortedSquares.java">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -180,8 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/flatten.java" />
-        <option value="$PROJECT_DIR$/src/floodFill.java" />
         <option value="$PROJECT_DIR$/src/moveZeroes.java" />
         <option value="$PROJECT_DIR$/src/myAtoi.java" />
         <option value="$PROJECT_DIR$/src/nextGreaterElement.java" />
@@ -231,6 +226,8 @@
         <option value="$PROJECT_DIR$/src/detectCapitalUse.java" />
         <option value="$PROJECT_DIR$/src/fizzBuzz.java" />
         <option value="$PROJECT_DIR$/src/shoppingOffers.java" />
+        <option value="$PROJECT_DIR$/src/bitwiseComplement.java" />
+        <option value="$PROJECT_DIR$/src/sortedSquares.java" />
       </list>
     </option>
   </component>
@@ -284,7 +281,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555553904617" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555554483035" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -305,23 +302,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.shoppingOffers">
+  <component name="RunManager" selected="Application.sortedSquares">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="allPathsSourceTarget" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="allPathsSourceTarget" />
-      <module name="JavaForLeeCode1" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="magicalString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="magicalString" />
+    <configuration name="bitwiseComplement" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bitwiseComplement" />
       <module name="JavaForLeeCode1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -352,6 +341,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="sortedSquares" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sortedSquares" />
+      <module name="JavaForLeeCode1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -367,19 +364,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.allPathsSourceTarget" />
-      <item itemvalue="Application.magicalString" />
       <item itemvalue="Application.professorChoice" />
       <item itemvalue="Application.reverseString" />
       <item itemvalue="Application.shoppingOffers" />
+      <item itemvalue="Application.bitwiseComplement" />
+      <item itemvalue="Application.sortedSquares" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sortedSquares" />
+        <item itemvalue="Application.bitwiseComplement" />
         <item itemvalue="Application.shoppingOffers" />
         <item itemvalue="Application.professorChoice" />
         <item itemvalue="Application.reverseString" />
-        <item itemvalue="Application.magicalString" />
-        <item itemvalue="Application.allPathsSourceTarget" />
       </list>
     </recent_temporary>
   </component>
@@ -547,12 +544,12 @@
       <workItem from="1554264403773" duration="158000" />
       <workItem from="1555420357520" duration="4828000" />
       <workItem from="1555511397756" duration="655000" />
-      <workItem from="1555553625833" duration="249000" />
+      <workItem from="1555553625833" duration="771000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="403688000" />
+    <option name="totallyTimeSpent" value="404210000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -564,7 +561,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="67" y="25" width="1853" height="1055" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16510215" />
@@ -576,13 +573,13 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32954547" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.496963" weight="0.23831776" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.496963" visible="true" weight="0.2376344" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.2516129" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32903227" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4973262" visible="true" weight="0.27204302" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4973262" weight="0.27204302" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32150537" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.503037" side_tool="true" weight="0.3344086" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32903227" />
@@ -604,13 +601,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/exist.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="90" column="32" selection-start-line="90" selection-start-column="32" selection-end-line="90" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/findComplement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="572">
@@ -959,10 +949,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/bitwiseComplement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+        <state relative-caret-position="220">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="18" selection-end-column="19" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sortedSquares.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
