@@ -7,7 +7,7 @@
  */
 public class bitwiseComplement {
 
-    public int bitwiseComplementResult(int N) {
+    private static int bitwiseComplementResult(int N) {
         if (N == 0)
             return 1;
         int t = N ^ Integer.MAX_VALUE;
@@ -17,5 +17,10 @@ public class bitwiseComplement {
             d *= 2;
         }
         return sum;
+    }
+
+    public static void main(String[] args) {
+        int N = 5;
+        System.out.println(bitwiseComplementResult(N));
     }
 }
