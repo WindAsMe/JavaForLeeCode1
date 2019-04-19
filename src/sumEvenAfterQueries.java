@@ -17,7 +17,6 @@ public class sumEvenAfterQueries {
             if (a % 2 == 0)
                 previous += a;
         }
-
         for (int[] query : queries) {
             int before = A[query[1]];
             int after = A[query[1]] + query[0];
@@ -29,7 +28,7 @@ public class sumEvenAfterQueries {
             if (before % 2 == 0 && Math.abs(after % 2) == 1)
                 previous -= before;
 
-            System.out.println("before: " + before + "  after: " + after + "  p: " + previous);
+            // System.out.println("before: " + before + "  after: " + after + "  p: " + previous);
             sum[row] = previous;
             row++;
         }
