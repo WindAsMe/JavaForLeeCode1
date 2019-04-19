@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * Author     : WindAsMe
  * File       : sumEvenAfterQueries.java
@@ -25,5 +27,11 @@ public class sumEvenAfterQueries {
                 sum += a;
         }
         return sum;
+    }
+
+    public static void main(String[] args) {
+        int[] A = {1, 2, 3, 4};
+        int[][] queries = {{1, 0}, {-3, 1}, {-4, 0}, {2, 3}};
+        System.out.println(Arrays.toString(sumEvenAfterQueriesResult(A, queries)));
     }
 }
