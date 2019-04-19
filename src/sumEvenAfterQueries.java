@@ -12,19 +12,26 @@ public class sumEvenAfterQueries {
     private static int[] sumEvenAfterQueriesResult(int[] A, int[][] queries) {
         int[] sum = new int[A.length];
         int row = 0;
-        for (int[] query : queries) {
-            A[query[1]] += query[0];
-            sum[row] = findDouble(A);
-            row++;
-        }
-        return sum;
-    }
-
-    private static int findDouble(int[] A) {
-        int sum = 0;
+        int previous = 0;
         for (int a : A) {
             if (a % 2 == 0)
-                sum += a;
+                previous += a;
+        }
+
+        for (int[] query : queries) {
+            int before = A[query[1]];
+            int after = A[query[1]] + query[0];
+            A[query[1]] += query[0];
+            if (Math.abs(before % 2) == 1 && after % 2 == 0)
+                previous += after;
+            if (before % 2 == 0 && after % 2 == 0)
+                previous += (after - before);
+            if (before % 2 == 0 && Math.abs(after % 2) == 1)
+                previous -= before;
+
+            System.out.println("before: " + before + "  after: " + after + "  p: " + previous);
+            sum[row] = previous;
+            row++;
         }
         return sum;
     }
