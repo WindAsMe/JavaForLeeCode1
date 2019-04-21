@@ -45,4 +45,9 @@ public class commonChars {
         }
         return list;
     }
+
+    public static void main(String[] args) {
+        String[] A = {"bella", "label", "roller"};
+        System.out.println(commonCharsResult(A).toString());
+    }
 }
