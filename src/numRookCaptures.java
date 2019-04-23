@@ -24,7 +24,7 @@ public class numRookCaptures {
         for (int i = row; i < 8; i++) {
             if (board[i][column] == 'B')
                 break;
-            else if (board[i][column] == 'P') {
+            else if (board[i][column] == 'p') {
                 sum++;
                 break;
             }
@@ -33,7 +33,7 @@ public class numRookCaptures {
         for (int i = row; i >= 0; i--) {
             if (board[i][column] == 'B')
                 break;
-            else if (board[i][column] == 'P') {
+            else if (board[i][column] == 'p') {
                 sum++;
                 break;
             }
@@ -42,7 +42,7 @@ public class numRookCaptures {
         for (int i = column; i < 8; i++) {
             if (board[row][i] == 'B')
                 break;
-            else if (board[row][i] == 'P') {
+            else if (board[row][i] == 'p') {
                 sum++;
                 break;
             }
@@ -51,11 +51,15 @@ public class numRookCaptures {
         for (int i = column; i >= 0; i--) {
             if (board[row][i] == 'B')
                 break;
-            else if (board[row][i] == 'P') {
+            else if (board[row][i] == 'p') {
                 sum++;
                 break;
             }
         }
         return sum;
+    }
+
+    public static void main(String[] args) {
+
     }
 }
