@@ -33,10 +33,7 @@ public class commonChars {
                 else
                     tempMap.put(string.charAt(i), tempMap.get(string.charAt(i)) + 1);
             }
-            for (Map.Entry<Character, Integer> entry : tempMap.entrySet()) {
-                if (map.get(entry.getKey()) > entry.getValue())
-                    map.put(entry.getKey(), entry.getValue());
-            }
+            map = mapMerge(map, tempMap);
         }
 
         for (Map.Entry<Character, Integer> entry : map.entrySet()) {
@@ -45,6 +42,16 @@ public class commonChars {
         }
         return list;
     }
+
+    private static Map<Character, Integer> mapMerge(Map<Character, Integer> map1, Map<Character, Integer> map2) {
+        Map<Character, Integer> map = new HashMap<>();
+        for (Map.Entry<Character, Integer> entry : map1.entrySet()) {
+            if (map2.get(entry.getKey()) != null)
+                map.put(entry.getKey(), Math.min(map2.get(entry.getKey()), entry.getValue()));
+        }
+        return map;
+    }
+
 
     public static void main(String[] args) {
         String[] A = {"bella", "label", "roller"};
