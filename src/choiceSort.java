@@ -20,7 +20,6 @@ public class choiceSort {
 
     private static int[] arrayMin(int start, int end, int[] A) {
         int[] array = {A[start], start};
-
         for (int i = start; i < end; i++) {
             if (A[i] < array[0]) {
                 array[0] = A[i];
@@ -32,6 +31,6 @@ public class choiceSort {
 
     public static void main(String[] args) {
         int[] A = {6, 1, 7, 8, 9, 3, 5, 4, 2};
-
+        choiceSortResult(A);
     }
 }
