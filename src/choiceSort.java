@@ -10,7 +10,7 @@ public class choiceSort {
 
     private static void choiceSortResult(int[] A) {
         for (int i = 0; i < A.length; i++) {
-            int[] array = arrayMin(i + 1, A.length, A);
+            int[] array = arrayMin(i, A.length, A);
             int temp = A[i];
             A[i] = array[0];
             A[array[1]] = temp;
