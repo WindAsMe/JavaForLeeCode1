@@ -27,7 +27,17 @@ public class heapCreate {
     }
 
     public static HeapNode HeapRecreateUp(HeapNode node) {
-        return node;
+        if (node != null) {
+            HeapNode heapNode = node;
+            if (node.left != null && node.right != null) {
+                if (node.num <= node.left.num && node.num <= node.right.num) {
+                    HeapRecreateUp(node.left);
+                    HeapRecreateUp(node.right);
+                } else if ()
+
+            }
+            return node;
+        }
     }
 
     public static HeapNode HeapRecreateDown(HeapNode node) {
