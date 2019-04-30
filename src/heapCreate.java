@@ -16,6 +16,10 @@ public class heapCreate {
         private HeapNode right;
         private int num;
 
+        public HeapNode(int num) {
+            this.num = num;
+        }
+
         public int getNum() {
             return num;
         }
@@ -29,15 +33,26 @@ public class heapCreate {
     public static HeapNode HeapRecreateUp(HeapNode node) {
         if (node != null) {
             HeapNode heapNode = node;
-            if (node.left != null && node.right != null) {
-                if (node.num <= node.left.num && node.num <= node.right.num) {
-                    HeapRecreateUp(node.left);
-                    HeapRecreateUp(node.right);
-                } else if ()
+            if (heapNode.left != null && heapNode.right != null) {
+                if (heapNode.num <= heapNode.left.num && heapNode.num <= heapNode.right.num) {
+                    HeapRecreateUp(heapNode.left);
+                    HeapRecreateUp(heapNode.right);
+                } else if (heapNode.num > heapNode.left.num) {
+                    int temp = heapNode.num;
+                    heapNode.num = heapNode.left.num;
+                    heapNode.left.num = temp;
+                    HeapRecreateUp(node);
+                } else {
+                    int temp = heapNode.num;
+                    heapNode.num = heapNode.right.num;
+                    heapNode.right.num = temp;
+                    HeapRecreateUp(node);
+                }
 
             }
             return node;
         }
+        return null;
     }
 
     public static HeapNode HeapRecreateDown(HeapNode node) {
@@ -55,8 +70,10 @@ public class heapCreate {
             while (!queue1.isEmpty()) {
                 HeapNode heapNode = queue1.poll();
                 list.add(heapNode.getNum());
-                queue2.add(heapNode.left);
-                queue2.add(heapNode.right);
+                if (heapNode.left != null)
+                    queue2.add(heapNode.left);
+                if (heapNode.right != null)
+                    queue2.add(heapNode.right);
             }
             for (Integer i : list)
                 System.out.print(i + " ");
@@ -65,8 +82,10 @@ public class heapCreate {
             while (!queue2.isEmpty()) {
                 HeapNode heapNode = queue2.poll();
                 list.add(heapNode.getNum());
-                queue1.add(heapNode.left);
-                queue1.add(heapNode.right);
+                if (heapNode.left != null)
+                    queue1.add(heapNode.left);
+                if (heapNode.right != null)
+                    queue1.add(heapNode.right);
             }
             for (Integer i : list)
                 System.out.print(i + " ");
@@ -74,7 +93,19 @@ public class heapCreate {
         }
     }
 
+    public static void main(String[] args) {
+        HeapNode node = new HeapNode(1);
+        node.left = new HeapNode(3);
+        node.left.left = new HeapNode(4);
+        node.left.right = new HeapNode(8);
 
+        node.right = new HeapNode(6);
+        node.right.left = new HeapNode(7);
+        node.right.right = new HeapNode(5);
+        LayerIteration(node);
+        HeapRecreateUp(node);
+        LayerIteration(node);
+    }
 
 
 }
