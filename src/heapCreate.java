@@ -16,7 +16,7 @@ public class heapCreate {
         private HeapNode right;
         private int num;
 
-        public HeapNode(int num) {
+        HeapNode(int num) {
             this.num = num;
         }
 
@@ -30,22 +30,21 @@ public class heapCreate {
 
     }
 
-    public static HeapNode HeapRecreateUp(HeapNode node) {
+    private static HeapNode HeapRecreateUp(HeapNode node) {
         if (node != null) {
-            HeapNode heapNode = node;
-            if (heapNode.left != null && heapNode.right != null) {
-                if (heapNode.num <= heapNode.left.num && heapNode.num <= heapNode.right.num) {
-                    HeapRecreateUp(heapNode.left);
-                    HeapRecreateUp(heapNode.right);
-                } else if (heapNode.num > heapNode.left.num) {
-                    int temp = heapNode.num;
-                    heapNode.num = heapNode.left.num;
-                    heapNode.left.num = temp;
+            if (node.left != null && node.right != null) {
+                if (node.num <= node.left.num && node.num <= node.right.num) {
+                    HeapRecreateUp(node.left);
+                    HeapRecreateUp(node.right);
+                } else if (node.num > node.left.num) {
+                    int temp = node.num;
+                    node.num = node.left.num;
+                    node.left.num = temp;
                     HeapRecreateUp(node);
                 } else {
-                    int temp = heapNode.num;
-                    heapNode.num = heapNode.right.num;
-                    heapNode.right.num = temp;
+                    int temp = node.num;
+                    node.num = node.right.num;
+                    node.right.num = temp;
                     HeapRecreateUp(node);
                 }
 
@@ -59,37 +58,11 @@ public class heapCreate {
         return node;
     }
 
-    public static void LayerIteration(HeapNode node) {
-        Queue<HeapNode> queue1 = new PriorityQueue<>();
-        Queue<HeapNode> queue2 = new PriorityQueue<>();
-        if (node != null)
-            queue1.add(node);
-
-        while (!queue1.isEmpty() || !queue2.isEmpty()) {
-            List<Integer> list = new ArrayList<>();
-            while (!queue1.isEmpty()) {
-                HeapNode heapNode = queue1.poll();
-                list.add(heapNode.getNum());
-                if (heapNode.left != null)
-                    queue2.add(heapNode.left);
-                if (heapNode.right != null)
-                    queue2.add(heapNode.right);
-            }
-            for (Integer i : list)
-                System.out.print(i + " ");
-            System.out.println();
-            list.clear();
-            while (!queue2.isEmpty()) {
-                HeapNode heapNode = queue2.poll();
-                list.add(heapNode.getNum());
-                if (heapNode.left != null)
-                    queue1.add(heapNode.left);
-                if (heapNode.right != null)
-                    queue1.add(heapNode.right);
-            }
-            for (Integer i : list)
-                System.out.print(i + " ");
-            System.out.println();
+    private static void LayerIteration(HeapNode node) {
+        if (node != null) {
+            System.out.print(node.num + " ");
+            LayerIteration(node.left);
+            LayerIteration(node.right);
         }
     }
 
@@ -103,7 +76,8 @@ public class heapCreate {
         node.right.left = new HeapNode(7);
         node.right.right = new HeapNode(5);
         LayerIteration(node);
-        HeapRecreateUp(node);
+        node = HeapRecreateUp(node);
+        System.out.println();
         LayerIteration(node);
     }
 
