@@ -66,6 +66,7 @@ public class heapCreate {
         }
     }
 
+
     public static void main(String[] args) {
         HeapNode node = new HeapNode(1);
         node.left = new HeapNode(3);
@@ -79,6 +80,9 @@ public class heapCreate {
         node = HeapRecreateUp(node);
         System.out.println();
         LayerIteration(node);
+
+
+
     }
 
 
