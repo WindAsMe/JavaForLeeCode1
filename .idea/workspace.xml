@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdb379e-4279-428b-9b06-590e93c8068c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/heapCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/heapCreate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BellmanFord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,7 +23,7 @@
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.30" value="3" />
           <entry key="project.open.time.31" value="6" />
-          <entry key="project.open.time.32" value="14" />
+          <entry key="project.open.time.32" value="15" />
           <entry key="project.open.time.33" value="9" />
           <entry key="project.open.time.34" value="5" />
           <entry key="project.open.time.35" value="5" />
@@ -36,30 +37,30 @@
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.opened" value="68" />
+          <entry key="project.opened" value="69" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="conclusion" value="2" />
-          <entry key="java" value="418" />
+          <entry key="java" value="420" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="418" />
+          <entry key="JAVA" value="420" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ft" value="21" />
-          <entry key="java" value="15239" />
+          <entry key="java" value="15604" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="15239" />
+          <entry key="JAVA" value="15604" />
           <entry key="VTL" value="21" />
         </counts>
       </usages-collector>
@@ -71,15 +72,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/fourSumCount.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="770">
-              <caret line="36" column="23" selection-start-line="36" selection-start-column="23" selection-end-line="36" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/shoppingOffers.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -158,15 +150,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/heapCreate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+            <state relative-caret-position="1299">
+              <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#447#448#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BellmanFord.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="726">
+              <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -187,8 +189,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/matrixReshape.java" />
-        <option value="$PROJECT_DIR$/src/maxArea.java" />
         <option value="$PROJECT_DIR$/src/maxCount.java" />
         <option value="$PROJECT_DIR$/src/fourSum.java" />
         <option value="$PROJECT_DIR$/src/fourSumCount.java" />
@@ -238,6 +238,8 @@
         <option value="$PROJECT_DIR$/src/numRookCaptures.java" />
         <option value="$PROJECT_DIR$/src/choiceSort.java" />
         <option value="$PROJECT_DIR$/src/heapCreate.java" />
+        <option value="$PROJECT_DIR$/src/mergeSort.java" />
+        <option value="$PROJECT_DIR$/src/BellmanFord.java" />
       </list>
     </option>
   </component>
@@ -267,9 +269,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -286,12 +287,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556642852261" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557674508904" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -561,11 +563,12 @@
       <workItem from="1556547127398" duration="2082000" />
       <workItem from="1556631559436" duration="5423000" />
       <workItem from="1556714142868" duration="508000" />
+      <workItem from="1557673207136" duration="1223000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="418919000" />
+    <option name="totallyTimeSpent" value="420142000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -580,7 +583,7 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17725013" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17890668" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -617,20 +620,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/isAnagram.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="29" column="25" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/isPerfectSquare.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/isPowerOfFour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -973,14 +962,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/mergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="8" lean-forward="true" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/heapCreate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+        <state relative-caret-position="1299">
+          <caret line="72" column="18" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#447#448#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BellmanFord.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="38" column="38" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
