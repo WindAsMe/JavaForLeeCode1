@@ -32,9 +32,8 @@ public class BellmanFord {
             graph[tuple.start - 'A'][tuple.end - 'A'] = tuple.dis;
             graph[tuple.end - 'A'][tuple.start - 'A'] = tuple.dis;
         }
-
-        for (int[] g : graph)
-            System.out.println(Arrays.toString(g));
+//        for (int[] g : graph)
+//            System.out.println(Arrays.toString(g));
         return graph;
     }
 
