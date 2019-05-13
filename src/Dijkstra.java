@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -47,6 +48,7 @@ public class Dijkstra {
                 bfs(graph, mark, i);
             }
         }
+        System.out.println(Arrays.toString(mark));
         return mark[mark.length - 1];
     }
 
@@ -55,9 +57,8 @@ public class Dijkstra {
             if (graph[index][i] != -1 && (mark[i] == -1 || Math.min(mark[index] + graph[index][i], mark[i]) < mark[i])) {
                 mark[i] = mark[index] + graph[index][i];
                 for (int j = 0; j < mark.length; j++) {
-                    if (graph[j][i] != -1) {
+                    if (graph[j][i] != -1)
                         bfs(graph, mark, i);
-                    }
                 }
             }
         }
