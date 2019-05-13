@@ -63,6 +63,7 @@ public class BellmanFord {
             if (Arrays.equals(temp, mark))
                 break;
         }
+        System.out.println(Arrays.toString(mark));
         return mark[mark.length - 1];
     }
 
