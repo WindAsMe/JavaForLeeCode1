@@ -9,21 +9,32 @@ import java.util.Arrays;
  */
 public class quickSort {
 
+    private static int[] quickSortResult1(int[] arr) {
+
+    }
+
+
+
+
+
+
+
+
     private static int[] quickSortResult(int[] arr, int low, int high) {
         int l = low;
         int h = high;
         int povit = arr[low];
-        while(l < h) {
+        while (l < h) {
             while (l < h && arr[h] >= povit)
-                h --;
+                h--;
             if (l < h) {
                 int temp = arr[h];
                 arr[h] = arr[l];
                 arr[l] = temp;
-                l ++;
+                l++;
             }
             while (l < h && arr[l] <= povit)
-                l ++;
+                l++;
             if (l < h) {
                 int temp = arr[h];
                 arr[h] = arr[l];
@@ -39,7 +50,7 @@ public class quickSort {
     }
 
     public static void main(String[] args) {
-        int[] nums = {61,12,6,7,9,4,66,22,3,5,6};
+        int[] nums = {61, 12, 6, 7, 9, 4, 66, 22, 3, 5, 6};
         System.out.println(Arrays.toString(quickSortResult(nums, 0, nums.length - 1)));
     }
 }
