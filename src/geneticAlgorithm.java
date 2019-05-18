@@ -44,8 +44,28 @@ public class geneticAlgorithm {
     }
 
     class Evolution extends abstractEvolution {
-        void SelectPop() {
+        void SelectPop() { // select the operation
+            double fitSum = 0;
+            double selection[] = new double[popSize];
+            individual[] newPopulation = new individual[popSize];
+            for (int index = 0; index < popSize; index++)  // sum the fitValue
+                fitSum += Population[index].fitValue;
+            for (int index = 0; index < popSize; index++)
+                selection[index] = Population[index].fitValue / fitSum;
+            for (int index = 1; index < popSize; index++)
+                selection[index] = selection[index - 1] + selection[index];
 
+            for (int popIndex = 0; popIndex < popSize; popIndex++) { // roulette selection
+                double p = Math.random() * Integer.MAX_VALUE % 100;
+                p /= 100;
+                int index = 0;
+                while (p > selection[index])
+                    index++;
+                newPopulation[popIndex] = Population[index];
+            }
+
+            if (popSize >= 0) // update the generation
+                System.arraycopy(newPopulation, 0, Population, 0, popSize);
         }
         void VaryPop() {}
         void CrossPop() {}
@@ -54,7 +74,7 @@ public class geneticAlgorithm {
             for (int index = 0; index < popSize; index++) { // create every individual's chromosome
                 StringBuilder builder = new StringBuilder();
                 for (int bitIndex = 0; bitIndex < chromosomeSize; bitIndex++)
-                    builder.append(Math.random() % 2);
+                    builder.append(Math.random() * Integer.MAX_VALUE % 2);
                 Population[index].chromosome = builder.toString();
             }
             HistoryBest = Population[0]; // permanently to set the history best as the first
@@ -63,8 +83,38 @@ public class geneticAlgorithm {
 
         }
         void Statistics() {}
-        void EvaluatePop() {}
-        void NextPopulation() {}
+        void EvaluatePop() { // f(x1, x2) = x1 ^ 2 + x2 ^ 2;
+            for (int index = 0; index < popSize; index++) {
+                int value1 = Integer.parseInt(Population[index].chromosome.substring(0, 3), 2);
+                int value2 = Integer.parseInt(Population[index].chromosome.substring(3, 3), 2);
+                int value3 = Integer.parseInt(new StringBuilder(Population[index].chromosome.substring(3, 6)).reverse().toString(), 2);
+                int a = value1 / 100;
+                int b = (value1 - a * 100) / 10;
+                int c = value1 - a * 100 - b * 10;
+                value1 = a * 4 + b * 2 + c;
+                a = value2 / 100;
+                b = (value2 - a * 100) / 10;
+                c = value2 - a * 100 - b * 10;
+                value2 = a * 4 + b * 2 + c;
+                a = value3 / 100;
+                b = (value3 - a * 100) / 10;
+                c = value3 - a * 100 - b * 10;
+                value3 = a * 4 + b * 2 + c;
+                Population[index].fitValue = value1 * value1 + value2 * value2 + value3 * value3;
+                Population[index].objectiveValue = value1 * value1 + value2 * value2 + value3 * value3;
+            }
+        }
+        void NextPopulation() { // create the next generation
+             SelectPop();
+             VaryPop();
+             CrossPop();
+             EvaluatePop();
+             Statistics();
+             OptimizePop();
+             EvaluatePop();
+             Statistics();
+             generation++;
+        }
         void output() {}
 
         public Evolution() { // Initialization
