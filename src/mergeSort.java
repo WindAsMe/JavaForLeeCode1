@@ -6,26 +6,24 @@
  */
 public class mergeSort {
 
-    private static int number=0;
-
+    private static int number = 0;
 
     private static void printArray(String pre,int[] a) {
-        System.out.print(pre+"\n");
+        System.out.print(pre + "\n");
         for (int anA : a)
             System.out.print(anA + "\t");
         System.out.println();
     }
 
     private static void MergeSort(int[] a) {
-        System.out.println("开始排序");
+        System.out.println("Start");
         Sort(a, 0, a.length - 1);
     }
 
     private static void Sort(int[] a, int left, int right) {
-        if(left >= right)
+        if (left >= right)
             return;
         int mid = (left + right) / 2;
-        //二路归并排序里面有两个Sort，多路归并排序里面写多个Sort就可以了
         Sort(a, left, mid);
         Sort(a, mid + 1, right);
         merge(a, left, mid, right);
@@ -35,25 +33,24 @@ public class mergeSort {
         int[] tmp = new int[a.length];
         int r1 = mid + 1;
         int tIndex = left;
-        int cIndex=left;
+        int cIndex = left;
         // 逐个归并
-        while(left <=mid && r1 <= right) {
+        while (left <= mid && r1 <= right) {
             if (a[left] <= a[r1])
                 tmp[tIndex++] = a[left++];
             else
                 tmp[tIndex++] = a[r1++];
         }
-        // 将左边剩余的归并
-        while (left <=mid)
+        // merge the left
+        while (left <= mid)
             tmp[tIndex++] = a[left++];
-        // 将右边剩余的归并
+        // merge the right
         while ( r1 <= right )
             tmp[tIndex++] = a[r1++];
-        System.out.println("第" + (++number) + "趟排序:\t");
-        //从临时数组拷贝到原数组
+        System.out.println("In " + (++number) + " times:\t");
+        // copy the temp data
         while (cIndex <= right){
             a[cIndex] = tmp[cIndex];
-            //输出中间归并排序结果
             System.out.print(a[cIndex] + "\t");
             cIndex++;
         }
