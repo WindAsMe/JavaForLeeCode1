@@ -9,6 +9,30 @@ import java.util.Arrays;
  */
 public class quickSort {
 
+    private static int[] quickSort1(int[] a) {
+        quick(a, 0, a.length - 1);
+        return a;
+    }
+
+    private static void quick(int[] a, int start, int end) {
+        if (start >= end)
+            return;
+        int pivotal = a[start];
+        int left = start, right = end;
+        while (left < right) {
+            while (left < right && a[right] >= pivotal)
+                right--;
+            a[left] = a[right];
+            while (left < right && a[left] <= pivotal)
+                left++;
+            a[right] = a[left];
+        }
+        a[left] = pivotal;
+        // System.out.println(Arrays.toString(a));
+        quick(a, start, left - 1);
+        quick(a, left + 1, end);
+    }
+
     private static int[] quickSortResult1(int[] arr) {
         int pivotal = arr[0];
         int left = 0;
@@ -83,6 +107,7 @@ public class quickSort {
     public static void main(String[] args) {
         int[] nums = {61, 12, 6, 7, 9, 4, 66, 22, 3, 5, 6};
         // System.out.println(Arrays.toString(quickSortResult(nums, 0, nums.length - 1)));
-        System.out.println(Arrays.toString(quickSortResult1(nums)));
+        // System.out.println(Arrays.toString(quickSortResult1(nums)));
+        System.out.println(Arrays.toString(quickSort1(nums)));
     }
 }
