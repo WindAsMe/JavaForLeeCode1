@@ -95,7 +95,7 @@ public class quickSort {
                 h--;
             }
         }
-        System.out.println(Arrays.toString(arr));
+        // System.out.println(Arrays.toString(arr));
         System.out.print("l = " + (l + 1) + " h = " + (h + 1) + "povit = " + povit + "\n");
         if (l > low)
             quickSortResult(arr, low, l - 1);
