@@ -72,14 +72,17 @@ public class trie {
     private static void dfs(TrieTree tree) {
         if (tree.c != null) {
             System.out.println(tree.toString());
-            for (TrieTree trieTree : tree.node)
-                dfs(trieTree);
+            if (tree.node != null) {
+                for (TrieTree trieTree : tree.node)
+                    dfs(trieTree);
+            }
         }
     }
 
     public static void main(String[] args) {
-        String[] words = {"abc", "abbc", "abb"};
+        String[] words = {"abc", "abbc", "abbe"};
+        String s = "absababbebabbc";
         TrieTree tree = TrieTreeConstruct(words);
-        dfs(tree);
+
     }
 }
