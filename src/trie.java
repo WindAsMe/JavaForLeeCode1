@@ -14,6 +14,14 @@ public class trie {
         Character c;
         List<TrieTree> node;
 
+        TrieTree() {
+        }
+
+        TrieTree(Character c) {
+            this.isContained = false;
+            this.c = c;
+        }
+
         @Override
         public String toString() {
             return "TrieTree{" +
@@ -26,27 +34,40 @@ public class trie {
 
     private static TrieTree TrieTreeConstruct(String[] words) {
         TrieTree tree = new TrieTree();
-        tree.node = new ArrayList<>();
-        tree.isContained = false;
-        tree.c = null;
-        for (String s : words)
-            TrieTreeWord(0, 0, s, tree.node);
+        for (String word : words)
+            TrieTreeWord(0, word, tree);
         return tree;
     }
 
-    private static void TrieTreeWord(int indexS, int indexList, String s, List<TrieTree> list) {
-        if (indexS == s.length() - 1)
-            list.get(indexList).isContained = true;
-        for ()
+    private static void TrieTreeWord(int indexWord, String word, TrieTree tree) {
+        if (indexWord == word.length() - 1) {
+            tree.isContained = true;
+            return;
+        }
+        List<TrieTree> list = tree.node;
+        if (list == null || list.size() == 0) {
+            tree.node = new ArrayList<>();
+            tree.node.add(new TrieTree(word.charAt(indexWord)));
+            TrieTreeWord(indexWord + 1, word, tree.node.get(0));
+        } else if (TrieTreeIndex(word.charAt(indexWord), tree.node) == -1) {
+            tree.node.add(new TrieTree(word.charAt(indexWord)));
+            TrieTreeWord(indexWord + 1, word, tree.node.get(tree.node.size() - 1));
+        } else {
+            TrieTreeWord(indexWord + 1, word, tree.node.get(TrieTreeIndex(word.charAt(indexWord), tree.node)));
+        }
+
     }
 
-    private static int TrieTreeContain(List<TrieTree> list, Character c) {
+    private static int TrieTreeIndex(Character c, List<TrieTree> list) {
         for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).c == c)
+            if (c == list.get(i).c)
                 return i;
         }
         return -1;
     }
+
+
+
 
     private static void dfs(TrieTree tree) {
         if (tree.c != null) {
@@ -59,6 +80,6 @@ public class trie {
     public static void main(String[] args) {
         String[] words = {"abc", "abbc", "abb"};
         TrieTree tree = TrieTreeConstruct(words);
-
+        dfs(tree);
     }
 }
