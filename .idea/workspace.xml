@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdb379e-4279-428b-9b06-590e93c8068c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaForLeeCode1/trie$TrieTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaForLeeCode1/trie$TrieTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaForLeeCode1/trie.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaForLeeCode1/trie.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/trie.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trie.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,7 +28,7 @@
           <entry key="project.open.time.32" value="19" />
           <entry key="project.open.time.33" value="12" />
           <entry key="project.open.time.34" value="5" />
-          <entry key="project.open.time.35" value="6" />
+          <entry key="project.open.time.35" value="7" />
           <entry key="project.open.time.36" value="5" />
           <entry key="project.open.time.37" value="5" />
           <entry key="project.open.time.38" value="2" />
@@ -36,7 +39,7 @@
           <entry key="project.open.time.49" value="2" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="4" />
-          <entry key="project.opened" value="83" />
+          <entry key="project.opened" value="84" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -95,8 +98,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/trie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="98" column="65" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
+            <state relative-caret-position="484">
+              <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -265,9 +268,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -284,12 +285,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559915605236" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559915760729" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -574,11 +577,12 @@
       <workItem from="1559645909987" duration="4284000" />
       <workItem from="1559899650423" duration="1478000" />
       <workItem from="1559913089336" duration="2516000" />
+      <workItem from="1559976607615" duration="620000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="452093000" />
+    <option name="totallyTimeSpent" value="452713000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -593,7 +597,7 @@
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19491993" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19712865" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -1012,8 +1016,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/trie.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="98" column="65" selection-start-line="98" selection-start-column="65" selection-end-line="98" selection-end-column="65" />
+        <state relative-caret-position="484">
+          <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

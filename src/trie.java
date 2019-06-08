@@ -27,7 +27,6 @@ public class trie {
             return "TrieTree{" +
                     "isContained=" + isContained +
                     ", c=" + c +
-                    ", node=" + node +
                     '}';
         }
     }
@@ -52,7 +51,7 @@ public class trie {
     }
 
     private static void TrieTreeWord(int indexWord, String word, TrieTree tree) {
-        if (indexWord == word.length() - 1) {
+        if (indexWord == word.length()) {
             tree.isContained = true;
             return;
         }
@@ -67,7 +66,6 @@ public class trie {
         } else {
             TrieTreeWord(indexWord + 1, word, tree.node.get(TrieTreeIndex(word.charAt(indexWord), tree.node)));
         }
-
     }
 
     private static int TrieTreeIndex(Character c, List<TrieTree> list) {
@@ -104,6 +102,7 @@ public class trie {
         String[] words = {"abc", "abbc", "abbe"};
         String s = "absababbebabbc";
         TrieTree tree = TrieTreeConstruct(words);
+        dfs(tree);
         System.out.println(Filter(s, tree).toString());
     }
 }
