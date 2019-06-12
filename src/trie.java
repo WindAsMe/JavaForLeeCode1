@@ -100,7 +100,7 @@ public class trie {
 
     public static void main(String[] args) {
         String[] words = {"abc", "abbc", "abbe"};
-        String s = "absababbebabbc";
+        String s = "absababbebabbbc";
         TrieTree tree = TrieTreeConstruct(words);
         dfs(tree);
         System.out.println(Filter(s, tree).toString());
