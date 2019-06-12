@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="acdb379e-4279-428b-9b06-590e93c8068c" name="Default" comment="" />
+    <list default="true" id="acdb379e-4279-428b-9b06-590e93c8068c" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/kpm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/WindAsMe.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/WindAsMe.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,31 +37,31 @@
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.49" value="2" />
           <entry key="project.open.time.6" value="2" />
-          <entry key="project.open.time.7" value="4" />
-          <entry key="project.opened" value="87" />
+          <entry key="project.open.time.7" value="5" />
+          <entry key="project.opened" value="88" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="conclusion" value="2" />
-          <entry key="java" value="432" />
+          <entry key="java" value="433" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="432" />
+          <entry key="JAVA" value="433" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ft" value="21" />
-          <entry key="java" value="23241" />
+          <entry key="java" value="23684" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="23241" />
+          <entry key="JAVA" value="23684" />
           <entry key="VTL" value="21" />
         </counts>
       </usages-collector>
@@ -69,11 +73,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/trie.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
+            <state relative-caret-position="332">
               <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/kpm.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -171,7 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/ladderLength.java" />
         <option value="$PROJECT_DIR$/src/largestDivisibleSubset.java" />
         <option value="$PROJECT_DIR$/src/exist.java" />
         <option value="$PROJECT_DIR$/src/findAnagrams.java" />
@@ -222,6 +237,7 @@
         <option value="$PROJECT_DIR$/src/quickSort.java" />
         <option value="$PROJECT_DIR$/src/maxMatching.java" />
         <option value="$PROJECT_DIR$/src/trie.java" />
+        <option value="$PROJECT_DIR$/src/kpm.java" />
       </list>
     </option>
   </component>
@@ -237,10 +253,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="722" />
-    <option name="y" value="122" />
-    <option name="width" value="1355" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="292" />
+    <option name="y" value="66" />
+    <option name="width" value="1345" />
     <option name="height" value="789" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -251,9 +267,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,12 +283,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560322924842" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560323897678" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -296,7 +312,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.trie">
+  <component name="RunManager" selected="Application.kpm">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -311,8 +327,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="gene" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="gene" />
+    <configuration name="kpm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="kpm" />
       <module name="JavaForLeeCode1" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -359,18 +375,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.quickSort" />
-      <item itemvalue="Application.gene" />
       <item itemvalue="Application.mergeSort" />
       <item itemvalue="Application.bubbleSort" />
       <item itemvalue="Application.trie" />
+      <item itemvalue="Application.kpm" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.kpm" />
         <item itemvalue="Application.trie" />
         <item itemvalue="Application.bubbleSort" />
         <item itemvalue="Application.quickSort" />
         <item itemvalue="Application.mergeSort" />
-        <item itemvalue="Application.gene" />
       </list>
     </recent_temporary>
   </component>
@@ -564,11 +580,12 @@
       <workItem from="1560082403783" duration="244000" />
       <workItem from="1560259856707" duration="1983000" />
       <workItem from="1560322818708" duration="165000" />
+      <workItem from="1560323001891" duration="895000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="455539000" />
+    <option name="totallyTimeSpent" value="456434000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -580,9 +597,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
+    <frame x="292" y="66" width="1345" height="789" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20375483" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28626248" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -597,7 +615,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32903227" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49641082" visible="true" weight="0.30645162" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49641082" visible="true" weight="0.42921686" />
       <window_info anchor="bottom" id="Messages" order="9" weight="0.32150537" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50358915" side_tool="true" weight="0.3075269" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32903227" />
@@ -649,13 +667,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/lemonadeChange.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/letterCombinations.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="770">
@@ -931,6 +942,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/maxMatching.java" />
+    <entry file="file://$PROJECT_DIR$/src/trie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/maximumProduct.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/bubbleSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1056">
@@ -983,17 +1011,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/maximumProduct.java">
+    <entry file="file://$PROJECT_DIR$/src/kpm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/trie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="102" column="33" selection-start-line="102" selection-start-column="33" selection-end-line="102" selection-end-column="33" />
+          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
